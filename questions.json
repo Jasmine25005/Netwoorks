@@ -5953,7 +5953,2334 @@
     ],
     "correct": 2,
     "explanation": "Broadcasts stay within same VLAN."
+  },
+  {
+    "id": 459,
+    "lecture": "VLAN & VTP",
+    "question": "When a VLAN spans across two switches, a broadcast frame from a specific VLAN on Switch 1 will:",
+    "options": [
+      "Be blocked from reaching Switch 2",
+      "Exit only from ports on Switch 2 that belong to that same VLAN",
+      "Exit from all ports on Switch 2",
+      "Be converted into a unicast frame"
+    ],
+    "correct": 1,
+    "explanation": "Trunk carries VLAN info, broadcast stays within same VLAN across switches."
+  },
+  {
+    "id": 460,
+    "lecture": "VLAN & VTP",
+    "question": "VLANs allow a single switch to act as if it were:",
+    "options": [
+      "A single router",
+      "A bridge only",
+      "Multiple independent switches",
+      "A Repeater"
+    ],
+    "correct": 2,
+    "explanation": "Each VLAN acts like separate switch."
+  },
+  {
+    "id": 461,
+    "lecture": "VLAN & VTP",
+    "question": "Each VLAN represents:",
+    "options": [
+      "A separate collision domain",
+      "A separate routing table",
+      "A separate broadcast domain",
+      "A separate physical network"
+    ],
+    "correct": 2,
+    "explanation": "Each VLAN = separate broadcast domain."
+  },
+  {
+    "id": 462,
+    "lecture": "VLAN & VTP",
+    "question": "In a switch with multiple VLANs, devices in different VLANs:",
+    "options": [
+      "Can communicate directly",
+      "Can see each other's broadcasts",
+      "Are isolated unless routed",
+      "Must be on different switches"
+    ],
+    "correct": 2,
+    "explanation": "Inter-VLAN communication requires router/Layer 3 switch."
+  },
+  {
+    "id": 463,
+    "lecture": "VLAN & VTP",
+    "question": "If HR is VLAN 10 and IT is VLAN 20 on the same switch:",
+    "options": [
+      "HR can see IT traffic",
+      "IT can see HR traffic",
+      "Both share the same broadcast domain",
+      "Neither can see the other"
+    ],
+    "correct": 3,
+    "explanation": "Different VLANs = isolated broadcast domains."
+  },
+  {
+    "id": 464,
+    "lecture": "VLAN & VTP",
+    "question": "What is a trunk line?",
+    "options": [
+      "A backup cable between switches",
+      "A link that carries only management traffic",
+      "A single physical link carrying multiple VLANs",
+      "A routed interface"
+    ],
+    "correct": 2,
+    "explanation": "Trunk carries multiple VLANs over single link."
+  },
+  {
+    "id": 465,
+    "lecture": "VLAN & VTP",
+    "question": "Trunk ports primarily use:",
+    "options": [
+      "Untagged frames",
+      "Tagged frames",
+      "Encrypted frames",
+      "Fragmented frames"
+    ],
+    "correct": 1,
+    "explanation": "Trunks use tagging (802.1Q) to identify VLANs."
+  },
+  {
+    "id": 466,
+    "lecture": "VLAN & VTP",
+    "question": "ISL differs from IEEE 802.1Q because ISL:",
+    "options": [
+      "Tags only part of the frame",
+      "Encapsulates the entire Ethernet frame",
+      "Is an open standard",
+      "Adds only 4 bytes"
+    ],
+    "correct": 1,
+    "explanation": "ISL encapsulates entire frame; 802.1Q inserts tag."
+  },
+  {
+    "id": 467,
+    "lecture": "VLAN & VTP",
+    "question": "How many bytes does IEEE 802.1Q add to a frame?",
+    "options": [
+      "30 bytes",
+      "26 bytes",
+      "4 bytes",
+      "8 bytes"
+    ],
+    "correct": 2,
+    "explanation": "802.1Q adds 4-byte tag."
+  },
+  {
+    "id": 468,
+    "lecture": "VLAN & VTP",
+    "question": "What is the purpose of adding 4 bytes to the frame in IEEE 802.1Q?",
+    "options": [
+      "To increase the speed of the data",
+      "To encrypt the message",
+      "To identify the VLAN number being sent to the other switch",
+      "To delete the frame"
+    ],
+    "correct": 2,
+    "explanation": "Tag contains VLAN ID for identification."
+  },
+  {
+    "id": 469,
+    "lecture": "VLAN & VTP",
+    "question": "ISL (Inter-Switch Link) is a proprietary protocol developed by:",
+    "options": [
+      "Microsoft",
+      "IEEE",
+      "Cisco",
+      "Intel"
+    ],
+    "correct": 2,
+    "explanation": "ISL is Cisco proprietary."
+  },
+  {
+    "id": 470,
+    "lecture": "VLAN & VTP",
+    "question": "How many total bytes does ISL add to an Ethernet frame?",
+    "options": [
+      "4 bytes",
+      "26 bytes",
+      "30 bytes",
+      "15 bytes"
+    ],
+    "correct": 2,
+    "explanation": "ISL adds 26-byte header + 4-byte trailer = 30 bytes total."
+  },
+  {
+    "id": 471,
+    "lecture": "VLAN & VTP",
+    "question": "The ISL encapsulation includes a header of ___ bytes and a trailer of ___ bytes.",
+    "options": [
+      "4, 26",
+      "26, 4",
+      "15, 15",
+      "20, 10"
+    ],
+    "correct": 1,
+    "explanation": "ISL: 26-byte header, 4-byte trailer."
+  },
+  {
+    "id": 472,
+    "lecture": "VLAN & VTP",
+    "question": "What are the '4 bytes' at the end of an ISL encapsulated frame called?",
+    "options": [
+      "Header",
+      "Preamble",
+      "Check bytes",
+      "VLAN ID"
+    ],
+    "correct": 2,
+    "explanation": "Trailer contains CRC for error checking."
+  },
+  {
+    "id": 473,
+    "lecture": "VLAN & VTP",
+    "question": "ISL will only work on connections between:",
+    "options": [
+      "A Switch and a PC",
+      "Any two different branded switches",
+      "Cisco switches",
+      "Two routers only"
+    ],
+    "correct": 2,
+    "explanation": "ISL works only between Cisco devices."
+  },
+  {
+    "id": 474,
+    "lecture": "VLAN & VTP",
+    "question": "What must occur before a trunking protocol can successfully start?",
+    "options": [
+      "A password must be entered",
+      "Negotiations between the two switches",
+      "The VTP revision must be Zero",
+      "All ports must be set to VLAN 1"
+    ],
+    "correct": 1,
+    "explanation": "DTP negotiates trunk formation."
+  },
+  {
+    "id": 475,
+    "lecture": "VLAN & VTP",
+    "question": "Trunking negotiation operates at:",
+    "options": [
+      "Layer 1",
+      "Layer 2",
+      "Layer 3",
+      "Layer 4"
+    ],
+    "correct": 1,
+    "explanation": "DTP operates at Layer 2."
+  },
+  {
+    "id": 476,
+    "lecture": "VLAN & VTP",
+    "question": "How many administrative modes for trunking are mentioned in the sources?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": 1,
+    "explanation": "Auto and Desirable are two main DTP modes."
+  },
+  {
+    "id": 477,
+    "lecture": "VLAN & VTP",
+    "question": "Which mode actively sends a 'request' to the opposite switch to form a trunk (positive type)?",
+    "options": [
+      "Auto mode",
+      "Desirable mode",
+      "Transparent mode",
+      "Client mode"
+    ],
+    "correct": 1,
+    "explanation": "Desirable actively tries to form trunk."
+  },
+  {
+    "id": 478,
+    "lecture": "VLAN & VTP",
+    "question": "Which DTP mode waits for the other side to initiate?",
+    "options": [
+      "Auto mode",
+      "Desirable mode",
+      "Transparent mode",
+      "Client mode"
+    ],
+    "correct": 0,
+    "explanation": "Auto waits for other side to be Desirable."
+  },
+  {
+    "id": 479,
+    "lecture": "VLAN & VTP",
+    "question": "What is the result of Desirable ⇔ Desirable?",
+    "options": [
+      "Access link",
+      "No trunk",
+      "Trunk is formed",
+      "Negotiation fails"
+    ],
+    "correct": 2,
+    "explanation": "Both Desirable = trunk forms."
+  },
+  {
+    "id": 480,
+    "lecture": "VLAN & VTP",
+    "question": "What is the result of Auto ⇔ Auto?",
+    "options": [
+      "Access link",
+      "No trunk",
+      "Trunk is formed",
+      "Negotiation fails"
+    ],
+    "correct": 1,
+    "explanation": "Both Auto = no trunk (both waiting)."
+  },
+  {
+    "id": 481,
+    "lecture": "VLAN & VTP",
+    "question": "What is the result of Auto ⇔ Desirable?",
+    "options": [
+      "No trunk",
+      "Trunk is formed",
+      "Link shuts down",
+      "Transparent mode"
+    ],
+    "correct": 1,
+    "explanation": "Auto + Desirable = trunk forms."
+  },
+  {
+    "id": 482,
+    "lecture": "VLAN & VTP",
+    "question": "To fix two 'Auto' switches that won't trunk, you must change at least one to:",
+    "options": [
+      "Off mode",
+      "Client mode",
+      "Desirable mode",
+      "IEEE mode"
+    ],
+    "correct": 2,
+    "explanation": "Change one to Desirable to initiate trunk."
+  },
+  {
+    "id": 483,
+    "lecture": "VLAN & VTP",
+    "question": "What is the primary role of the VTP protocol?",
+    "options": [
+      "To increase the physical speed of the trunk link",
+      "To propagate VLAN information like adding, modifying, or deleting",
+      "To encrypt the passwords of the switches",
+      "To connect the switch to the internet"
+    ],
+    "correct": 1,
+    "explanation": "VTP synchronizes VLAN database across switches."
+  },
+  {
+    "id": 484,
+    "lecture": "VLAN & VTP",
+    "question": "Propagation in VTP refers to spreading information about:",
+    "options": [
+      "Switch temperatures",
+      "VLAN creation, modification, and deletion",
+      "IP addresses of the users",
+      "Physical cable types"
+    ],
+    "correct": 1,
+    "explanation": "VTP propagates VLAN changes."
+  },
+  {
+    "id": 485,
+    "lecture": "VLAN & VTP",
+    "question": "VTP allows:",
+    "options": [
+      "Local VLAN creation only",
+      "Manual VLAN synchronization",
+      "Centralized VLAN management",
+      "Routing between VLANs"
+    ],
+    "correct": 2,
+    "explanation": "VTP provides centralized VLAN management."
+  },
+  {
+    "id": 486,
+    "lecture": "VLAN & VTP",
+    "question": "Which VTP mode has full authority to Create, Delete, Modify and Sync VLANs?",
+    "options": [
+      "Server mode",
+      "Client mode",
+      "Transparent mode",
+      "Off mode"
+    ],
+    "correct": 0,
+    "explanation": "Server mode can create/modify/delete VLANs."
+  },
+  {
+    "id": 487,
+    "lecture": "VLAN & VTP",
+    "question": "What does a switch in 'Client mode' do when it receives a VTP signal?",
+    "options": [
+      "It ignores the signal",
+      "It updates its VLAN information (Sync)",
+      "It deletes all its local configuration",
+      "It changes itself to Server mode"
+    ],
+    "correct": 1,
+    "explanation": "Client syncs VLAN database from Server."
+  },
+  {
+    "id": 488,
+    "lecture": "VLAN & VTP",
+    "question": "In the context of Client mode, what does 'Relay' mean?",
+    "options": [
+      "Deleting the VLAN information",
+      "Sending VTP information to the next switch",
+      "Modifying the VLAN name",
+      "Stopping the VTP signal"
+    ],
+    "correct": 1,
+    "explanation": "Client forwards VTP messages (relays)."
+  },
+  {
+    "id": 489,
+    "lecture": "VLAN & VTP",
+    "question": "Which VTP mode does NOT update its VLAN database using VTP?",
+    "options": [
+      "Server",
+      "Client",
+      "Transparent",
+      "Off"
+    ],
+    "correct": 2,
+    "explanation": "Transparent mode ignores VTP updates."
+  },
+  {
+    "id": 490,
+    "lecture": "VLAN & VTP",
+    "question": "What is the main characteristic of 'Transparent mode'?",
+    "options": [
+      "It synchronizes with the Server",
+      "It is 'Relay only / no sync'",
+      "It can modify the Server's database",
+      "It turns off the switch ports"
+    ],
+    "correct": 1,
+    "explanation": "Transparent forwards VTP but doesn't sync."
+  },
+  {
+    "id": 491,
+    "lecture": "VLAN & VTP",
+    "question": "Which VTP mode does not participate in VTP at all and does not sync or relay messages?",
+    "options": [
+      "Transparent mode",
+      "Client mode",
+      "Server mode",
+      "Off mode"
+    ],
+    "correct": 3,
+    "explanation": "Off mode = no VTP participation."
+  },
+  {
+    "id": 492,
+    "lecture": "VLAN & VTP",
+    "question": "VTP revision number indicates:",
+    "options": [
+      "VLAN priority",
+      "Switch speed",
+      "Configuration freshness",
+      "Trunk bandwidth"
+    ],
+    "correct": 2,
+    "explanation": "Revision number indicates configuration version."
+  },
+  {
+    "id": 493,
+    "lecture": "VLAN & VTP",
+    "question": "Which switch mode is responsible for issuing the VTP message that contains the Revision Number?",
+    "options": [
+      "Client mode",
+      "Transparent mode",
+      "Server mode",
+      "Off mode"
+    ],
+    "correct": 2,
+    "explanation": "Server generates VTP updates with revision number."
+  },
+  {
+    "id": 494,
+    "lecture": "VLAN & VTP",
+    "question": "A Transparent switch always has a Revision Number of:",
+    "options": [
+      "One",
+      "100",
+      "Zero",
+      "It matches the Server"
+    ],
+    "correct": 2,
+    "explanation": "Transparent mode revision always 0."
+  },
+  {
+    "id": 495,
+    "lecture": "VLAN & VTP",
+    "question": "If a Client receives a VTP message with a Revision Number equal to what it already has, it will:",
+    "options": [
+      "Update again",
+      "Reject the message",
+      "Reset to Zero",
+      "Change to Server mode"
+    ],
+    "correct": 1,
+    "explanation": "Equal revision = no update needed."
+  },
+  {
+    "id": 496,
+    "lecture": "VLAN & VTP",
+    "question": "What is a 'VTP Domain'?",
+    "options": [
+      "The physical location of the switch",
+      "A name given to a group of switches sharing VTP info",
+      "The password for the switch",
+      "The MAC address table"
+    ],
+    "correct": 1,
+    "explanation": "VTP domain = group of switches sharing same VLAN database."
+  },
+  {
+    "id": 497,
+    "lecture": "VLAN & VTP",
+    "question": "How does a switch react to a VTP message from a different domain name?",
+    "options": [
+      "It updates its VLANs immediately",
+      "It treats the revision number as Zero (ignores it)",
+      "It shuts down the trunk port",
+      "It changes its own domain name to match"
+    ],
+    "correct": 1,
+    "explanation": "Different domain = message ignored."
+  },
+  {
+    "id": 498,
+    "lecture": "VLAN & VTP",
+    "question": "Before adding a new switch to a network, you should reset its revision number to:",
+    "options": [
+      "10",
+      "The same as the Server",
+      "Zero",
+      "Any number higher than the Server"
+    ],
+    "correct": 2,
+    "explanation": "Reset to 0 to prevent overwriting existing VLAN database."
+  },
+  {
+    "id": 499,
+    "lecture": "VLAN & VTP",
+    "question": "Why is it important to reset the Revision Number of a new switch to Zero?",
+    "options": [
+      "To increase the internet speed",
+      "To prevent network disturbance or mess",
+      "To save power",
+      "To enable the Transparent mode"
+    ],
+    "correct": 1,
+    "explanation": "Prevents switch with higher revision from overwriting network VLANs."
+  },
+  {
+    "id": 500,
+    "lecture": "VLAN & VTP",
+    "question": "A way to reset a revision number to Zero is to change the switch to:",
+    "options": [
+      "Client mode",
+      "Transparent mode",
+      "Server mode",
+      "Auto mode"
+    ],
+    "correct": 1,
+    "explanation": "Changing to Transparent mode resets revision to 0."
+  },
+  {
+    "id": 501,
+    "lecture": "VLAN & VTP",
+    "question": "Another way to reset the VTP revision number to 0 is to:",
+    "options": [
+      "Reload the switch",
+      "Disable trunking",
+      "Change VTP domain name, then revert",
+      "Enable client mode"
+    ],
+    "correct": 2,
+    "explanation": "Changing domain name resets revision."
+  },
+  {
+    "id": 502,
+    "lecture": "WAN",
+    "question": "Which device adjusts the clock rate between the local network and the ISP?",
+    "options": [
+      "Router",
+      "Modem",
+      "CSU/DSU",
+      "Switch"
+    ],
+    "correct": 2,
+    "explanation": "CSU/DSU handles timing/synchronization."
+  },
+  {
+    "id": 503,
+    "lecture": "WAN",
+    "question": "The physical point where the private network begins and the public network ends is the:",
+    "options": [
+      "Local Loop",
+      "ISP Central Office",
+      "Demarcation Point",
+      "CSU/DSU"
+    ],
+    "correct": 2,
+    "explanation": "Demarc = boundary between customer and ISP."
+  },
+  {
+    "id": 504,
+    "lecture": "WAN",
+    "question": "CSU/DSU stands for:",
+    "options": [
+      "Channel Service Unit / Data Service Unit",
+      "Cisco Service Unit / Digital Service Unit",
+      "Circuit Switching Unit / Digital Switch Unit",
+      "Channel Serial Unit / Data Serial Unit"
+    ],
+    "correct": 0,
+    "explanation": "CSU/DSU = Channel Service Unit / Data Service Unit."
+  },
+  {
+    "id": 505,
+    "lecture": "WAN",
+    "question": "The cable that connects the local side to the central office of the ISP is called the:",
+    "options": [
+      "Demarcation line",
+      "Serial link",
+      "Local Loop",
+      "Circuit line"
+    ],
+    "correct": 2,
+    "explanation": "Local Loop = connection to ISP CO."
+  },
+  {
+    "id": 506,
+    "lecture": "WAN",
+    "question": "In the main construction of a WAN, which device is positioned between the Switch and the CSU/DSU?",
+    "options": [
+      "PC",
+      "Router",
+      "Demarcation Point",
+      "ISP"
+    ],
+    "correct": 1,
+    "explanation": "Router connects LAN to WAN (CSU/DSU)."
+  },
+  {
+    "id": 507,
+    "lecture": "WAN",
+    "question": "The 'Local Side' of a WAN connection includes which sequence of devices?",
+    "options": [
+      "PC → Switch → Router → CSU/DSU",
+      "PC → CSU/DSU → Router → ISP",
+      "Router → ISP → Local Loop",
+      "Switch → PC → Local Loop"
+    ],
+    "correct": 0,
+    "explanation": "Local side: PC → Switch → Router → CSU/DSU."
+  },
+  {
+    "id": 508,
+    "lecture": "WAN",
+    "question": "Where is the Demarcation Point located in the WAN diagram?",
+    "options": [
+      "Between the PC and the Switch",
+      "Between the Router and the CSU/DSU",
+      "Between the CSU/DSU and the Local Loop",
+      "Inside the ISP central office"
+    ],
+    "correct": 2,
+    "explanation": "Demarc between CSU/DSU and Local Loop."
+  },
+  {
+    "id": 509,
+    "lecture": "WAN",
+    "question": "Leased line technology is based on:",
+    "options": [
+      "Packet switching",
+      "Cell switching",
+      "Circuit switching",
+      "Message switching"
+    ],
+    "correct": 2,
+    "explanation": "Leased lines use circuit switching."
+  },
+  {
+    "id": 510,
+    "lecture": "WAN",
+    "question": "T1 and E1 are examples of:",
+    "options": [
+      "Analog lines",
+      "Digital lines",
+      "Packet protocols",
+      "Security mechanisms"
+    ],
+    "correct": 1,
+    "explanation": "T1/E1 are digital leased lines."
+  },
+  {
+    "id": 511,
+    "lecture": "WAN",
+    "question": "On a leased line, the connection between two routers is often referred to as a:",
+    "options": [
+      "Local loop",
+      "Packet link",
+      "Serial link",
+      "Dial-up link"
+    ],
+    "correct": 2,
+    "explanation": "Leased lines use serial interfaces."
+  },
+  {
+    "id": 512,
+    "lecture": "WAN",
+    "question": "Which switching technique is used by Digital Subscriber Line (DSL)?",
+    "options": [
+      "Circuit switching",
+      "Packet switching",
+      "Analog switching",
+      "Frame switching"
+    ],
+    "correct": 1,
+    "explanation": "DSL uses packet switching."
+  },
+  {
+    "id": 513,
+    "lecture": "WAN",
+    "question": "Which of the following is a primary component of a leased line path?",
+    "options": [
+      "DSL Modem",
+      "PSTN",
+      "T1/E1",
+      "Packet converter"
+    ],
+    "correct": 2,
+    "explanation": "T1/E1 circuits are leased lines."
+  },
+  {
+    "id": 514,
+    "lecture": "WAN",
+    "question": "Leased lines are connected to the ISP through the:",
+    "options": [
+      "PSTN",
+      "Demarcation Point and Local Loop",
+      "Ethernet port",
+      "Analog converter"
+    ],
+    "correct": 1,
+    "explanation": "Leased line goes through demarc and local loop to ISP."
+  },
+  {
+    "id": 515,
+    "lecture": "WAN",
+    "question": "What does PSTN stand for?",
+    "options": [
+      "Packet Switched Telephone Network",
+      "Private Switched Telephone Network",
+      "Public Switched Telephone Network",
+      "Public Serial Telephone Node"
+    ],
+    "correct": 2,
+    "explanation": "PSTN = Public Switched Telephone Network."
+  },
+  {
+    "id": 516,
+    "lecture": "WAN",
+    "question": "The DSL Modem acts as a(n):",
+    "options": [
+      "Circuit switcher",
+      "Analog/Digital Converter",
+      "Authentication server",
+      "Clock rate adjuster"
+    ],
+    "correct": 1,
+    "explanation": "DSL modem converts digital to analog for phone lines."
+  },
+  {
+    "id": 517,
+    "lecture": "WAN",
+    "question": "What type of signal travels through the PSTN and the Local Loop in a DSL connection?",
+    "options": [
+      "Digital signal",
+      "Analog signal",
+      "Encrypted text",
+      "Hash values"
+    ],
+    "correct": 1,
+    "explanation": "PSTN carries analog signals."
+  },
+  {
+    "id": 518,
+    "lecture": "WAN",
+    "question": "In a DSL connection, the signal exiting the PC is ______, but the signal in the Local Loop is ______.",
+    "options": [
+      "Analog, Digital",
+      "Digital, Analog",
+      "Packet, Circuit",
+      "Public, Private"
+    ],
+    "correct": 1,
+    "explanation": "PC digital → DSL modem → analog on phone line."
+  },
+  {
+    "id": 519,
+    "lecture": "WAN",
+    "question": "The purpose of the DSL modem on the receiver's end is to:",
+    "options": [
+      "Encrypt the data",
+      "Convert the analog signal back to a digital signal",
+      "Adjust the clock rate",
+      "Initiate a 3-way handshake"
+    ],
+    "correct": 1,
+    "explanation": "DSL modem converts analog back to digital."
+  },
+  {
+    "id": 520,
+    "lecture": "WAN",
+    "question": "Which network is represented as a cloud between two local loops in the DSL diagram?",
+    "options": [
+      "ISP",
+      "Leased line",
+      "PSTN",
+      "T1/E1"
+    ],
+    "correct": 2,
+    "explanation": "PSTN cloud between DSL modems."
+  },
+  {
+    "id": 521,
+    "lecture": "WAN",
+    "question": "Data in a DSL connection travels through:",
+    "options": [
+      "Router → ISP → Router",
+      "CSU/DSU → Router → ISP",
+      "Switch → WAN → Switch",
+      "DSL modem → PSTN → DSL modem"
+    ],
+    "correct": 3,
+    "explanation": "DSL: modem → PSTN → modem."
+  },
+  {
+    "id": 522,
+    "lecture": "WAN",
+    "question": "PPP is defined as a(n):",
+    "options": [
+      "Open standard protocol",
+      "Cisco proprietary protocol",
+      "Routing algorithm",
+      "Hardware device"
+    ],
+    "correct": 0,
+    "explanation": "PPP is open standard."
+  },
+  {
+    "id": 523,
+    "lecture": "WAN",
+    "question": "PPP is commonly used with which WAN connection?",
+    "options": [
+      "Leased Line only",
+      "Fiber optic WAN",
+      "DSL connections",
+      "Wireless WAN"
+    ],
+    "correct": 2,
+    "explanation": "PPP often used with DSL."
+  },
+  {
+    "id": 524,
+    "lecture": "WAN",
+    "question": "What switching technique does PPP use?",
+    "options": [
+      "Packet switching",
+      "Circuit switching",
+      "Analog switching",
+      "Hybrid switching"
+    ],
+    "correct": 1,
+    "explanation": "PPP works over circuit-switched links."
+  },
+  {
+    "id": 525,
+    "lecture": "WAN",
+    "question": "Which underlying technology does PPP utilize?",
+    "options": [
+      "PSTN",
+      "Leased line",
+      "DSL",
+      "OUI"
+    ],
+    "correct": 1,
+    "explanation": "PPP works over leased lines."
+  },
+  {
+    "id": 526,
+    "lecture": "WAN",
+    "question": "How many security mechanisms does PPP have?",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "correct": 1,
+    "explanation": "PPP has PAP and CHAP authentication."
+  },
+  {
+    "id": 527,
+    "lecture": "WAN",
+    "question": "PAP stands for:",
+    "options": [
+      "Private Authentication Protocol",
+      "Password Authentication Protocol",
+      "Point Authentication Protocol",
+      "Packet Auth Protocol"
+    ],
+    "correct": 1,
+    "explanation": "PAP = Password Authentication Protocol."
+  },
+  {
+    "id": 528,
+    "lecture": "WAN",
+    "question": "Which authentication protocol sends passwords in plain text?",
+    "options": [
+      "CHAP",
+      "EAP",
+      "PAP",
+      "Ipsec"
+    ],
+    "correct": 2,
+    "explanation": "PAP sends plain text passwords."
+  },
+  {
+    "id": 529,
+    "lecture": "WAN",
+    "question": "CHAP stands for:",
+    "options": [
+      "Cisco Handshake Auth Protocol",
+      "Circuit Handshake Auth Protocol",
+      "Challenge Handshake Authentication Protocol",
+      "Channel Handshake Auth Protocol"
+    ],
+    "correct": 2,
+    "explanation": "CHAP = Challenge Handshake Authentication Protocol."
+  },
+  {
+    "id": 530,
+    "lecture": "WAN",
+    "question": "What type of text does CHAP use for security?",
+    "options": [
+      "Plain text",
+      "Encrypted text",
+      "Analog signals",
+      "Hexadecimal text"
+    ],
+    "correct": 1,
+    "explanation": "CHAP uses encrypted/hashed passwords."
+  },
+  {
+    "id": 531,
+    "lecture": "WAN",
+    "question": "The CHAP authentication process uses a:",
+    "options": [
+      "2-way handshake",
+      "3-way handshake",
+      "4-way handshake",
+      "Single-step verification"
+    ],
+    "correct": 1,
+    "explanation": "CHAP uses 3-way handshake."
+  },
+  {
+    "id": 532,
+    "lecture": "WAN",
+    "question": "Which of the following is the first step in the CHAP 3-way handshake?",
+    "options": [
+      "User name (from A to B)",
+      "Random number (from B to A)",
+      "Hash value (from A to B)",
+      "Password (as text)"
+    ],
+    "correct": 0,
+    "explanation": "Step 1: Username sent."
+  },
+  {
+    "id": 533,
+    "lecture": "WAN",
+    "question": "What is the second step in the CHAP 3-way handshake?",
+    "options": [
+      "User name (from A to B)",
+      "Random number (from B to A)",
+      "Hash value (from A to B)",
+      "Clock rate adjustment"
+    ],
+    "correct": 1,
+    "explanation": "Step 2: Challenge/random number sent."
+  },
+  {
+    "id": 534,
+    "lecture": "WAN",
+    "question": "What is the final step in the CHAP 3-way handshake?",
+    "options": [
+      "User name (from A to B)",
+      "Random number (from B to A)",
+      "Hash value (from A to B)",
+      "Acknowledgement"
+    ],
+    "correct": 2,
+    "explanation": "Step 3: Hashed response sent."
+  },
+  {
+    "id": 535,
+    "lecture": "WAN",
+    "question": "A key characteristic of CHAP is that it is:",
+    "options": [
+      "Only for Cisco routers",
+      "Only updated once",
+      "Periodically updated",
+      "Less secure than PAP"
+    ],
+    "correct": 2,
+    "explanation": "CHAP periodically re-authenticates."
+  },
+  {
+    "id": 536,
+    "lecture": "WAN",
+    "question": "HDLC stands for:",
+    "options": [
+      "High-speed Data-link Control",
+      "High-level Data-link Control",
+      "High-level Digital Line Circuit",
+      "Host Data-link Cisco"
+    ],
+    "correct": 1,
+    "explanation": "HDLC = High-level Data Link Control."
+  },
+  {
+    "id": 537,
+    "lecture": "WAN",
+    "question": "HDLC is described as being:",
+    "options": [
+      "An open standard",
+      "Cisco proprietary",
+      "Packet switched",
+      "An authentication protocol"
+    ],
+    "correct": 1,
+    "explanation": "Cisco HDLC is proprietary (standard HDLC exists but Cisco's is enhanced)."
+  },
+  {
+    "id": 538,
+    "lecture": "WAN",
+    "question": "Which feature is NOT supported by HDLC?",
+    "options": [
+      "Circuit switching",
+      "Leased lines",
+      "Authentication",
+      "WAN encapsulation"
+    ],
+    "correct": 2,
+    "explanation": "HDLC doesn't support authentication."
+  },
+  {
+    "id": 539,
+    "lecture": "WAN",
+    "question": "What is the default protocol on Cisco routers for WAN links?",
+    "options": [
+      "PPP",
+      "Frame Relay",
+      "HDLC",
+      "ATM"
+    ],
+    "correct": 2,
+    "explanation": "HDLC is Cisco default WAN encapsulation."
+  },
+  {
+    "id": 540,
+    "lecture": "WAN",
+    "question": "Like PPP, HDLC uses ______ technology and ______ switching.",
+    "options": [
+      "Leased line; circuit",
+      "DSL; packet",
+      "PSTN; analog",
+      "T1; packet"
+    ],
+    "correct": 0,
+    "explanation": "HDLC uses leased lines with circuit switching."
+  },
+  {
+    "id": 541,
+    "lecture": "WAN",
+    "question": "If you need to connect a Cisco router to a non-Cisco router, you should use ______ instead of HDLC",
+    "options": [
+      "PSTN",
+      "PPP",
+      "T1/E1",
+      "CSU/DSU"
+    ],
+    "correct": 1,
+    "explanation": "PPP is interoperable; Cisco HDLC isn't."
+  },
+  {
+    "id": 542,
+    "lecture": "WAN",
+    "question": "Which protocol is more secure for WAN connections?",
+    "options": [
+      "PAP",
+      "HDLC",
+      "CHAP",
+      "PSTN"
+    ],
+    "correct": 2,
+    "explanation": "CHAP provides encrypted authentication."
+  },
+  {
+    "id": 543,
+    "lecture": "Frame Relay",
+    "question": "In what type of network environment is the Frame Relay protocol used?",
+    "options": [
+      "LAN",
+      "WAN",
+      "PAN",
+      "CAN"
+    ],
+    "correct": 1,
+    "explanation": "Frame Relay is a WAN technology."
+  },
+  {
+    "id": 544,
+    "lecture": "Frame Relay",
+    "question": "Which topology does Frame Relay utilize for connecting branches?",
+    "options": [
+      "Mesh",
+      "Star",
+      "Point-to-Multipoint",
+      "Ring"
+    ],
+    "correct": 2,
+    "explanation": "Frame Relay often uses hub-and-spoke (point-to-multipoint)."
+  },
+  {
+    "id": 545,
+    "lecture": "Frame Relay",
+    "question": "How does a headquarters router physically connect to multiple branches?",
+    "options": [
+      "One physical interface per branch",
+      "One physical interface for all branches",
+      "Using a wireless antenna",
+      "Multiple serial ports for each connection"
+    ],
+    "correct": 1,
+    "explanation": "Single physical interface connects to Frame Relay cloud for multiple branches."
+  },
+  {
+    "id": 546,
+    "lecture": "Frame Relay",
+    "question": "While the physical connection is single, how are the connections to branches actually established?",
+    "options": [
+      "Physically",
+      "Logically",
+      "Through hardware jumpers",
+      "Via satellite"
+    ],
+    "correct": 1,
+    "explanation": "Virtual circuits provide logical connections."
+  },
+  {
+    "id": 547,
+    "lecture": "Frame Relay",
+    "question": "What is the term for the logical connection between routers in a Frame Relay network?",
+    "options": [
+      "Physical Link",
+      "Ethernet Cable",
+      "Virtual Circuit",
+      "Fiber Path"
+    ],
+    "correct": 2,
+    "explanation": "Virtual Circuit (VC) = logical connection."
+  },
+  {
+    "id": 548,
+    "lecture": "Frame Relay",
+    "question": "Which type of connection is described as 'temporary'?",
+    "options": [
+      "PVC",
+      "SVC",
+      "LMI",
+      "DLCI"
+    ],
+    "correct": 1,
+    "explanation": "SVC = Switched Virtual Circuit (temporary)."
+  },
+  {
+    "id": 549,
+    "lecture": "Frame Relay",
+    "question": "What does SVC stand for?",
+    "options": [
+      "Simple Virtual Circuit",
+      "Switched Virtual Circuit",
+      "Standard Virtual Circuit",
+      "Serial Virtual Connection"
+    ],
+    "correct": 1,
+    "explanation": "SVC = Switched Virtual Circuit."
+  },
+  {
+    "id": 550,
+    "lecture": "Frame Relay",
+    "question": "When does an SVC open?",
+    "options": [
+      "When the router is powered on",
+      "At the start of data transfer between two routers",
+      "When the ISP allows it",
+      "Every 10 minutes"
+    ],
+    "correct": 1,
+    "explanation": "SVC opens when data transfer starts."
+  },
+  {
+    "id": 551,
+    "lecture": "Frame Relay",
+    "question": "What happens to an SVC when the data transfer ends?",
+    "options": [
+      "It stays open forever",
+      "It becomes a PVC",
+      "It closes",
+      "Both B and C"
+    ],
+    "correct": 2,
+    "explanation": "SVC closes after data transfer."
+  },
+  {
+    "id": 552,
+    "lecture": "Frame Relay",
+    "question": "Which VC acts like a 'leased line' (always on) between two parties?",
+    "options": [
+      "SVC",
+      "PVC",
+      "LMI",
+      "DLCI"
+    ],
+    "correct": 1,
+    "explanation": "PVC = Permanent Virtual Circuit (always on)."
+  },
+  {
+    "id": 553,
+    "lecture": "Frame Relay",
+    "question": "What does PVC stand for?",
+    "options": [
+      "Private Virtual Connection",
+      "Permanent Virtual Circuit",
+      "Primary Virtual Circuit",
+      "Protocol Virtual Circuit"
+    ],
+    "correct": 1,
+    "explanation": "PVC = Permanent Virtual Circuit."
+  },
+  {
+    "id": 554,
+    "lecture": "Frame Relay",
+    "question": "How is a PVC defined?",
+    "options": [
+      "It is created dynamically by the router",
+      "It is pre-defined and always active",
+      "It only works during the day",
+      "It is created by the user every time"
+    ],
+    "correct": 1,
+    "explanation": "PVC is pre-configured and always available."
+  },
+  {
+    "id": 555,
+    "lecture": "Frame Relay",
+    "question": "What is the role of a DLCI in Frame Relay?",
+    "options": [
+      "Layer 3 address",
+      "Layer 2 address",
+      "Physical port number",
+      "Password for the cloud"
+    ],
+    "correct": 1,
+    "explanation": "DLCI = Data Link Connection Identifier (Layer 2 address)."
+  },
+  {
+    "id": 556,
+    "lecture": "Frame Relay",
+    "question": "Which LAN address is DLCI equivalent to in WAN networks?",
+    "options": [
+      "IP address",
+      "MAC address",
+      "Subnet mask",
+      "Default gateway"
+    ],
+    "correct": 1,
+    "explanation": "DLCI is like MAC address for Frame Relay."
+  },
+  {
+    "id": 557,
+    "lecture": "Frame Relay",
+    "question": "In an Ethernet LAN, we use MAC addresses; in Frame Relay, we use:",
+    "options": [
+      "IPv6",
+      "DLCI",
+      "SVC",
+      "FECN"
+    ],
+    "correct": 1,
+    "explanation": "DLCI identifies virtual circuit."
+  },
+  {
+    "id": 558,
+    "lecture": "Frame Relay",
+    "question": "What information does a router's mapping table typically contain for Frame Relay?",
+    "options": [
+      "MAC address and IP address",
+      "Local DLCI and Remote IP address",
+      "Local IP and Remote MAC",
+      "Router name and speed"
+    ],
+    "correct": 1,
+    "explanation": "Frame Relay map: local DLCI → remote IP."
+  },
+  {
+    "id": 559,
+    "lecture": "Frame Relay",
+    "question": "Where does the LMI exchange occur?",
+    "options": [
+      "Between R1 and R2",
+      "Between the router and the first Frame Relay switch",
+      "Between two different ISP clouds",
+      "Between the router and the PC"
+    ],
+    "correct": 1,
+    "explanation": "LMI between router and Frame Relay switch."
+  },
+  {
+    "id": 560,
+    "lecture": "Frame Relay",
+    "question": "Which of the following is a primary function of LMI?",
+    "options": [
+      "To ensure VC is active or not",
+      "To ensure the connection is correct",
+      "To assign IP addresses",
+      "Both A and B"
+    ],
+    "correct": 3,
+    "explanation": "LMI monitors VC status and verifies connectivity."
+  },
+  {
+    "id": 561,
+    "lecture": "Frame Relay",
+    "question": "How many types of LMI?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": 2,
+    "explanation": "Three LMI types: Cisco, ANSI, Q933A."
+  },
+  {
+    "id": 562,
+    "lecture": "Frame Relay",
+    "question": "Which LMI type is the American standard?",
+    "options": [
+      "Cisco",
+      "ITU Q.933A",
+      "ANSI",
+      "ISO"
+    ],
+    "correct": 2,
+    "explanation": "ANSI = American standard."
+  },
+  {
+    "id": 563,
+    "lecture": "Frame Relay",
+    "question": "Which LMI type is the International standard?",
+    "options": [
+      "Cisco",
+      "ANSI",
+      "ITU Q.933A",
+      "Frame Relay Standard"
+    ],
+    "correct": 2,
+    "explanation": "Q.933A = ITU international standard."
+  },
+  {
+    "id": 564,
+    "lecture": "Frame Relay",
+    "question": "Which LMI type uses DLCI Number 1023?",
+    "options": [
+      "ANSI",
+      "ITU Q.933A",
+      "Cisco",
+      "Microsoft"
+    ],
+    "correct": 2,
+    "explanation": "Cisco LMI uses DLCI 1023."
+  },
+  {
+    "id": 565,
+    "lecture": "Frame Relay",
+    "question": "What DLCI number is used by the ANSI LMI type?",
+    "options": [
+      "0",
+      "1023",
+      "100",
+      "1"
+    ],
+    "correct": 0,
+    "explanation": "ANSI uses DLCI 0."
+  },
+  {
+    "id": 566,
+    "lecture": "Frame Relay",
+    "question": "What DLCI number is used by ITU Q.933A LMI type?",
+    "options": [
+      "0",
+      "1023",
+      "100",
+      "1"
+    ],
+    "correct": 0,
+    "explanation": "Q.933A uses DLCI 0."
+  },
+  {
+    "id": 567,
+    "lecture": "Frame Relay",
+    "question": "What is the requirement for a router and a switch to exchange LMI messages?",
+    "options": [
+      "They must be from the same brand",
+      "They must use the same LMI type",
+      "They must have the same IP address",
+      "They must be connected by fiber"
+    ],
+    "correct": 1,
+    "explanation": "LMI types must match."
+  },
+  {
+    "id": 568,
+    "lecture": "Frame Relay",
+    "question": "What does CIR stand for?",
+    "options": [
+      "Constant Internal Rate",
+      "Committed Information Rate",
+      "Congestion Identification Relay",
+      "Circuit Information Router"
+    ],
+    "correct": 1,
+    "explanation": "CIR = Committed Information Rate."
+  },
+  {
+    "id": 569,
+    "lecture": "Frame Relay",
+    "question": "CIR represents:",
+    "options": [
+      "The maximum hardware speed",
+      "The guaranteed speed agreed with ISP",
+      "The speed of the local LAN",
+      "The speed during congestion"
+    ],
+    "correct": 1,
+    "explanation": "CIR = minimum guaranteed bandwidth."
+  },
+  {
+    "id": 570,
+    "lecture": "Frame Relay",
+    "question": "What causes 'Congestion' in the network?",
+    "options": [
+      "The router is too old",
+      "Data flow increases beyond the link's capacity",
+      "Using the wrong DLCI",
+      "The ISP is offline"
+    ],
+    "correct": 1,
+    "explanation": "Congestion = traffic exceeds capacity."
+  },
+  {
+    "id": 571,
+    "lecture": "Frame Relay",
+    "question": "Which signal informs the receiver about congestion?",
+    "options": [
+      "BECN",
+      "DE",
+      "FECN",
+      "CIR"
+    ],
+    "correct": 2,
+    "explanation": "FECN = Forward Explicit Congestion Notification (to receiver)."
+  },
+  {
+    "id": 572,
+    "lecture": "Frame Relay",
+    "question": "Which signal tells the sender to reduce its speed?",
+    "options": [
+      "BECN",
+      "DE",
+      "FECN",
+      "CIR"
+    ],
+    "correct": 0,
+    "explanation": "BECN = Backward Explicit Congestion Notification (to sender)."
+  },
+  {
+    "id": 573,
+    "lecture": "Frame Relay",
+    "question": "What does FECN = 1 signify?",
+    "options": [
+      "No congestion",
+      "Congestion is present",
+      "The link is broken",
+      "Data transfer complete"
+    ],
+    "correct": 1,
+    "explanation": "FECN=1 indicates congestion on forward path."
+  },
+  {
+    "id": 574,
+    "lecture": "Frame Relay",
+    "question": "BECN = 1 indicates:",
+    "options": [
+      "No congestion",
+      "Receiver congestion only",
+      "Sender must slow down traffic",
+      "Frame is high priority"
+    ],
+    "correct": 2,
+    "explanation": "BECN=1 tells sender to reduce rate."
+  },
+  {
+    "id": 575,
+    "lecture": "Frame Relay",
+    "question": "What happens to a frame marked with DE = 1 during congestion?",
+    "options": [
+      "It is given priority",
+      "It is buffered",
+      "It is automatically dropped",
+      "It is resent 10 times"
+    ],
+    "correct": 2,
+    "explanation": "DE = Discard Eligibility; frames with DE=1 dropped first during congestion."
+  },
+  {
+    "id": 576,
+    "lecture": "Wireshark",
+    "question": "Who is responsible for assigning a Private IP address to a device?",
+    "options": [
+      "Internet Service Provider (ISP)",
+      "Device manufacturer",
+      "Local router",
+      "Google web server"
+    ],
+    "correct": 2,
+    "explanation": "Local router (via DHCP) assigns private IPs."
+  },
+  {
+    "id": 577,
+    "lecture": "Wireshark",
+    "question": "Which of the following is true about Private IP addresses?",
+    "options": [
+      "They cost money to obtain",
+      "They are the same for every device in a home",
+      "They can be assigned even without an internet connection",
+      "They are visible to the entire global internet"
+    ],
+    "correct": 2,
+    "explanation": "Private IPs work locally without internet."
+  },
+  {
+    "id": 578,
+    "lecture": "Wireshark",
+    "question": "What command is used in the Windows command prompt to find your Private IP?",
+    "options": [
+      "whatismyip",
+      "ifconfig",
+      "ipconfig",
+      "ping"
+    ],
+    "correct": 2,
+    "explanation": "ipconfig shows private IP in Windows."
+  },
+  {
+    "id": 579,
+    "lecture": "Wireshark",
+    "question": "What is the primary role of a Private IP inside a router?",
+    "options": [
+      "To act as the default gateway for the internal network",
+      "To track the location of the user via GPS",
+      "To increase the speed of the ISP connection",
+      "To encrypt the data payload of every packet"
+    ],
+    "correct": 0,
+    "explanation": "Router's private IP = default gateway for LAN."
+  },
+  {
+    "id": 580,
+    "lecture": "Wireshark",
+    "question": "Which statement accurately describes a Public IP address?",
+    "options": [
+      "It is the same as the MAC address",
+      "It is assigned by the ISP and usually involves a cost",
+      "It is unique for every individual laptop sharing a single home router",
+      "It can only be found using the ipconfig command"
+    ],
+    "correct": 1,
+    "explanation": "Public IPs assigned by ISP, often paid."
+  },
+  {
+    "id": 581,
+    "lecture": "Wireshark",
+    "question": "If five devices are connected to the same home router, how do their IP addresses compare?",
+    "options": [
+      "They have the same Private IP and different Public IPs",
+      "They have the same Private IP and the same Public IP",
+      "They have different Private IPs and different Public IPs",
+      "They have different Private IPs but share the same Public IP"
+    ],
+    "correct": 3,
+    "explanation": "Different private IPs, single public IP (NAT)."
+  },
+  {
+    "id": 582,
+    "lecture": "Wireshark",
+    "question": "Why is Network Address Translation (NAT) necessary for internet access?",
+    "options": [
+      "Because private IPs cannot be used to communicate directly on the internet",
+      "Because it increases the length of the data packets",
+      "Because it removes the need for a router",
+      "Because it converts binary data into English text"
+    ],
+    "correct": 0,
+    "explanation": "Private IPs not routable on internet; NAT translates them."
+  },
+  {
+    "id": 583,
+    "lecture": "Wireshark",
+    "question": "What is the core idea of NAT regarding device connectivity?",
+    "options": [
+      "To allow only one device per household to use the internet",
+      "To allow multiple devices to access the internet through a single public address",
+      "To assign a unique public IP to every single smartphone in the world",
+      "To bypass the ISP network"
+    ],
+    "correct": 1,
+    "explanation": "NAT enables many-to-one IP sharing."
+  },
+  {
+    "id": 584,
+    "lecture": "Wireshark",
+    "question": "At which layer of the OSI model does NAT primarily operate?",
+    "options": [
+      "Layer 1",
+      "Layer 2",
+      "Layer 3",
+      "Layer 7"
+    ],
+    "correct": 2,
+    "explanation": "NAT operates at Network layer (Layer 3)."
+  },
+  {
+    "id": 585,
+    "lecture": "Wireshark",
+    "question": "Besides IP addresses, what else does NAT translate to distinguish between different internal hosts?",
+    "options": [
+      "MAC address",
+      "Packet's 'HELEN' field",
+      "Port numbers",
+      "Physical cable type"
+    ],
+    "correct": 2,
+    "explanation": "PAT uses port numbers to track connections."
+  },
+  {
+    "id": 586,
+    "lecture": "Wireshark",
+    "question": "Where does the router store the mapping between internal and external IP/port combinations?",
+    "options": [
+      "History folder",
+      "NAT table",
+      "ISP's cloud database",
+      "PCAP file"
+    ],
+    "correct": 1,
+    "explanation": "NAT table tracks translations."
+  },
+  {
+    "id": 587,
+    "lecture": "Wireshark",
+    "question": "On which type of device does NAT generally operate?",
+    "options": [
+      "network switch",
+      "router or firewall",
+      "client PC",
+      "wireless mouse"
+    ],
+    "correct": 1,
+    "explanation": "NAT on router/firewall."
+  },
+  {
+    "id": 588,
+    "lecture": "Wireshark",
+    "question": "Source NAT (SNAT) is also commonly known as:",
+    "options": [
+      "Inbound NAT",
+      "Outbound NAT",
+      "Port Forwarding",
+      "Load Balancing"
+    ],
+    "correct": 1,
+    "explanation": "SNAT = Outbound NAT (internal to external)."
+  },
+  {
+    "id": 589,
+    "lecture": "Wireshark",
+    "question": "What is a primary reason for using Source NAT (SNAT)?",
+    "options": [
+      "Redirect incoming traffic to a specific web server",
+      "Hide the internal network structure from external networks",
+      "Change the destination IP of an incoming request",
+      "Increase the bit-size of the IP address"
+    ],
+    "correct": 1,
+    "explanation": "SNAT hides internal IPs."
+  },
+  {
+    "id": 590,
+    "lecture": "Wireshark",
+    "question": "Destination NAT (DNAT) is also commonly known as:",
+    "options": [
+      "Outbound NAT",
+      "Inbound NAT",
+      "Static Translation",
+      "Local Routing"
+    ],
+    "correct": 1,
+    "explanation": "DNAT = Inbound NAT (external to internal)."
+  },
+  {
+    "id": 591,
+    "lecture": "Wireshark",
+    "question": "Which scenario would typically require Destination NAT (DNAT)?",
+    "options": [
+      "A home user browsing a social media site",
+      "Exposing an internal server to the internet without revealing its actual IP",
+      "Connecting a printer to a local laptop",
+      "Sending an email from a private network"
+    ],
+    "correct": 1,
+    "explanation": "DNAT for hosting servers internally."
+  },
+  {
+    "id": 592,
+    "lecture": "Wireshark",
+    "question": "In SNAT, which of the following remains unchanged during translation?",
+    "options": [
+      "Source IP",
+      "Port numbers",
+      "Header Checksum",
+      "Outgoing interface"
+    ],
+    "correct": 3,
+    "explanation": "Outgoing interface remains same."
+  },
+  {
+    "id": 593,
+    "lecture": "Wireshark",
+    "question": "Where does DNAT typically occur in a network?",
+    "options": [
+      "On the internal client's network card",
+      "At the edge of the network where external traffic enters",
+      "On the destination Google server",
+      "In the middle of the internet backbone"
+    ],
+    "correct": 1,
+    "explanation": "DNAT at network edge for incoming traffic."
+  },
+  {
+    "id": 594,
+    "lecture": "Wireshark",
+    "question": "Which type of NAT involves a fixed, one-to-one mapping of a private IP to a public IP?",
+    "options": [
+      "Dynamic NAT",
+      "PAT",
+      "Static NAT",
+      "NAT Overload"
+    ],
+    "correct": 2,
+    "explanation": "Static NAT = 1:1 fixed mapping."
+  },
+  {
+    "id": 595,
+    "lecture": "Wireshark",
+    "question": "What is a common application for Static NAT?",
+    "options": [
+      "Home gaming consoles",
+      "Public web or email servers",
+      "Guest Wi-Fi networks",
+      "Temporary mobile connections"
+    ],
+    "correct": 1,
+    "explanation": "Static NAT for servers needing consistent public IP."
+  },
+  {
+    "id": 596,
+    "lecture": "Wireshark",
+    "question": "Dynamic NAT maps private IP addresses to public IPs from a:",
+    "options": [
+      "Fixed single address",
+      "Pool of addresses",
+      "Random MAC address",
+      "Different protocol"
+    ],
+    "correct": 1,
+    "explanation": "Dynamic NAT uses pool of public IPs."
+  },
+  {
+    "id": 597,
+    "lecture": "Wireshark",
+    "question": "How is allocation handled in Dynamic NAT?",
+    "options": [
+      "It is manually assigned by the user",
+      "It is fixed and never changes",
+      "It is dynamic, based on demand",
+      "It is based on the alphabetical name of the device"
+    ],
+    "correct": 2,
+    "explanation": "Dynamic allocation as needed."
+  },
+  {
+    "id": 598,
+    "lecture": "Wireshark",
+    "question": "What is the most common type of NAT used in homes and small businesses?",
+    "options": [
+      "Static NAT",
+      "Dynamic NAT",
+      "PAT",
+      "Destination NAT"
+    ],
+    "correct": 2,
+    "explanation": "PAT (NAT overload) most common."
+  },
+  {
+    "id": 599,
+    "lecture": "Wireshark",
+    "question": "How many public IP addresses are typically used in a PAT (NAT Overload) setup for an entire home?",
+    "options": [
+      "One for every device",
+      "A single public IP",
+      "A minimum of five",
+      "None"
+    ],
+    "correct": 1,
+    "explanation": "PAT uses single public IP for all devices."
+  },
+  {
+    "id": 600,
+    "lecture": "Wireshark",
+    "question": "What is Wireshark?",
+    "options": [
+      "A virus protection software",
+      "A free and open-source network protocol and traffic analyzer",
+      "A tool to increase internet speed",
+      "A physical device used to connect cables"
+    ],
+    "correct": 1,
+    "explanation": "Wireshark = network packet analyzer."
+  },
+  {
+    "id": 601,
+    "lecture": "Wireshark",
+    "question": "How does Wireshark present network traffic to the user?",
+    "options": [
+      "As a single continuous stream of text",
+      "In the form of individual packets for granular analysis",
+      "As a series of signal waves",
+      "Only as a summary report"
+    ],
+    "correct": 1,
+    "explanation": "Wireshark shows individual packets."
+  },
+  {
+    "id": 602,
+    "lecture": "Wireshark",
+    "question": "What is the purpose of 'dissecting' packets in Wireshark?",
+    "options": [
+      "To delete the packet from the network",
+      "To display various packet fields and headers based on the protocol",
+      "To encrypt the packet for security",
+      "To change the destination IP of the packet"
+    ],
+    "correct": 1,
+    "explanation": "Packet dissection reveals header fields."
+  },
+  {
+    "id": 603,
+    "lecture": "Wireshark",
+    "question": "How can security professionals use Wireshark to identify malicious activity?",
+    "options": [
+      "By blocking all incoming IP addresses automatically",
+      "By pinpointing the time of an attack and the IPs involved",
+      "By physically locating the attacker's house",
+      "By increasing the computer's RAM"
+    ],
+    "correct": 1,
+    "explanation": "Wireshark helps forensic analysis."
+  },
+  {
+    "id": 604,
+    "lecture": "Wireshark",
+    "question": "Which Wireshark feature allows you to visually categorize packets?",
+    "options": [
+      "Live Capture",
+      "Packet Dissection",
+      "Color coding packets based on requirements",
+      "Importing PCAP files"
+    ],
+    "correct": 2,
+    "explanation": "Color coding helps visual identification."
+  },
+  {
+    "id": 605,
+    "lecture": "Wireshark",
+    "question": "What does the term 'Cross-platform' mean for Wireshark?",
+    "options": [
+      "It can only work on routers",
+      "It is available for both UNIX and Windows",
+      "It can analyze both power and data",
+      "It can translate between English and Arabic"
+    ],
+    "correct": 1,
+    "explanation": "Wireshark works on multiple OSes."
+  },
+  {
+    "id": 606,
+    "lecture": "Wireshark",
+    "question": "What is a .pcap file?",
+    "options": [
+      "A file used to store images of routers",
+      "A Packet Capture file used to store packets for later analysis",
+      "A protocol used to encrypt emails",
+      "A driver for a network card"
+    ],
+    "correct": 1,
+    "explanation": "PCAP = packet capture file format."
+  },
+  {
+    "id": 607,
+    "lecture": "Wireshark",
+    "question": "From which OSI layers does Wireshark record network packets?",
+    "options": [
+      "Layer 1 only",
+      "Layers 1 through 7",
+      "Layers 2 through 7",
+      "Layer 3 only"
+    ],
+    "correct": 1,
+    "explanation": "Wireshark captures Layers 2-7 (Data Link to Application)."
+  },
+  {
+    "id": 608,
+    "lecture": "Wireshark",
+    "question": "Why is the ability to import/export PCAP files useful for analysts?",
+    "options": [
+      "It allows them to analyze traffic captured on a different network at a different time",
+      "It allows them to use the internet for free",
+      "It allows them to delete the ISP's logs",
+      "It changes the physical layer of the network"
+    ],
+    "correct": 0,
+    "explanation": "PCAP files allow offline analysis."
+  },
+  {
+    "id": 609,
+    "lecture": "Wireshark",
+    "question": "What is another name for a network packet?",
+    "options": [
+      "Network link",
+      "Network frame",
+      "Network table",
+      "Network gateway"
+    ],
+    "correct": 1,
+    "explanation": "Packet at Layer 3, Frame at Layer 2."
+  },
+  {
+    "id": 610,
+    "lecture": "Wireshark",
+    "question": "Which of the following information is NOT typically found in a packet header analyzed by Wireshark?",
+    "options": [
+      "Source IP",
+      "Destination IP",
+      "Type of protocol",
+      "The cost of the Public IP"
+    ],
+    "correct": 3,
+    "explanation": "Cost not in packet headers."
+  },
+  {
+    "id": 611,
+    "lecture": "Wireshark",
+    "question": "In a standard IP packet header, what is the bit-size of the 'Version' field?",
+    "options": [
+      "8 bits",
+      "16 bits",
+      "4 bits",
+      "32 bits"
+    ],
+    "correct": 2,
+    "explanation": "Version field = 4 bits."
+  },
+  {
+    "id": 612,
+    "lecture": "Wireshark",
+    "question": "The field 'HELEN' in the packet header is:",
+    "options": [
+      "8 bits",
+      "16 bits",
+      "4 bits",
+      "32 bits"
+    ],
+    "correct": 2,
+    "explanation": "Header Length (HELEN) = 4 bits."
+  },
+  {
+    "id": 613,
+    "lecture": "Wireshark",
+    "question": "how many bits does the 'Service Type' field contain?",
+    "options": [
+      "4 bits",
+      "8 bits",
+      "16 bits",
+      "3 bits"
+    ],
+    "correct": 1,
+    "explanation": "Service Type = 8 bits."
+  },
+  {
+    "id": 614,
+    "lecture": "Wireshark",
+    "question": "What is the bit-size of the 'Total Length' field in the packet header?",
+    "options": [
+      "4 bits",
+      "8 bits",
+      "16 bits",
+      "32 bits"
+    ],
+    "correct": 2,
+    "explanation": "Total Length = 16 bits."
+  },
+  {
+    "id": 615,
+    "lecture": "Wireshark",
+    "question": "How many bits are used for the 'Identification' field?",
+    "options": [
+      "16 bits",
+      "8 bits",
+      "13 bits",
+      "32 bits"
+    ],
+    "correct": 0,
+    "explanation": "Identification = 16 bits."
+  },
+  {
+    "id": 616,
+    "lecture": "Wireshark",
+    "question": "How many bits are used for the 'Flags' field in the packet header?",
+    "options": [
+      "3 bits",
+      "13 bits",
+      "16 bits",
+      "8 bits"
+    ],
+    "correct": 0,
+    "explanation": "Flags = 3 bits."
+  },
+  {
+    "id": 617,
+    "lecture": "Wireshark",
+    "question": "What is the bit size of the 'Fragmentation Offset' field?",
+    "options": [
+      "3 bits",
+      "8 bits",
+      "16 bits",
+      "13 bits"
+    ],
+    "correct": 3,
+    "explanation": "Fragment Offset = 13 bits."
+  },
+  {
+    "id": 618,
+    "lecture": "Wireshark",
+    "question": "How many bits are assigned to the 'Time to live' (TTL) field?",
+    "options": [
+      "16 bits",
+      "8 bits",
+      "4 bits",
+      "32 bits"
+    ],
+    "correct": 1,
+    "explanation": "TTL = 8 bits."
+  },
+  {
+    "id": 619,
+    "lecture": "Wireshark",
+    "question": "What is the bit size of the 'Protocol' field?",
+    "options": [
+      "8 bits",
+      "4 bits",
+      "16 bits",
+      "32 bits"
+    ],
+    "correct": 0,
+    "explanation": "Protocol = 8 bits."
+  },
+  {
+    "id": 620,
+    "lecture": "Wireshark",
+    "question": "What is the bit-size of the 'Header Checksum' field?",
+    "options": [
+      "8 bits",
+      "32 bits",
+      "16 bits",
+      "4 bits"
+    ],
+    "correct": 2,
+    "explanation": "Header Checksum = 16 bits."
+  },
+  {
+    "id": 621,
+    "lecture": "Wireshark",
+    "question": "How many bits long is a Source or Destination IP address header?",
+    "options": [
+      "16 bits",
+      "32 bits",
+      "64 bits",
+      "4 bits"
+    ],
+    "correct": 1,
+    "explanation": "IP address = 32 bits."
+  },
+  {
+    "id": 622,
+    "lecture": "Wireshark",
+    "question": "Which two fields both have a size of exactly 4 bits?",
+    "options": [
+      "Service Type/Protocol",
+      "Total Length/Identification",
+      "Version/HELEN",
+      "Flags/Fragmentation Offset"
+    ],
+    "correct": 2,
+    "explanation": "Version and Header Length both 4 bits."
+  },
+  {
+    "id": 623,
+    "lecture": "Wireshark",
+    "question": "Which group of fields all share the same size of 8 bits?",
+    "options": [
+      "Version/HELEN/Flags",
+      "Service Type/TTL/Protocol",
+      "Total Length/Identification/Header Checksum",
+      "Source IP and Destination IP"
+    ],
+    "correct": 1,
+    "explanation": "Service Type, TTL, Protocol = 8 bits each."
+  },
+  {
+    "id": 624,
+    "lecture": "Wireshark",
+    "question": "Which field in the packet header is used to specify how long a packet can stay on the network?",
+    "options": [
+      "Protocol",
+      "Identification",
+      "TTL",
+      "Fragmentation Offset"
+    ],
+    "correct": 2,
+    "explanation": "TTL limits packet lifetime."
+  },
+  {
+    "id": 625,
+    "lecture": "Wireshark",
+    "question": "In the NAT_home_side case study, what was the Private IP address of the home client?",
+    "options": [
+      "64.233.169.104",
+      "71.192.34.104",
+      "192.168.1.100",
+      "127.0.0.1"
+    ],
+    "correct": 2,
+    "explanation": "Home client had private IP 192.168.1.100."
+  },
+  {
+    "id": 626,
+    "lecture": "Wireshark",
+    "question": "To filter Wireshark to show only HTTP traffic to/from a specific Google server (64.233.169.104):",
+    "options": [
+      "ip.addr == 192.168.1.100",
+      "http && ip.addr == 64.233.169.104",
+      "filter.google.http",
+      "tcp.port == 80"
+    ],
+    "correct": 1,
+    "explanation": "Filter combines protocol and IP address."
+  },
+  {
+    "id": 627,
+    "lecture": "Wireshark",
+    "question": "What are the Source IP and Port for the HTTP GET sent to Google?",
+    "options": [
+      "Source: 71.192.34.104, Port: 80",
+      "Source: 192.168.1.100, Port: 4335",
+      "Source: 64.233.169.104, Port: 4335",
+      "Source: 192.168.1.100, Port: 80"
+    ],
+    "correct": 1,
+    "explanation": "Source: private IP 192.168.1.100 with ephemeral port 4335."
+  },
+  {
+    "id": 628,
+    "lecture": "Wireshark",
+    "question": "When comparing the 'NAT_home_side' and 'NAT_ISP_side' trace files for the same HTTP GET, what happens to the Source IP?",
+    "options": [
+      "It remains 192.168.1.100",
+      "It changes from 192.168.1.100 to 71.192.34.104",
+      "It changes from 71.192.34.104 to 64.233.169.104",
+      "It is deleted"
+    ],
+    "correct": 1,
+    "explanation": "NAT translates private to public IP."
+  },
+  {
+    "id": 629,
+    "lecture": "Wireshark",
+    "question": "Did the destination IP address change between the Home side and ISP side?",
+    "options": [
+      "Yes, it changed to the router IP",
+      "No, it remained 64.233.169.104",
+      "Yes, it changed to a private IP",
+      "No, it became 71.192.34.104"
+    ],
+    "correct": 1,
+    "explanation": "Destination (Google server) IP unchanged."
+  },
+  {
+    "id": 630,
+    "lecture": "Wireshark",
+    "question": "At what time does the HTTP GET message appear in the 'NAT_ISP_side' trace file?",
+    "options": [
+      "7.102967",
+      "7.109267",
+      "6.069168",
+      "1.100234"
+    ],
+    "correct": 2,
+    "explanation": "Timestamp differs due to capture timing."
+  },
+  {
+    "id": 631,
+    "lecture": "Wireshark",
+    "question": "After passing through the NAT router, what is the modified Source IP address on the ISP side?",
+    "options": [
+      "192.168.1.100",
+      "64.233.169.104",
+      "71.192.34.104",
+      "150.150.0.1"
+    ],
+    "correct": 2,
+    "explanation": "NAT changes source to public IP 71.192.34.104."
+  },
+  {
+    "id": 632,
+    "lecture": "Wireshark",
+    "question": "When comparing the HTTP GET on the home side vs. the ISP side, which of these fields changed?",
+    "options": [
+      "Version and Flags",
+      "Destination IP and Ports",
+      "Source IP and Checksum",
+      "Header Length and Protocol"
+    ],
+    "correct": 2,
+    "explanation": "Source IP changed → checksum must be recalculated."
+  },
+  {
+    "id": 633,
+    "lecture": "Wireshark",
+    "question": "Which of the following fields in the IP datagram remains UNCHANGED after passing through NAT?",
+    "options": [
+      "Checksum",
+      "Source IP",
+      "Version, Header Length, and Flags",
+      "All fields change"
+    ],
+    "correct": 2,
+    "explanation": "Version, Header Length, Flags unchanged."
+  },
+  {
+    "id": 634,
+    "lecture": "Wireshark",
+    "question": "Why does the Checksum field change in the IP header?",
+    "options": [
+      "Because the protocol was changed to HTTP",
+      "Because the time of capture was different",
+      "Because the checksum includes the value of the source IP address, which was modified",
+      "Because the fragmentation offset was adjusted by the route"
+    ],
+    "correct": 2,
+    "explanation": "Checksum depends on header fields; changed IP affects it."
+  },
+  {
+    "id": 635,
+    "lecture": "Wireshark",
+    "question": "In the case study, if the client sends a packet at time 7.102967 on the home side, does it appear at the exact same time on the ISP side trace?",
+    "options": [
+      "Yes, time is absolute",
+      "No, it appears at a different relative time (e.g., 6.069168)",
+      "Yes, because light travels instantly",
+      "No, the packet is delayed by exactly one hour"
+    ],
+    "correct": 1,
+    "explanation": "Capture timestamps differ between traces."
+  },
+  {
+    "id": 636,
+    "lecture": "Wireshark",
+    "question": "What is the broadcast address for this subnet 172.16.50.0/26?",
+    "options": [
+      "172.16.50.255",
+      "172.16.50.63",
+      "172.16.50.62",
+      "172.16.50.127"
+    ],
+    "correct": 1,
+    "explanation": "/26 block size = 64, broadcast = 172.16.50.63."
+  },
+  {
+    "id": 637,
+    "lecture": "Wireshark",
+    "question": "How many usable hosts are available in the network 10.200.1.0/29?",
+    "options": [
+      "8",
+      "6",
+      "14",
+      "30"
+    ],
+    "correct": 1,
+    "explanation": "/29 = 8 total addresses - 2 = 6 usable hosts."
   }
-] 
+]
 
 
