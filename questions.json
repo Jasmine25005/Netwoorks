@@ -1,0 +1,3020 @@
+[
+  {
+    "id": 1,
+    "lecture": "General",
+    "question": "Explain the collision domain and the broadcast domain",
+    "options": [
+      "Collision Domain: where packets can collide; Broadcast Domain: all hosts receiving broadcast packets",
+      "Both are the same thing",
+      "Collision Domain: for wireless only; Broadcast Domain: for wired only",
+      "None of the above"
+    ],
+    "correct": 0,
+    "explanation": "Collision Domain: network segment where packets can collide if sent simultaneously. Broadcast Domain: all hosts that receive a broadcast packet."
+  },
+  {
+    "id": 2,
+    "lecture": "OSI Model",
+    "question": "State the OSI layers and explain in detail layers 5 and 6",
+    "options": [
+      "7 layers: Physical, Data Link, Network, Transport, Session, Presentation, Application. Layer 5: manages sessions, Layer 6: compression/encryption",
+      "5 layers only",
+      "Layer 5: routing, Layer 6: switching",
+      "All layers are the same"
+    ],
+    "correct": 0,
+    "explanation": "7 layers: 1) Physical, 2) Data Link, 3) Network, 4) Transport, 5) Session (manages sessions), 6) Presentation (compression/encryption), 7) Application."
+  },
+  {
+    "id": 3,
+    "lecture": "General",
+    "question": "Explain in detail the Ethernet technology and (PAT) technology",
+    "options": [
+      "Ethernet: LAN protocol at Layers 1&2; PAT: many-to-one NAT using port numbers",
+      "Ethernet: WAN protocol; PAT: one-to-one NAT",
+      "Both are wireless technologies",
+      "Ethernet for encryption, PAT for compression"
+    ],
+    "correct": 0,
+    "explanation": "Ethernet: most common LAN protocol at Layers 1 & 2. PAT (Port Address Translation): many-to-one NAT mapping multiple private IPs to one public IP using port numbers."
+  },
+  {
+    "id": 4,
+    "lecture": "OSPF",
+    "question": "Explain in brief the OSPF packet types",
+    "options": [
+      "Hello, DBD, LSR, LSU, LSACK",
+      "SYN, ACK, FIN, RST",
+      "Request, Reply, Update, Query",
+      "IP, TCP, UDP, ICMP"
+    ],
+    "correct": 0,
+    "explanation": "1) Hello: neighbor discovery, 2) DBD: LSDB summary, 3) LSR: request missing info, 4) LSU: reply with data, 5) LSACK: acknowledgment."
+  },
+  {
+    "id": 5,
+    "lecture": "OSPF",
+    "question": "Explain in brief the OSPF neighbor states",
+    "options": [
+      "Down, Init, Two-way, Extart, Exchange, Loading, Full",
+      "Up, Down, Listening, Speaking",
+      "Active, Passive, Idle, Established",
+      "Open, Close, Wait, Sync"
+    ],
+    "correct": 0,
+    "explanation": "1) Down, 2) Init, 3) Two-way, 4) Extart, 5) Exchange, 6) Loading, 7) Full."
+  },
+  {
+    "id": 6,
+    "lecture": "OSPF",
+    "question": "Explain in brief how the OSPF ID is assigned",
+    "options": [
+      "1. Manually configured, 2. Highest loopback IP, 3. Highest active physical interface IP",
+      "Always automatic",
+      "Based on MAC address only",
+      "Randomly generated"
+    ],
+    "correct": 0,
+    "explanation": "1. Manual config, 2. Highest loopback IP, 3. Highest active physical interface IP."
+  },
+  {
+    "id": 7,
+    "lecture": "OSPF",
+    "question": "What are the steps after the OSPF Designated Router (DR) failure?",
+    "options": [
+      "1. BDR becomes DR, 2. New BDR elected, 3. If DR returns it becomes DROther",
+      "All routers restart",
+      "OSPF stops working",
+      "Nothing happens"
+    ],
+    "correct": 0,
+    "explanation": "1. BDR becomes DR, 2. New BDR elected, 3. If old DR returns, it becomes DROther."
+  },
+  {
+    "id": 8,
+    "lecture": "OSI Model",
+    "question": "State four protocols of the application layer and show their functions",
+    "options": [
+      "HTTP: web browsing, FTP: file transfer, SMTP: send email, POP3: receive email",
+      "TCP, UDP, IP, ICMP",
+      "ARP, RARP, DHCP, DNS",
+      "OSPF, RIP, BGP, EIGRP"
+    ],
+    "correct": 0,
+    "explanation": "HTTP: web, FTP: file transfer, SMTP: send mail, POP3: receive mail."
+  },
+  {
+    "id": 9,
+    "lecture": "Ethernet & STP",
+    "question": "Show the types of Ethernet cables and show their use to connect devices",
+    "options": [
+      "Straight-through: different devices (PC to Switch), Crossover: similar devices (Switch to Switch), Rolled: console",
+      "Only one type exists",
+      "All cables are the same",
+      "Fiber only"
+    ],
+    "correct": 0,
+    "explanation": "Straight-through: different devices (PC to Switch). Crossover: similar devices (Switch to Switch). Rolled: console connections."
+  },
+  {
+    "id": 10,
+    "lecture": "OSPF",
+    "question": "Explain the different types of OSPF LSA",
+    "options": [
+      "Type 1: Router LSA, Type 2: Network LSA, Type 3: Summary LSA",
+      "Type A, B, C only",
+      "All LSAs are the same",
+      "Only Type 1 exists"
+    ],
+    "correct": 0,
+    "explanation": "Type 1: Router LSA (every router), Type 2: Network LSA (DR), Type 3: Summary LSA (ABR)."
+  },
+  {
+    "id": 11,
+    "lecture": "Ethernet & STP",
+    "question": "Explain how the MAC address is divided, then give examples for unicast, multicast and broadcast MAC addresses numbers.",
+    "options": [
+      "48 bits: first 24 bits OUI, last 24 bits vendor assigned. Unicast: c8bc.c865.ac13, Broadcast: FFFF.FFFF.FFFF, Multicast: 0100.5exx.xxxx",
+      "All MAC addresses are the same",
+      "MAC is 32 bits only",
+      "No division exists"
+    ],
+    "correct": 0,
+    "explanation": "MAC: 48 bits (6 bytes). First 24 bits: OUI, last 24 bits: vendor assigned. Unicast: c8bc.c865.ac13, Broadcast: FFFF.FFFF.FFFF, Multicast: 0100.5exx.xxxx."
+  },
+  {
+    "id": 12,
+    "lecture": "Network Devices",
+    "question": "What is a network?",
+    "options": [
+      "A single computer system",
+      "A collection of devices connected together to provide a certain service",
+      "Only a group of printers connected together",
+      "A device that repeats signals"
+    ],
+    "correct": 1,
+    "explanation": "A network is a collection of interconnected devices that share resources and services."
+  },
+  {
+    "id": 13,
+    "lecture": "Network Devices",
+    "question": "Which of the following are examples of network devices?",
+    "options": [
+      "Computers and keyboards",
+      "Monitors and printers",
+      "Computers and printers",
+      "Mice and monitors"
+    ],
+    "correct": 2,
+    "explanation": "Computers and printers are network devices; keyboards, monitors, and mice are peripherals."
+  },
+  {
+    "id": 14,
+    "lecture": "Network Devices",
+    "question": "Which of the following is NOT a benefit of networking?",
+    "options": [
+      "Data sharing",
+      "Resource sharing",
+      "Video conferencing",
+      "Increasing electricity cost"
+    ],
+    "correct": 3,
+    "explanation": "Increasing electricity cost is a disadvantage, not a benefit."
+  },
+  {
+    "id": 15,
+    "lecture": "Network Devices",
+    "question": "Network components include:",
+    "options": [
+      "End devices, intermediary devices, and media",
+      "Only intermediary devices",
+      "Only end devices and routers",
+      "Servers and software only"
+    ],
+    "correct": 0,
+    "explanation": "Network components: end devices (PCs, printers), intermediary devices (routers, switches), and media (cables)."
+  },
+  {
+    "id": 16,
+    "lecture": "Network Devices",
+    "question": "Which of the following is an end device?",
+    "options": [
+      "Router",
+      "Hub",
+      "PC",
+      "Switch"
+    ],
+    "correct": 2,
+    "explanation": "PC is an end device; router, hub, switch are intermediary devices."
+  },
+  {
+    "id": 17,
+    "lecture": "Network Devices",
+    "question": "Which of the following is an intermediary device?",
+    "options": [
+      "PC",
+      "Printer",
+      "Switch",
+      "Mouse"
+    ],
+    "correct": 2,
+    "explanation": "Switch is an intermediary device; PC, printer, mouse are end devices."
+  },
+  {
+    "id": 18,
+    "lecture": "Network Devices",
+    "question": "What does NIC stand for?",
+    "options": [
+      "Network Internet Cable",
+      "Network Interface Card",
+      "Network Internal Connection",
+      "Network Integration Component"
+    ],
+    "correct": 1,
+    "explanation": "NIC = Network Interface Card."
+  },
+  {
+    "id": 19,
+    "lecture": "Network Devices",
+    "question": "The main function of a hub is to:",
+    "options": [
+      "Filter traffic between devices",
+      "Repeat information received from one host to all connected hosts",
+      "Choose the best path for data",
+      "Encrypt data"
+    ],
+    "correct": 1,
+    "explanation": "Hub broadcasts data to all ports."
+  },
+  {
+    "id": 20,
+    "lecture": "Network Devices",
+    "question": "When Host A sends a message to Host B through a hub, who receives a copy?",
+    "options": [
+      "Only Host B",
+      "Only Host C",
+      "Host B and Host C",
+      "The hub only"
+    ],
+    "correct": 2,
+    "explanation": "Hub broadcasts to all connected hosts."
+  },
+  {
+    "id": 21,
+    "lecture": "Network Devices",
+    "question": "A main disadvantage of a hub is:",
+    "options": [
+      "It creates multiple broadcast domains",
+      "It floods all packets including unicast ones",
+      "It connects only one device",
+      "It is wireless"
+    ],
+    "correct": 1,
+    "explanation": "Hub floods all traffic, causing collisions and inefficiency."
+  },
+  {
+    "id": 22,
+    "lecture": "Network Devices",
+    "question": "A hub has how many collision domains?",
+    "options": [
+      "One per port",
+      "One per host",
+      "One total",
+      "Depends on the network size"
+    ],
+    "correct": 2,
+    "explanation": "Hub: single collision domain."
+  },
+  {
+    "id": 23,
+    "lecture": "Network Devices",
+    "question": "When two messages are sent at the same time on a hub-based network:",
+    "options": [
+      "They are queued automatically",
+      "They collide",
+      "One is dropped by the hub",
+      "They are merged"
+    ],
+    "correct": 1,
+    "explanation": "Collisions occur in hub networks."
+  },
+  {
+    "id": 24,
+    "lecture": "Network Devices",
+    "question": "Communication between hosts can be classified into:",
+    "options": [
+      "Unicast, Broadcast, Multicast",
+      "Peer, Server, Client",
+      "Wired, Wireless, Optical",
+      "LAN, MAN, WAN"
+    ],
+    "correct": 0,
+    "explanation": "Unicast, Broadcast, Multicast are communication types."
+  },
+  {
+    "id": 25,
+    "lecture": "Network Devices",
+    "question": "Unicast means communication:",
+    "options": [
+      "From one host to all",
+      "From one host to some",
+      "From one host to one",
+      "Between all devices"
+    ],
+    "correct": 2,
+    "explanation": "Unicast = one-to-one."
+  },
+  {
+    "id": 26,
+    "lecture": "Network Devices",
+    "question": "Broadcast means communication:",
+    "options": [
+      "From one host to one host",
+      "From one host to some hosts",
+      "From one host to all hosts in the network",
+      "From all hosts to one host"
+    ],
+    "correct": 2,
+    "explanation": "Broadcast = one-to-all."
+  },
+  {
+    "id": 27,
+    "lecture": "Network Devices",
+    "question": "Multicast means communication:",
+    "options": [
+      "From one host to all hosts",
+      "From one host to a selected group of hosts",
+      "From many hosts to one host",
+      "From router to switch"
+    ],
+    "correct": 1,
+    "explanation": "Multicast = one-to-many (specific group)."
+  },
+  {
+    "id": 28,
+    "lecture": "Network Devices",
+    "question": "Why are switches used instead of hubs?",
+    "options": [
+      "They are cheaper",
+      "They break collision domains and prevent unnecessary traffic",
+      "They create more broadcasts",
+      "They only work wirelessly"
+    ],
+    "correct": 1,
+    "explanation": "Switches reduce collisions and segment traffic."
+  },
+  {
+    "id": 29,
+    "lecture": "Network Devices",
+    "question": "Each port on a switch represents:",
+    "options": [
+      "One broadcast domain",
+      "One collision domain",
+      "One hub",
+      "One VLAN"
+    ],
+    "correct": 1,
+    "explanation": "Switch port = separate collision domain."
+  },
+  {
+    "id": 30,
+    "lecture": "Network Devices",
+    "question": "In a switched network, if Host A sends a message to Host B:",
+    "options": [
+      "Host C also receives it",
+      "Only Host B receives it",
+      "All hosts receive it",
+      "The router filters it"
+    ],
+    "correct": 1,
+    "explanation": "Switch forwards only to destination MAC."
+  },
+  {
+    "id": 31,
+    "lecture": "Network Devices",
+    "question": "A switch floods out which type of packets?",
+    "options": [
+      "Unicast",
+      "Broadcast",
+      "Multicast",
+      "None"
+    ],
+    "correct": 1,
+    "explanation": "Switches flood broadcast and unknown unicast."
+  },
+  {
+    "id": 32,
+    "lecture": "Network Devices",
+    "question": "All hosts connected to a switch are in the same:",
+    "options": [
+      "Collision domain",
+      "Broadcast domain",
+      "IP address",
+      "VLAN"
+    ],
+    "correct": 1,
+    "explanation": "Switch: separate collision domains, single broadcast domain (unless VLANs)."
+  },
+  {
+    "id": 33,
+    "lecture": "Network Devices",
+    "question": "Too many broadcast packets in a switched network will:",
+    "options": [
+      "Speed up the network",
+      "Slow down the network",
+      "Have no effect",
+      "Stop communication completely"
+    ],
+    "correct": 1,
+    "explanation": "Broadcast storms degrade performance."
+  },
+  {
+    "id": 34,
+    "lecture": "Network Devices",
+    "question": "Routers do not allow:",
+    "options": [
+      "Data packets",
+      "Broadcasts to pass between networks",
+      "Multicasts within a LAN",
+      "IP addressing"
+    ],
+    "correct": 1,
+    "explanation": "Routers block broadcast traffic between networks."
+  },
+  {
+    "id": 35,
+    "lecture": "Network Devices",
+    "question": "The number of broadcast domains equals:",
+    "options": [
+      "The number of hosts",
+      "The number of router interfaces",
+      "The number of switches",
+      "The number of collision domains"
+    ],
+    "correct": 1,
+    "explanation": "Each router interface is a separate broadcast domain."
+  },
+  {
+    "id": 36,
+    "lecture": "Network Devices",
+    "question": "Which of the following is a function of a router?",
+    "options": [
+      "Amplify signals",
+      "Path selection",
+      "Device cooling",
+      "Data compression"
+    ],
+    "correct": 1,
+    "explanation": "Routers select best paths based on routing tables."
+  },
+  {
+    "id": 37,
+    "lecture": "Network Devices",
+    "question": "Routers can apply security considerations by:",
+    "options": [
+      "Filtering packets based on source and destination",
+      "Encrypting all traffic",
+      "Broadcasting all packets",
+      "Acting as a firewall only"
+    ],
+    "correct": 0,
+    "explanation": "Routers can filter packets using ACLs."
+  },
+  {
+    "id": 38,
+    "lecture": "Network Devices",
+    "question": "Routers break up:",
+    "options": [
+      "Broadcast domains",
+      "Collision domains",
+      "Subnets",
+      "VLANs"
+    ],
+    "correct": 0,
+    "explanation": "Routers separate broadcast domains."
+  },
+  {
+    "id": 39,
+    "lecture": "Network Devices",
+    "question": "Routers always drop:",
+    "options": [
+      "Unicast messages",
+      "Multicast messages",
+      "Broadcast messages",
+      "Ethernet frames"
+    ],
+    "correct": 2,
+    "explanation": "Routers drop broadcast packets (unless directed broadcast)."
+  },
+  {
+    "id": 40,
+    "lecture": "Network Devices",
+    "question": "If a router has 3 interfaces, how many broadcast domains exist?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "6"
+    ],
+    "correct": 2,
+    "explanation": "Each router interface = separate broadcast domain."
+  },
+  {
+    "id": 41,
+    "lecture": "Network Devices",
+    "question": "LAN stands for:",
+    "options": [
+      "Large Area Network",
+      "Local Area Network",
+      "Linear Access Network",
+      "Logical Area Network"
+    ],
+    "correct": 1,
+    "explanation": "LAN = Local Area Network."
+  },
+  {
+    "id": 42,
+    "lecture": "Network Devices",
+    "question": "LAN covers:",
+    "options": [
+      "A small geographical area",
+      "A large geographical area",
+      "The entire internet",
+      "Only one PC"
+    ],
+    "correct": 0,
+    "explanation": "LAN covers small area like building/campus."
+  },
+  {
+    "id": 43,
+    "lecture": "Network Devices",
+    "question": "LANs usually have:",
+    "options": [
+      "Low data-transfer rates",
+      "High data-transfer rates",
+      "Only wireless connections",
+      "Satellite-based transmission"
+    ],
+    "correct": 1,
+    "explanation": "LANs typically have high-speed connections."
+  },
+  {
+    "id": 44,
+    "lecture": "Network Devices",
+    "question": "The most common technology used in LANs is:",
+    "options": [
+      "Wi-Fi",
+      "Token Ring",
+      "Ethernet",
+      "Bluetooth"
+    ],
+    "correct": 2,
+    "explanation": "Ethernet is the dominant LAN technology."
+  },
+  {
+    "id": 45,
+    "lecture": "Network Devices",
+    "question": "WAN stands for:",
+    "options": [
+      "Wired Access Network",
+      "Wide Area Network",
+      "World Application Network",
+      "Wireless Area Network"
+    ],
+    "correct": 1,
+    "explanation": "WAN = Wide Area Network."
+  },
+  {
+    "id": 46,
+    "lecture": "Network Devices",
+    "question": "WAN covers:",
+    "options": [
+      "A single building",
+      "A city only",
+      "A large geographical area",
+      "A small geographical area"
+    ],
+    "correct": 2,
+    "explanation": "WAN spans large distances (cities, countries)."
+  },
+  {
+    "id": 47,
+    "lecture": "Network Devices",
+    "question": "WAN consists of:",
+    "options": [
+      "Only LANs",
+      "LANs and point-to-point networks",
+      "Only routers",
+      "Only switches"
+    ],
+    "correct": 1,
+    "explanation": "WAN connects LANs over long distances."
+  },
+  {
+    "id": 48,
+    "lecture": "Network Devices",
+    "question": "An example of a WAN is:",
+    "options": [
+      "A classroom network",
+      "A company’s offices connected across cities",
+      "A single floor in a building",
+      "A printer connection"
+    ],
+    "correct": 1,
+    "explanation": "Multi-city office network = WAN."
+  },
+  {
+    "id": 49,
+    "lecture": "OSI Model",
+    "question": "Why is the OSI model used?",
+    "options": [
+      "To make communication slower",
+      "To simplify understanding of data transfer and standardize device compatibility",
+      "To replace IP addressing",
+      "To increase hardware cost"
+    ],
+    "correct": 1,
+    "explanation": "OSI model standardizes network communication."
+  },
+  {
+    "id": 50,
+    "lecture": "OSI Model",
+    "question": "What does OSI stand for?",
+    "options": [
+      "Open Software Interface",
+      "Open System Interconnection",
+      "Online System Interaction",
+      "Open Standard Internet"
+    ],
+    "correct": 1,
+    "explanation": "OSI = Open Systems Interconnection."
+  },
+  {
+    "id": 51,
+    "lecture": "OSI Model",
+    "question": "How many layers does the OSI model have?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": 2,
+    "explanation": "OSI model has 7 layers."
+  },
+  {
+    "id": 52,
+    "lecture": "OSI Model",
+    "question": "What is the process of adding headers as data moves down the OSI layers called?",
+    "options": [
+      "Decompression",
+      "Decapsulation",
+      "Encapsulation",
+      "Encryption"
+    ],
+    "correct": 2,
+    "explanation": "Encapsulation = adding headers/trailers."
+  },
+  {
+    "id": 53,
+    "lecture": "OSI Model",
+    "question": "What is the process of removing headers as data moves up the OSI layers called?",
+    "options": [
+      "Encapsulation",
+      "Decapsulation",
+      "Fragmentation",
+      "Multiplexing"
+    ],
+    "correct": 1,
+    "explanation": "Decapsulation = removing headers."
+  },
+  {
+    "id": 54,
+    "lecture": "OSI Model",
+    "question": "Which layer interacts directly with the user?",
+    "options": [
+      "Network",
+      "Transport",
+      "Application",
+      "Session"
+    ],
+    "correct": 2,
+    "explanation": "Application layer interacts with user/apps."
+  },
+  {
+    "id": 55,
+    "lecture": "OSI Model",
+    "question": "Does the Application Layer include the application itself?",
+    "options": [
+      "Yes",
+      "No, it provides services needed by applications",
+      "Only partially",
+      "Only in HTTP"
+    ],
+    "correct": 1,
+    "explanation": "Application layer provides services to apps, not the apps themselves."
+  },
+  {
+    "id": 56,
+    "lecture": "OSI Model",
+    "question": "Which protocol is used to browse web pages?",
+    "options": [
+      "FTP",
+      "SMTP",
+      "HTTP",
+      "DNS"
+    ],
+    "correct": 2,
+    "explanation": "HTTP = web browsing."
+  },
+  {
+    "id": 57,
+    "lecture": "OSI Model",
+    "question": "Which protocol is used for uploading and downloading files?",
+    "options": [
+      "FTP",
+      "POP3",
+      "DHCP",
+      "HTTP"
+    ],
+    "correct": 0,
+    "explanation": "FTP = file transfer."
+  },
+  {
+    "id": 58,
+    "lecture": "OSI Model",
+    "question": "SMTP is used for:",
+    "options": [
+      "Receiving emails",
+      "Sending emails",
+      "Web browsing",
+      "File transfer"
+    ],
+    "correct": 1,
+    "explanation": "SMTP = send email."
+  },
+  {
+    "id": 59,
+    "lecture": "OSI Model",
+    "question": "POP3 is used to:",
+    "options": [
+      "Send emails",
+      "Receive emails",
+      "Upload files",
+      "Assign IP addresses"
+    ],
+    "correct": 1,
+    "explanation": "POP3 = receive email."
+  },
+  {
+    "id": 60,
+    "lecture": "OSI Model",
+    "question": "Which protocol allows remote login?",
+    "options": [
+      "DHCP",
+      "Telnet",
+      "FTP",
+      "POP3"
+    ],
+    "correct": 1,
+    "explanation": "Telnet = remote login."
+  },
+  {
+    "id": 61,
+    "lecture": "OSI Model",
+    "question": "DHCP stands for:",
+    "options": [
+      "Data Host Configuration Protocol",
+      "Dynamic Host Configuration Protocol",
+      "Domain Host Control Protocol",
+      "Dynamic Hypertext Communication Protocol"
+    ],
+    "correct": 1,
+    "explanation": "DHCP = Dynamic Host Configuration Protocol."
+  },
+  {
+    "id": 62,
+    "lecture": "OSI Model",
+    "question": "The purpose of DHCP is to:",
+    "options": [
+      "Assign IP addresses automatically",
+      "Send emails",
+      "Translate domain names",
+      "Encrypt messages"
+    ],
+    "correct": 0,
+    "explanation": "DHCP auto-assigns IP addresses."
+  },
+  {
+    "id": 63,
+    "lecture": "OSI Model",
+    "question": "DNS stands for:",
+    "options": [
+      "Data Network Service",
+      "Domain Name System (or Server)",
+      "Distributed Name Setup",
+      "Digital Network Source"
+    ],
+    "correct": 1,
+    "explanation": "DNS = Domain Name System."
+  },
+  {
+    "id": 64,
+    "lecture": "OSI Model",
+    "question": "The function of DNS is to:",
+    "options": [
+      "Assign MAC addresses",
+      "Translate names to IP addresses",
+      "Control ports",
+      "Encrypt email"
+    ],
+    "correct": 1,
+    "explanation": "DNS resolves domain names to IPs."
+  },
+  {
+    "id": 65,
+    "lecture": "OSI Model",
+    "question": "The presentation layer is responsible for:",
+    "options": [
+      "Routing data",
+      "Defining data format, compression, and encryption",
+      "Establishing sessions",
+      "Adding port numbers"
+    ],
+    "correct": 1,
+    "explanation": "Presentation layer: format, compression, encryption."
+  },
+  {
+    "id": 66,
+    "lecture": "OSI Model",
+    "question": "Which of the following is NOT a function of the Presentation Layer?",
+    "options": [
+      "Compression/Decompression",
+      "Encoding/Decoding",
+      "Routing/Forwarding",
+      "Encryption/Decryption"
+    ],
+    "correct": 2,
+    "explanation": "Routing is a Network layer function."
+  },
+  {
+    "id": 67,
+    "lecture": "OSI Model",
+    "question": "The session layer is responsible for:",
+    "options": [
+      "Data encryption",
+      "Managing sessions between applications",
+      "Segmenting data",
+      "Assigning IP addresses"
+    ],
+    "correct": 1,
+    "explanation": "Session layer manages dialogs/sessions."
+  },
+  {
+    "id": 68,
+    "lecture": "OSI Model",
+    "question": "The session layer controls dialogs that can be:",
+    "options": [
+      "Simplex only",
+      "Half duplex or full duplex",
+      "Broadcast only",
+      "Multicast only"
+    ],
+    "correct": 1,
+    "explanation": "Session layer manages half/full duplex dialogs."
+  },
+  {
+    "id": 69,
+    "lecture": "OSI Model",
+    "question": "Providing synchronization and checkpoints is the job of which layer?",
+    "options": [
+      "Presentation",
+      "Session",
+      "Transport",
+      "Data Link"
+    ],
+    "correct": 1,
+    "explanation": "Session layer provides synchronization."
+  },
+  {
+    "id": 70,
+    "lecture": "OSI Model",
+    "question": "Example of session synchronization is:",
+    "options": [
+      "Opening a web page",
+      "Resuming a YouTube video",
+      "Translating a domain name",
+      "Sending an email"
+    ],
+    "correct": 1,
+    "explanation": "Resuming video uses session checkpoints."
+  },
+  {
+    "id": 71,
+    "lecture": "OSI Model",
+    "question": "Which layer performs segmentation of data?",
+    "options": [
+      "Network",
+      "Transport",
+      "Session",
+      "Data Link"
+    ],
+    "correct": 1,
+    "explanation": "Transport layer segments data."
+  },
+  {
+    "id": 72,
+    "lecture": "OSI Model",
+    "question": "The transport layer adds what to data segments?",
+    "options": [
+      "IP address",
+      "Port numbers",
+      "MAC address",
+      "Encryption"
+    ],
+    "correct": 1,
+    "explanation": "Transport layer adds port numbers."
+  },
+  {
+    "id": 73,
+    "lecture": "OSI Model",
+    "question": "Which protocol provides error recovery?",
+    "options": [
+      "UDP",
+      "TCP",
+      "IP",
+      "ICMP"
+    ],
+    "correct": 1,
+    "explanation": "TCP provides error recovery."
+  },
+  {
+    "id": 74,
+    "lecture": "OSI Model",
+    "question": "TCP stands for:",
+    "options": [
+      "Transfer Communication Protocol",
+      "Transmission Control Protocol",
+      "Transport Connection Protocol",
+      "Terminal Control Process"
+    ],
+    "correct": 1,
+    "explanation": "TCP = Transmission Control Protocol."
+  },
+  {
+    "id": 75,
+    "lecture": "OSI Model",
+    "question": "UDP stands for:",
+    "options": [
+      "User Datagram Protocol",
+      "Unified Data Process",
+      "Universal Device Port",
+      "User Domain Protocol"
+    ],
+    "correct": 0,
+    "explanation": "UDP = User Datagram Protocol."
+  },
+  {
+    "id": 76,
+    "lecture": "OSI Model",
+    "question": "TCP is:",
+    "options": [
+      "Reliable and connection-oriented",
+      "Unreliable and connectionless",
+      "Fast but unreliable",
+      "Used only in email"
+    ],
+    "correct": 0,
+    "explanation": "TCP is reliable, connection-oriented."
+  },
+  {
+    "id": 77,
+    "lecture": "OSI Model",
+    "question": "UDP is:",
+    "options": [
+      "Reliable and connection-oriented",
+      "Unreliable and connectionless",
+      "Slow but accurate",
+      "Error correcting"
+    ],
+    "correct": 1,
+    "explanation": "UDP is unreliable, connectionless."
+  },
+  {
+    "id": 78,
+    "lecture": "OSI Model",
+    "question": "TCP provides which of the following features?",
+    "options": [
+      "Sequencing and acknowledgements",
+      "Error correction",
+      "Flow control (windowing, buffering)",
+      "All of the above"
+    ],
+    "correct": 3,
+    "explanation": "TCP provides all: sequencing, ACKs, error recovery, flow control."
+  },
+  {
+    "id": 79,
+    "lecture": "OSI Model",
+    "question": "Port numbers are used to:",
+    "options": [
+      "Identify devices on the network",
+      "Distinguish between processes or services on the same device",
+      "Replace IP addresses",
+      "Encrypt data"
+    ],
+    "correct": 1,
+    "explanation": "Ports identify services/processes on a host."
+  },
+  {
+    "id": 80,
+    "lecture": "OSI Model",
+    "question": "How many bits are in a port number?",
+    "options": [
+      "8 bits",
+      "12 bits",
+      "16 bits",
+      "32 bits"
+    ],
+    "correct": 2,
+    "explanation": "Port number = 16 bits (0-65535)."
+  },
+  {
+    "id": 81,
+    "lecture": "OSI Model",
+    "question": "The range of port numbers is:",
+    "options": [
+      "0 – 255",
+      "0 – 1023",
+      "0 – 65535",
+      "1 – 10000"
+    ],
+    "correct": 2,
+    "explanation": "Port range: 0-65535."
+  },
+  {
+    "id": 82,
+    "lecture": "OSI Model",
+    "question": "Well-known ports are in the range:",
+    "options": [
+      "0 – 1023",
+      "1024 – 2048",
+      "1024 – 65535",
+      "0 – 255"
+    ],
+    "correct": 0,
+    "explanation": "Well-known ports: 0-1023."
+  },
+  {
+    "id": 83,
+    "lecture": "OSI Model",
+    "question": "HTTP uses which port and protocol?",
+    "options": [
+      "Port 21 / TCP",
+      "Port 80 / TCP",
+      "Port 23 / UDP",
+      "Port 67 / UDP"
+    ],
+    "correct": 1,
+    "explanation": "HTTP = port 80 TCP."
+  },
+  {
+    "id": 84,
+    "lecture": "OSI Model",
+    "question": "FTP uses:",
+    "options": [
+      "Port 20 (data) and 21 (control), TCP",
+      "Port 23, UDP",
+      "Port 25, TCP",
+      "Port 53, UDP"
+    ],
+    "correct": 0,
+    "explanation": "FTP: port 20 (data), 21 (control) TCP."
+  },
+  {
+    "id": 85,
+    "lecture": "OSI Model",
+    "question": "SMTP uses:",
+    "options": [
+      "Port 110 / TCP",
+      "Port 25 / TCP",
+      "Port 20 / UDP",
+      "Port 53 / TCP"
+    ],
+    "correct": 1,
+    "explanation": "SMTP = port 25 TCP."
+  },
+  {
+    "id": 86,
+    "lecture": "OSI Model",
+    "question": "POP3 uses:",
+    "options": [
+      "Port 23",
+      "Port 25",
+      "Port 110",
+      "Port 80"
+    ],
+    "correct": 2,
+    "explanation": "POP3 = port 110 TCP."
+  },
+  {
+    "id": 87,
+    "lecture": "OSI Model",
+    "question": "Telnet uses:",
+    "options": [
+      "Port 67 / UDP",
+      "Port 23 / TCP",
+      "Port 53 / UDP",
+      "Port 80 / TCP"
+    ],
+    "correct": 1,
+    "explanation": "Telnet = port 23 TCP."
+  },
+  {
+    "id": 88,
+    "lecture": "OSI Model",
+    "question": "DHCP uses ports:",
+    "options": [
+      "67 and 68 (UDP)",
+      "20 and 21 (TCP)",
+      "80 and 110 (TCP)",
+      "25 and 53 (UDP)"
+    ],
+    "correct": 0,
+    "explanation": "DHCP: port 67 (server), 68 (client) UDP."
+  },
+  {
+    "id": 89,
+    "lecture": "OSI Model",
+    "question": "DNS uses:",
+    "options": [
+      "Port 53 (TCP and UDP)",
+      "Port 110 (TCP)",
+      "Port 25 (TCP)",
+      "Port 23 (UDP)"
+    ],
+    "correct": 0,
+    "explanation": "DNS = port 53 TCP/UDP."
+  },
+  {
+    "id": 90,
+    "lecture": "OSI Model",
+    "question": "The network layer is responsible for:",
+    "options": [
+      "Physical signal transmission",
+      "Logical addressing and path selection",
+      "Compression",
+      "Port numbering"
+    ],
+    "correct": 1,
+    "explanation": "Network layer: logical addressing, routing."
+  },
+  {
+    "id": 91,
+    "lecture": "OSI Model",
+    "question": "IP addressing is handled by which layer?",
+    "options": [
+      "Data Link",
+      "Transport",
+      "Network",
+      "Application"
+    ],
+    "correct": 2,
+    "explanation": "Network layer handles IP addresses."
+  },
+  {
+    "id": 92,
+    "lecture": "OSI Model",
+    "question": "The data link layer is responsible for:",
+    "options": [
+      "Logical addressing",
+      "Regulating communication rules and framing",
+      "Application service management",
+      "Routing"
+    ],
+    "correct": 1,
+    "explanation": "Data Link layer: framing, MAC addressing."
+  },
+  {
+    "id": 93,
+    "lecture": "OSI Model",
+    "question": "In encapsulation, each layer adds what to the data from the previous layer?",
+    "options": [
+      "A header",
+      "A footer",
+      "A checksum",
+      "A MAC address"
+    ],
+    "correct": 0,
+    "explanation": "Each layer adds its header."
+  },
+  {
+    "id": 94,
+    "lecture": "OSI Model",
+    "question": "The combination of the header and data sent between layers is called:",
+    "options": [
+      "PDU",
+      "SDU",
+      "IP packet",
+      "Frame"
+    ],
+    "correct": 0,
+    "explanation": "PDU = Protocol Data Unit."
+  },
+  {
+    "id": 95,
+    "lecture": "OSI Model",
+    "question": "What is the correct order of data encapsulation?",
+    "options": [
+      "Bits → Frame → Packet → Segment → Data",
+      "Data → Segment → Packet → Frame → Bits",
+      "Data → Packet → Segment → Frame → Bits",
+      "Segment → Data → Packet → Frame → Bits"
+    ],
+    "correct": 1,
+    "explanation": "Data → Segment → Packet → Frame → Bits."
+  },
+  {
+    "id": 96,
+    "lecture": "OSI Model",
+    "question": "At which layer is a packet formed?",
+    "options": [
+      "Application Layer",
+      "Network Layer",
+      "Transport Layer",
+      "Data Link Layer"
+    ],
+    "correct": 1,
+    "explanation": "Network layer creates packets."
+  },
+  {
+    "id": 97,
+    "lecture": "OSI Model",
+    "question": "At which layer is a segment formed?",
+    "options": [
+      "Data Link Layer",
+      "Network Layer",
+      "Transport Layer",
+      "Physical Layer"
+    ],
+    "correct": 2,
+    "explanation": "Transport layer creates segments."
+  },
+  {
+    "id": 98,
+    "lecture": "OSI Model",
+    "question": "At which layer is a frame formed?",
+    "options": [
+      "Physical Layer",
+      "Data Link Layer",
+      "Transport Layer",
+      "Network Layer"
+    ],
+    "correct": 1,
+    "explanation": "Data Link layer creates frames."
+  },
+  {
+    "id": 99,
+    "lecture": "OSI Model",
+    "question": "At which layer are bits formed?",
+    "options": [
+      "Physical Layer",
+      "Network Layer",
+      "Transport Layer",
+      "Application Layer"
+    ],
+    "correct": 0,
+    "explanation": "Physical layer deals with bits."
+  },
+  {
+    "id": 100,
+    "lecture": "OSI Model",
+    "question": "At which layer is data generated?",
+    "options": [
+      "Application Layer",
+      "Transport Layer",
+      "Data Link Layer",
+      "Network Layer"
+    ],
+    "correct": 0,
+    "explanation": "Application layer generates data."
+  },
+  {
+    "id": 101,
+    "lecture": "OSI Model",
+    "question": "Which device operates at the Application Layer?",
+    "options": [
+      "Router",
+      "Switch",
+      "PC",
+      "Hub"
+    ],
+    "correct": 2,
+    "explanation": "PCs operate at all layers, including Application."
+  },
+  {
+    "id": 102,
+    "lecture": "OSI Model",
+    "question": "Which device operates at the Network Layer?",
+    "options": [
+      "Switch",
+      "Router",
+      "Bridge",
+      "Hub"
+    ],
+    "correct": 1,
+    "explanation": "Router operates at Network layer."
+  },
+  {
+    "id": 103,
+    "lecture": "OSI Model",
+    "question": "Which device operates at the Data Link Layer?",
+    "options": [
+      "Hub",
+      "Repeater",
+      "Switch, Bridge, and NIC",
+      "Router"
+    ],
+    "correct": 2,
+    "explanation": "Switch, Bridge, NIC operate at Data Link."
+  },
+  {
+    "id": 104,
+    "lecture": "OSI Model",
+    "question": "Which devices operate at the Physical Layer?",
+    "options": [
+      "Routers",
+      "Switches",
+      "Hubs and Repeaters",
+      "Bridges"
+    ],
+    "correct": 2,
+    "explanation": "Hub, Repeater operate at Physical layer."
+  },
+  {
+    "id": 105,
+    "lecture": "OSI Model",
+    "question": "What is a protocol?",
+    "options": [
+      "A programming language",
+      "A network device",
+      "A set of rules for communication between devices",
+      "An encryption method"
+    ],
+    "correct": 2,
+    "explanation": "Protocol = rules for communication."
+  },
+  {
+    "id": 106,
+    "lecture": "OSI Model",
+    "question": "The analogy for a protocol is:",
+    "options": [
+      "A file format",
+      "Two people speaking a common language",
+      "A type of IP address",
+      "A web browser"
+    ],
+    "correct": 1,
+    "explanation": "Protocol is like a common language."
+  },
+  {
+    "id": 107,
+    "lecture": "IP Addresses",
+    "question": "The length of an IPv4 address is:",
+    "options": [
+      "8 bits",
+      "16 bits",
+      "32 bits",
+      "64 bits"
+    ],
+    "correct": 2,
+    "explanation": "IPv4 address is 32 bits (4 bytes)."
+  },
+  {
+    "id": 108,
+    "lecture": "IP Addresses",
+    "question": "IPv4 address is divided into how many octets?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct": 1,
+    "explanation": "IPv4 address has 4 octets (each 8 bits)."
+  },
+  {
+    "id": 109,
+    "lecture": "IP Addresses",
+    "question": "Each octet in an IPv4 address has a value range between:",
+    "options": [
+      "0–100",
+      "0–127",
+      "0–255",
+      "1–255"
+    ],
+    "correct": 2,
+    "explanation": "Each octet range: 0 to 255."
+  },
+  {
+    "id": 110,
+    "lecture": "IP Addresses",
+    "question": "Each octet equals how many bits?",
+    "options": [
+      "4 bits",
+      "6 bits",
+      "8 bits",
+      "16 bits"
+    ],
+    "correct": 2,
+    "explanation": "1 octet = 8 bits."
+  },
+  {
+    "id": 111,
+    "lecture": "IP Addresses",
+    "question": "IPv4 address is composed of:",
+    "options": [
+      "Subnet ID and Host ID",
+      "Network ID and Host ID",
+      "MAC and Host ID",
+      "IP and Port"
+    ],
+    "correct": 1,
+    "explanation": "IPv4 = Network ID + Host ID."
+  },
+  {
+    "id": 112,
+    "lecture": "IP Addresses",
+    "question": "IPv4 is written in which format?",
+    "options": [
+      "Binary",
+      "Hexadecimal",
+      "Decimal",
+      "Octal"
+    ],
+    "correct": 2,
+    "explanation": "IPv4 is written in dotted-decimal notation."
+  },
+  {
+    "id": 113,
+    "lecture": "IP Addresses",
+    "question": "Example of a valid IPv4 address:",
+    "options": [
+      "192.168.1.0",
+      "192.168.1.0",
+      "192,168,1,0",
+      "192/168/1/0"
+    ],
+    "correct": 0,
+    "explanation": "192.168.1.0 is a valid IPv4 format."
+  },
+  {
+    "id": 114,
+    "lecture": "IP Addresses",
+    "question": "The length of an IPv6 address is:",
+    "options": [
+      "32 bits",
+      "64 bits",
+      "96 bits",
+      "128 bits"
+    ],
+    "correct": 3,
+    "explanation": "IPv6 address is 128 bits."
+  },
+  {
+    "id": 115,
+    "lecture": "IP Addresses",
+    "question": "IPv4 addresses are divided into how many classes?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": 2,
+    "explanation": "IPv4 classes: A, B, C, D, E (5 classes)."
+  },
+  {
+    "id": 116,
+    "lecture": "IP Addresses",
+    "question": "Class A provides:",
+    "options": [
+      "Many networks, few hosts",
+      "Few networks, many hosts",
+      "Medium networks, medium hosts",
+      "Reserved for multicast"
+    ],
+    "correct": 1,
+    "explanation": "Class A: few networks, many hosts per network."
+  },
+  {
+    "id": 117,
+    "lecture": "IP Addresses",
+    "question": "Class B provides:",
+    "options": [
+      "Small networks, many hosts",
+      "Many networks, few hosts",
+      "Medium networks, medium hosts",
+      "Reserved for multicast"
+    ],
+    "correct": 2,
+    "explanation": "Class B: medium networks, medium hosts."
+  },
+  {
+    "id": 118,
+    "lecture": "IP Addresses",
+    "question": "Class C provides:",
+    "options": [
+      "Large number of networks with fewer hosts",
+      "Small number of networks with many hosts",
+      "Reserved for special use",
+      "Used for multicasting"
+    ],
+    "correct": 0,
+    "explanation": "Class C: many networks, few hosts per network."
+  },
+  {
+    "id": 119,
+    "lecture": "IP Addresses",
+    "question": "Class D is used for:",
+    "options": [
+      "Broadcasting",
+      "Multicasting",
+      "Unicasting",
+      "Anycast"
+    ],
+    "correct": 1,
+    "explanation": "Class D is for multicast addresses."
+  },
+  {
+    "id": 120,
+    "lecture": "IP Addresses",
+    "question": "Class A address length:",
+    "options": [
+      "8 bits",
+      "16 bits",
+      "32 bits",
+      "64 bits"
+    ],
+    "correct": 2,
+    "explanation": "All IPv4 addresses are 32 bits."
+  },
+  {
+    "id": 121,
+    "lecture": "IP Addresses",
+    "question": "Number of network bits (N) in Class A:",
+    "options": [
+      "8 bits",
+      "16 bits",
+      "24 bits",
+      "4 bits"
+    ],
+    "correct": 0,
+    "explanation": "Class A: 8 network bits, 24 host bits."
+  },
+  {
+    "id": 122,
+    "lecture": "IP Addresses",
+    "question": "The first bit of a Class A address is always:",
+    "options": [
+      "1",
+      "0",
+      "10",
+      "110"
+    ],
+    "correct": 1,
+    "explanation": "Class A first bit = 0."
+  },
+  {
+    "id": 123,
+    "lecture": "IP Addresses",
+    "question": "Number of available Class A networks:",
+    "options": [
+      "2^8",
+      "2^7",
+      "2^6",
+      "2^16"
+    ],
+    "correct": 1,
+    "explanation": "Class A networks: 2^7 = 128 (but 0.0.0.0 reserved)."
+  },
+  {
+    "id": 124,
+    "lecture": "IP Addresses",
+    "question": "Number of host bits (H) in Class A:",
+    "options": [
+      "8",
+      "16",
+      "24",
+      "32"
+    ],
+    "correct": 2,
+    "explanation": "Class A: 24 host bits."
+  },
+  {
+    "id": 125,
+    "lecture": "IP Addresses",
+    "question": "Number of available hosts per network in Class A:",
+    "options": [
+      "2^16 - 2",
+      "2^24 - 2",
+      "2^8 - 2",
+      "2^32 - 2"
+    ],
+    "correct": 1,
+    "explanation": "Class A hosts: 2^24 - 2 = 16,777,214."
+  },
+  {
+    "id": 126,
+    "lecture": "IP Addresses",
+    "question": "Subnet mask of Class A:",
+    "options": [
+      "/8",
+      "/16",
+      "/24",
+      "/32"
+    ],
+    "correct": 0,
+    "explanation": "Class A default mask: /8 (255.0.0.0)."
+  },
+  {
+    "id": 127,
+    "lecture": "IP Addresses",
+    "question": "Example of Class A network:",
+    "options": [
+      "10.0.0.0/8",
+      "172.16.0.0/16",
+      "192.168.1.0/24",
+      "224.0.0.0"
+    ],
+    "correct": 0,
+    "explanation": "10.0.0.0/8 is a private Class A network."
+  },
+  {
+    "id": 128,
+    "lecture": "IP Addresses",
+    "question": "Class A subnet mask in dotted decimal:",
+    "options": [
+      "255.255.0.0",
+      "255.0.0.0",
+      "255.255.255.0",
+      "0.0.0.255"
+    ],
+    "correct": 1,
+    "explanation": "Class A mask: 255.0.0.0."
+  },
+  {
+    "id": 129,
+    "lecture": "IP Addresses",
+    "question": "Class B has how many network bits?",
+    "options": [
+      "8",
+      "12",
+      "16",
+      "24"
+    ],
+    "correct": 2,
+    "explanation": "Class B: 16 network bits."
+  },
+  {
+    "id": 130,
+    "lecture": "IP Addresses",
+    "question": "The first two bits of Class B are always:",
+    "options": [
+      "00",
+      "10",
+      "110",
+      "111"
+    ],
+    "correct": 1,
+    "explanation": "Class B first two bits = 10."
+  },
+  {
+    "id": 131,
+    "lecture": "IP Addresses",
+    "question": "Number of available Class B networks:",
+    "options": [
+      "2^7",
+      "2^14",
+      "2^16",
+      "2^24"
+    ],
+    "correct": 1,
+    "explanation": "Class B networks: 2^14 = 16,384."
+  },
+  {
+    "id": 132,
+    "lecture": "IP Addresses",
+    "question": "Number of host bits in Class B:",
+    "options": [
+      "8",
+      "16",
+      "24",
+      "32"
+    ],
+    "correct": 1,
+    "explanation": "Class B: 16 host bits."
+  },
+  {
+    "id": 133,
+    "lecture": "IP Addresses",
+    "question": "Number of available hosts in Class B:",
+    "options": [
+      "2^16 - 2",
+      "2^24 - 2",
+      "2^8 - 2",
+      "2^32 - 2"
+    ],
+    "correct": 0,
+    "explanation": "Class B hosts: 2^16 - 2 = 65,534."
+  },
+  {
+    "id": 134,
+    "lecture": "IP Addresses",
+    "question": "Subnet mask of Class B:",
+    "options": [
+      "/8",
+      "/16",
+      "/24",
+      "/32"
+    ],
+    "correct": 1,
+    "explanation": "Class B default mask: /16 (255.255.0.0)."
+  },
+  {
+    "id": 135,
+    "lecture": "IP Addresses",
+    "question": "Example of Class B network:",
+    "options": [
+      "10.0.0.0/8",
+      "172.16.0.0/16",
+      "192.168.1.0/24",
+      "224.0.0.0"
+    ],
+    "correct": 1,
+    "explanation": "172.16.0.0/16 is a private Class B network."
+  },
+  {
+    "id": 136,
+    "lecture": "IP Addresses",
+    "question": "Class B subnet mask in dotted decimal:",
+    "options": [
+      "255.0.0.0",
+      "255.255.0.0",
+      "255.255.255.0",
+      "255.255.255.255"
+    ],
+    "correct": 1,
+    "explanation": "Class B mask: 255.255.0.0."
+  },
+  {
+    "id": 137,
+    "lecture": "IP Addresses",
+    "question": "Class C has how many network bits?",
+    "options": [
+      "8",
+      "16",
+      "24",
+      "32"
+    ],
+    "correct": 2,
+    "explanation": "Class C: 24 network bits."
+  },
+  {
+    "id": 138,
+    "lecture": "IP Addresses",
+    "question": "The first three bits of a Class C address are always:",
+    "options": [
+      "000",
+      "010",
+      "110",
+      "111"
+    ],
+    "correct": 2,
+    "explanation": "Class C first three bits = 110."
+  },
+  {
+    "id": 139,
+    "lecture": "IP Addresses",
+    "question": "Number of available networks in Class C:",
+    "options": [
+      "2^14",
+      "2^21",
+      "2^8",
+      "2^3"
+    ],
+    "correct": 1,
+    "explanation": "Class C networks: 2^21 = 2,097,152."
+  },
+  {
+    "id": 140,
+    "lecture": "IP Addresses",
+    "question": "Number of host bits in Class C:",
+    "options": [
+      "8",
+      "16",
+      "24",
+      "32"
+    ],
+    "correct": 0,
+    "explanation": "Class C: 8 host bits."
+  },
+  {
+    "id": 141,
+    "lecture": "IP Addresses",
+    "question": "Number of hosts per network in Class C:",
+    "options": [
+      "126",
+      "254",
+      "62",
+      "14"
+    ],
+    "correct": 1,
+    "explanation": "Class C hosts: 2^8 - 2 = 254."
+  },
+  {
+    "id": 142,
+    "lecture": "IP Addresses",
+    "question": "Subnet mask of Class C:",
+    "options": [
+      "/8",
+      "/16",
+      "/24",
+      "/32"
+    ],
+    "correct": 2,
+    "explanation": "Class C default mask: /24 (255.255.255.0)."
+  },
+  {
+    "id": 143,
+    "lecture": "IP Addresses",
+    "question": "Example of Class C network:",
+    "options": [
+      "10.0.0.0/8",
+      "172.16.0.0/16",
+      "192.168.1.0/24",
+      "224.0.0.0"
+    ],
+    "correct": 2,
+    "explanation": "192.168.1.0/24 is a private Class C network."
+  },
+  {
+    "id": 144,
+    "lecture": "IP Addresses",
+    "question": "Class C subnet mask in dotted decimal:",
+    "options": [
+      "255.0.0.0",
+      "255.255.0.0",
+      "255.255.255.0",
+      "255.255.255.255"
+    ],
+    "correct": 2,
+    "explanation": "Class C mask: 255.255.255.0."
+  },
+  {
+    "id": 145,
+    "lecture": "IP Addresses",
+    "question": "The first 4 bits of Class D addresses are always:",
+    "options": [
+      "1100",
+      "1110",
+      "1111",
+      "1010"
+    ],
+    "correct": 1,
+    "explanation": "Class D first 4 bits = 1110."
+  },
+  {
+    "id": 146,
+    "lecture": "IP Addresses",
+    "question": "Class D is used for:",
+    "options": [
+      "Broadcasting",
+      "Multicasting",
+      "Loopback",
+      "Experimental"
+    ],
+    "correct": 1,
+    "explanation": "Class D = multicast addresses."
+  },
+  {
+    "id": 147,
+    "lecture": "IP Addresses",
+    "question": "Range of Class D first octet:",
+    "options": [
+      "192–223",
+      "224–239",
+      "128–191",
+      "240–254"
+    ],
+    "correct": 1,
+    "explanation": "Class D range: 224.0.0.0 to 239.255.255.255."
+  },
+  {
+    "id": 148,
+    "lecture": "IP Addresses",
+    "question": "Example of Class D address:",
+    "options": [
+      "224.0.0.5",
+      "192.168.1.5",
+      "10.0.0.5",
+      "172.16.5.5"
+    ],
+    "correct": 0,
+    "explanation": "224.0.0.5 is a multicast address (OSPF)."
+  },
+  {
+    "id": 149,
+    "lecture": "IP Addresses",
+    "question": "Class E is used for:",
+    "options": [
+      "Broadcasting",
+      "Multicasting",
+      "Experimental purposes",
+      "Public networks"
+    ],
+    "correct": 2,
+    "explanation": "Class E = experimental/reserved."
+  },
+  {
+    "id": 150,
+    "lecture": "IP Addresses",
+    "question": "Class A first octet range:",
+    "options": [
+      "0–255",
+      "1–126",
+      "127–191",
+      "192–223"
+    ],
+    "correct": 1,
+    "explanation": "Class A: 1.0.0.0 to 126.255.255.255."
+  },
+  {
+    "id": 151,
+    "lecture": "IP Addresses",
+    "question": "Class B first octet range:",
+    "options": [
+      "128–191",
+      "192–223",
+      "224–239",
+      "240–254"
+    ],
+    "correct": 0,
+    "explanation": "Class B: 128.0.0.0 to 191.255.255.255."
+  },
+  {
+    "id": 152,
+    "lecture": "IP Addresses",
+    "question": "Class C first octet range:",
+    "options": [
+      "1–126",
+      "128–191",
+      "192–223",
+      "224–239"
+    ],
+    "correct": 2,
+    "explanation": "Class C: 192.0.0.0 to 223.255.255.255."
+  },
+  {
+    "id": 153,
+    "lecture": "IP Addresses",
+    "question": "Class D first octet range:",
+    "options": [
+      "192–223",
+      "224–239",
+      "128–191",
+      "240–254"
+    ],
+    "correct": 1,
+    "explanation": "Class D: 224.0.0.0 to 239.255.255.255."
+  },
+  {
+    "id": 154,
+    "lecture": "IP Addresses",
+    "question": "Class E first octet range:",
+    "options": [
+      "224–239",
+      "240–254",
+      "192–223",
+      "128–191"
+    ],
+    "correct": 1,
+    "explanation": "Class E: 240.0.0.0 to 255.255.255.255."
+  },
+  {
+    "id": 155,
+    "lecture": "IP Addresses",
+    "question": "Class A default mask:",
+    "options": [
+      "255.0.0.0",
+      "255.255.0.0",
+      "255.255.255.0",
+      "255.255.255.255"
+    ],
+    "correct": 0,
+    "explanation": "Class A default: 255.0.0.0."
+  },
+  {
+    "id": 156,
+    "lecture": "IP Addresses",
+    "question": "Class B default mask:",
+    "options": [
+      "255.0.0.0",
+      "255.255.0.0",
+      "255.255.255.0",
+      "255.255.255.255"
+    ],
+    "correct": 1,
+    "explanation": "Class B default: 255.255.0.0."
+  },
+  {
+    "id": 157,
+    "lecture": "IP Addresses",
+    "question": "Class C default mask:",
+    "options": [
+      "255.0.0.0",
+      "255.255.0.0",
+      "255.255.255.0",
+      "255.255.255.255"
+    ],
+    "correct": 2,
+    "explanation": "Class C default: 255.255.255.0."
+  },
+  {
+    "id": 158,
+    "lecture": "IP Addresses",
+    "question": "Subnetting divides a major network into:",
+    "options": [
+      "Domains",
+      "Subnetworks",
+      "VLANs",
+      "Hosts"
+    ],
+    "correct": 1,
+    "explanation": "Subnetting creates smaller subnetworks."
+  },
+  {
+    "id": 159,
+    "lecture": "IP Addresses",
+    "question": "Each subnet is treated as a:",
+    "options": [
+      "Shared domain",
+      "Separate network",
+      "VLAN",
+      "Router"
+    ],
+    "correct": 1,
+    "explanation": "Each subnet acts as separate network."
+  },
+  {
+    "id": 160,
+    "lecture": "IP Addresses",
+    "question": "Subnetting is done by:",
+    "options": [
+      "Adding network bits to host bits",
+      "Adding host bits to network bits",
+      "Reducing bits",
+      "Removing network ID"
+    ],
+    "correct": 1,
+    "explanation": "Subnetting borrows host bits for network bits."
+  },
+  {
+    "id": 161,
+    "lecture": "IP Addresses",
+    "question": "How many hosts does a /24 subnet provide?",
+    "options": [
+      "2",
+      "14",
+      "254",
+      "126"
+    ],
+    "correct": 2,
+    "explanation": "/24 = 256 total addresses - 2 = 254 usable hosts."
+  },
+  {
+    "id": 162,
+    "lecture": "IP Addresses",
+    "question": "How many hosts does /27 provide?",
+    "options": [
+      "6",
+      "14",
+      "30",
+      "62"
+    ],
+    "correct": 2,
+    "explanation": "/27 = 32 total addresses - 2 = 30 usable hosts."
+  },
+  {
+    "id": 163,
+    "lecture": "IP Addresses",
+    "question": "Subnet mask for /29 is:",
+    "options": [
+      "255.255.255.224",
+      "255.255.255.248",
+      "255.255.255.192",
+      "255.255.255.252"
+    ],
+    "correct": 1,
+    "explanation": "/29 = 255.255.255.248."
+  },
+  {
+    "id": 164,
+    "lecture": "IP Addresses",
+    "question": "In the previous network 10.10.10.0/24, how many subnets were designed?",
+    "options": [
+      "2",
+      "3",
+      "6",
+      "8"
+    ],
+    "correct": 2,
+    "explanation": "3 LANs + 3 WANs = 6 subnets."
+  },
+  {
+    "id": 165,
+    "lecture": "IP Addresses",
+    "question": "In subnetting, 2 addresses are always reserved for:",
+    "options": [
+      "Network ID and Broadcast",
+      "Router and Switch",
+      "Gateway and DNS",
+      "LAN and WAN"
+    ],
+    "correct": 0,
+    "explanation": "Network address and broadcast address are reserved."
+  },
+  {
+    "id": 166,
+    "lecture": "IP Addresses",
+    "question": "What is the broadcast address for this subnet 172.16.50.0/26?",
+    "options": [
+      "172.16.50.255",
+      "172.16.50.63",
+      "172.16.50.62",
+      "172.16.50.127"
+    ],
+    "correct": 1,
+    "explanation": "/26 block size = 64, broadcast = 172.16.50.63."
+  },
+  {
+    "id": 167,
+    "lecture": "IP Addresses",
+    "question": "How many usable hosts are available in the network 10.200.1.0/29?",
+    "options": [
+      "8",
+      "6",
+      "14",
+      "30"
+    ],
+    "correct": 1,
+    "explanation": "/29 = 8 total - 2 = 6 usable hosts."
+  },
+  {
+    "id": 168,
+    "lecture": "IP Addresses",
+    "question": "What subnet mask is needed for 25 hosts?",
+    "options": [
+      "/26",
+      "/27",
+      "/28",
+      "/25"
+    ],
+    "correct": 1,
+    "explanation": "/27 provides 30 hosts (meets 25 requirement)."
+  },
+  {
+    "id": 169,
+    "lecture": "IP Addresses",
+    "question": "Which address is the first usable host in the subnet 192.168.5.128/25?",
+    "options": [
+      "192.168.5.1",
+      "192.168.5.128",
+      "192.168.5.129",
+      "192.168.5.254"
+    ],
+    "correct": 2,
+    "explanation": "Network address: 192.168.5.128, first host: 192.168.5.129."
+  },
+  {
+    "id": 170,
+    "lecture": "Ethernet & STP",
+    "question": "Ethernet is the most famous protocol used in:",
+    "options": [
+      "Wide Area Networks (WANs)",
+      "Local Area Networks (LANs)",
+      "Metropolitan Area Networks (MANS)",
+      "Virtual Private Networks (VPNs)"
+    ],
+    "correct": 1,
+    "explanation": "Ethernet is the dominant LAN technology."
+  },
+  {
+    "id": 171,
+    "lecture": "Ethernet & STP",
+    "question": "Ethernet operates on which layers of the OSI model?",
+    "options": [
+      "Layer 3 and Layer 4",
+      "Layer 2 and Layer 3",
+      "Layer 1 and Layer 2",
+      "Layer 4 and Layer 5"
+    ],
+    "correct": 2,
+    "explanation": "Ethernet operates at Physical (Layer 1) and Data Link (Layer 2)."
+  },
+  {
+    "id": 172,
+    "lecture": "Ethernet & STP",
+    "question": "Ethernet is a family of standards that define which layer(s)?",
+    "options": [
+      "Network Layer",
+      "Transport Layer",
+      "Network Access Layer (Data Link + Physical)",
+      "Application Layer"
+    ],
+    "correct": 2,
+    "explanation": "Ethernet defines Network Access Layer (Layers 1 & 2)."
+  },
+  {
+    "id": 173,
+    "lecture": "Ethernet & STP",
+    "question": "At the Data Link layer, Ethernet is responsible for:",
+    "options": [
+      "Routing and switching",
+      "Addressing and framing",
+      "Encryption and decryption",
+      "Error correction"
+    ],
+    "correct": 1,
+    "explanation": "Data Link layer: MAC addressing and framing."
+  },
+  {
+    "id": 174,
+    "lecture": "Ethernet & STP",
+    "question": "Ethernet addressing identifies devices on a LAN and is called:",
+    "options": [
+      "IP address",
+      "Logical address",
+      "MAC address",
+      "Port number"
+    ],
+    "correct": 2,
+    "explanation": "Ethernet uses MAC addresses."
+  },
+  {
+    "id": 175,
+    "lecture": "Ethernet & STP",
+    "question": "MAC address length is:",
+    "options": [
+      "16 bits",
+      "32 bits",
+      "48 bits",
+      "64 bits"
+    ],
+    "correct": 2,
+    "explanation": "MAC address = 48 bits (6 bytes)."
+  },
+  {
+    "id": 176,
+    "lecture": "Ethernet & STP",
+    "question": "48 bits equal how many bytes?",
+    "options": [
+      "4 bytes",
+      "6 bytes",
+      "8 bytes",
+      "10 bytes"
+    ],
+    "correct": 1,
+    "explanation": "48 bits = 6 bytes."
+  },
+  {
+    "id": 177,
+    "lecture": "Ethernet & STP",
+    "question": "MAC address is written in which format?",
+    "options": [
+      "Decimal",
+      "Binary",
+      "Hexadecimal",
+      "Octal"
+    ],
+    "correct": 2,
+    "explanation": "MAC addresses use hexadecimal notation."
+  },
+  {
+    "id": 178,
+    "lecture": "Ethernet & STP",
+    "question": "Each LAN interface card has a:",
+    "options": [
+      "Shared IP address",
+      "Globally unique MAC address",
+      "Local router ID",
+      "Temporary address"
+    ],
+    "correct": 1,
+    "explanation": "Each NIC has unique MAC address."
+  },
+  {
+    "id": 179,
+    "lecture": "Ethernet & STP",
+    "question": "To keep addresses unique, each manufacturer is assigned:",
+    "options": [
+      "Network ID",
+      "Organization Unique Identifier (OUI)",
+      "Hardware Serial",
+      "Device Prefix"
+    ],
+    "correct": 1,
+    "explanation": "OUI = first 24 bits of MAC assigned to manufacturer."
+  },
+  {
+    "id": 180,
+    "lecture": "Ethernet & STP",
+    "question": "The OUI is represented by:",
+    "options": [
+      "The second half of the MAC address",
+      "The first half of the MAC address",
+      "The middle part of the MAC address",
+      "None of the above"
+    ],
+    "correct": 1,
+    "explanation": "OUI = first 24 bits (first half) of MAC."
+  },
+  {
+    "id": 181,
+    "lecture": "Ethernet & STP",
+    "question": "The second half of the MAC address is:",
+    "options": [
+      "Assigned by the IEEE",
+      "Assigned by the manufacturer",
+      "Randomly generated by the device",
+      "Based on IP address"
+    ],
+    "correct": 1,
+    "explanation": "Last 24 bits assigned by manufacturer."
+  },
+  {
+    "id": 182,
+    "lecture": "Ethernet & STP",
+    "question": "Example of MAC address formats:",
+    "options": [
+      "50:22:ab:5b:63:a9",
+      "50-22-ab-5b-63-a9",
+      "5022.ab5b.63a9",
+      "All of the above"
+    ],
+    "correct": 3,
+    "explanation": "All are valid MAC address formats."
+  },
+  {
+    "id": 183,
+    "lecture": "Ethernet & STP",
+    "question": "MAC address can be represented by:",
+    "options": [
+      "Binary only",
+      "Hexadecimal with dots or colons",
+      "Octal with dashes",
+      "Decimal with slashes"
+    ],
+    "correct": 1,
+    "explanation": "MAC uses hex with separators like : or - or ."
+  },
+  {
+    "id": 184,
+    "lecture": "Ethernet & STP",
+    "question": "The broadcast MAC address value is:",
+    "options": [
+      "0000000000000",
+      "FFFFFFFFFFF",
+      "1111111111111",
+      "0000FFFF0000"
+    ],
+    "correct": 1,
+    "explanation": "Broadcast MAC = FF:FF:FF:FF:FF:FF."
+  },
+  {
+    "id": 185,
+    "lecture": "Ethernet & STP",
+    "question": "Which MAC address is the lowest?",
+    "options": [
+      "FFFFFFFFFFFF",
+      "DDDD:DDDD:DDDD",
+      "BBBB:BBBB:BBBB",
+      "EEEE:EEEE:EEEE"
+    ],
+    "correct": 2,
+    "explanation": "B < D < E < F in hex."
+  },
+  {
+    "id": 186,
+    "lecture": "Ethernet & STP",
+    "question": "Broadcast address means:",
+    "options": [
+      "Send to one host",
+      "Send to specific router",
+      "Send to all devices in the network",
+      "Send to multicast group only"
+    ],
+    "correct": 2,
+    "explanation": "Broadcast = all devices in LAN."
+  },
+  {
+    "id": 187,
+    "lecture": "Ethernet & STP",
+    "question": "Multicast MAC addresses are used when:",
+    "options": [
+      "A frame must reach all devices",
+      "A frame must go to a group of devices",
+      "A frame must go to the default gateway",
+      "A frame must go to a single user"
+    ],
+    "correct": 1,
+    "explanation": "Multicast = specific group of devices."
+  },
+  {
+    "id": 188,
+    "lecture": "Ethernet & STP",
+    "question": "Ethernet multicast addresses start with:",
+    "options": [
+      "01:00:5e:xx:xx:xx",
+      "ff:ff:ff:ff:ff:ff",
+      "00:00:00:00:00:00",
+      "10:10:10:10:10:10"
+    ],
+    "correct": 0,
+    "explanation": "Ethernet multicast = 01-00-5E (first 24 bits)."
+  },
+  {
+    "id": 189,
+    "lecture": "Ethernet & STP",
+    "question": "In a multicast MAC address, 'xx.xxxx' represents:",
+    "options": [
+      "The manufacturer ID",
+      "Any value",
+      "IP address range",
+      "Reserved bits"
+    ],
+    "correct": 1,
+    "explanation": "Last 24 bits can be any value."
+  },
+  {
+    "id": 190,
+    "lecture": "Ethernet & STP",
+    "question": "Ethernet uses how many wires?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct": 3,
+    "explanation": "Standard Ethernet uses 8 wires (4 pairs)."
+  },
+  {
+    "id": 191,
+    "lecture": "Ethernet & STP",
+    "question": "Ethernet cable uses twisted pairs to:",
+    "options": [
+      "Increase speed",
+      "Avoid internal electromagnetic interference",
+      "Save copper",
+      "Reduce cable thickness"
+    ],
+    "correct": 1,
+    "explanation": "Twisting reduces EMI/crosstalk."
+  },
+  {
+    "id": 192,
+    "lecture": "Ethernet & STP",
+    "question": "Ethernet connector type is:",
+    "options": [
+      "RG-11",
+      "RJ-45",
+      "RJ-11",
+      "BNC"
+    ],
+    "correct": 1,
+    "explanation": "Ethernet uses RJ-45 connector."
+  },
+  {
+    "id": 193,
+    "lecture": "Ethernet & STP",
+    "question": "RJ stands for:",
+    "options": [
+      "Registered Jack",
+      "Reversible Jack",
+      "Remote Jumper",
+      "Rotating Joint"
+    ],
+    "correct": 0,
+    "explanation": "RJ = Registered Jack."
+  },
+  {
+    "id": 194,
+    "lecture": "Ethernet & STP",
+    "question": "Ethernet cable has how many main types?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": 1,
+    "explanation": "UTP and STP are main types."
+  },
+  {
+    "id": 195,
+    "lecture": "Ethernet & STP",
+    "question": "UTP stands for:",
+    "options": [
+      "Unified Transmission Protocol",
+      "Unshielded Twisted Pair",
+      "Universal Transfer Path",
+      "Unlinked Transfer Pair"
+    ],
+    "correct": 1,
+    "explanation": "UTP = Unshielded Twisted Pair."
+  },
+  {
+    "id": 196,
+    "lecture": "Ethernet & STP",
+    "question": "STP stands for:",
+    "options": [
+      "Shielded Transfer Protocol",
+      "Shielded Twisted Pair",
+      "Secure Transmission Path",
+      "Standard Twisted Protocol"
+    ],
+    "correct": 1,
+    "explanation": "STP = Shielded Twisted Pair."
+  },
+  {
+    "id": 197,
+    "lecture": "Ethernet & STP",
+    "question": "Advantage of UTP cable:",
+    "options": [
+      "Immune to interference",
+      "Cheap",
+      "Very strong shielding",
+      "Heavier cable"
+    ],
+    "correct": 1,
+    "explanation": "UTP is inexpensive."
+  },
+  {
+    "id": 198,
+    "lecture": "Ethernet & STP",
+    "question": "Disadvantage of UTP cable:",
+    "options": [
+      "Expensive",
+      "Difficult to install",
+      "Not immune to external interference",
+      "Slower speed"
+    ],
+    "correct": 2,
+    "explanation": "UTP susceptible to EMI."
+  },
+  {
+    "id": 199,
+    "lecture": "Ethernet & STP",
+    "question": "Advantage of STP cable:",
+    "options": [
+      "Cheaper than UTP",
+      "Immune to external electromagnetic interference",
+      "Easier to install",
+      "Requires no shielding"
+    ],
+    "correct": 1,
+    "explanation": "STP has better EMI protection."
+  },
+  {
+    "id": 200,
+    "lecture": "Ethernet & STP",
+    "question": "Disadvantage of STP cable:",
+    "options": [
+      "More expensive",
+      "Weak shielding",
+      "Not flexible",
+      "Very slow"
+    ],
+    "correct": 0,
+    "explanation": "STP costs more than UTP."
+  },
+  {
+    "id": 201,
+    "lecture": "Ethernet & STP",
+    "question": "There are how many main types of Ethernet cables used for connections?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 1,
+    "explanation": "Straight-through, Crossover, Rolled (console)."
+  },
+  {
+    "id": 202,
+    "lecture": "Ethernet & STP",
+    "question": "The three Ethernet cable types are:",
+    "options": [
+      "UTP, STP, Fiber",
+      "Straight-through, Crossover, Rolled",
+      "Flat, Coaxial, Twisted",
+      "Parallel, Serial, Optical"
+    ],
+    "correct": 1,
+    "explanation": "Straight-through, Crossover, Rolled."
+  },
+  {
+    "id": 203,
+    "lecture": "Ethernet & STP",
+    "question": "Straight-through cable is used to connect:",
+    "options": [
+      "Switch to Switch",
+      "Hub to Hub",
+      "PC or Router to Switch or Hub",
+      "Router to Router"
+    ],
+    "correct": 2,
+    "explanation": "Straight-through: dissimilar devices."
+  },
+  {
+    "id": 204,
+    "lecture": "Ethernet & STP",
+    "question": "In straight-through cable, pin configuration is:",
+    "options": [
+      "Different on both ends",
+      "Same on both ends",
+      "Crossed",
+      "Rolled"
+    ],
+    "correct": 1,
+    "explanation": "Straight-through: same pinout both ends."
+  },
+  {
+    "id": 205,
+    "lecture": "Ethernet & STP",
+    "question": "Crossover cable is used to connect:",
+    "options": [
+      "Host to Switch",
+      "Switch to Host",
+      "Similar devices together",
+      "Router to Internet"
+    ],
+    "correct": 2,
+    "explanation": "Crossover: similar devices."
+  },
+  {
+    "id": 206,
+    "lecture": "Ethernet & STP",
+    "question": "Examples of connections using crossover cables include:",
+    "options": [
+      "Host to Host",
+      "Switch to Switch",
+      "Hub to Hub",
+      "All of the above"
+    ],
+    "correct": 3,
+    "explanation": "All are similar device connections."
+  },
+  {
+    "id": 207,
+    "lecture": "Ethernet & STP",
+    "question": "Crossover cables are also used for:",
+    "options": [
+      "Router to Router",
+      "Router to Switch",
+      "Router to Printer",
+      "Switch to PC"
+    ],
+    "correct": 0,
+    "explanation": "Router-to-Router = similar devices."
+  },
+  {
+    "id": 208,
+    "lecture": "Ethernet & STP",
+    "question": "Which cable type connects different devices (like PC to Switch)?",
+    "options": [
+      "Straight-through",
+      "Crossover",
+      "Rolled",
+      "Fiber"
+    ],
+    "correct": 0,
+    "explanation": "Straight-through for dissimilar."
+  },
+  {
+    "id": 209,
+    "lecture": "Ethernet & STP",
+    "question": "Which cable type connects similar devices (like Switch to Switch)?",
+    "options": [
+      "Straight-through",
+      "Crossover",
+      "Rolled",
+      "Coaxial"
+    ],
+    "correct": 1,
+    "explanation": "Crossover for similar."
+  },
+  {
+    "id": 210,
+    "lecture": "Ethernet & STP",
+    "question": "What does STP stand for?",
+    "options": [
+      "Standard Transfer Protocol",
+      "Spanning Tree Protocol",
+      "Secure Transmission Protocol",
+      "Switch Transfer Process"
+    ],
+    "correct": 1,
+    "explanation": "STP = Spanning Tree Protocol."
+  },
+  {
+    "id": 211,
+    "lecture": "Ethernet & STP",
+    "question": "What is the IEEE standard number for STP?",
+    "options": [
+      "802.1c",
+      "802.1d",
+      "802.1e",
+      "802.3"
+    ],
+    "correct": 1,
+    "explanation": "STP = IEEE 802.1D."
+  },
+  {
+    "id": 212,
+    "lecture": "Ethernet & STP",
+    "question": "What is the main purpose of STP in LAN networks?",
+    "options": [
+      "To increase bandwidth",
+      "To reduce broadcast frames",
+      "To reduce the effect of broadcast frames and prevent loops",
+      "To encrypt communication between switches"
+    ],
+    "correct": 2,
+    "explanation": "STP prevents switching loops/broadcast storms."
+  },
+  {
+    "id": 213,
+    "lecture": "Ethernet & STP",
+    "question": "How does STP prevent broadcast frames from moving in two opposite directions?",
+    "options": [
+      "By blocking some switch ports",
+      "By using encryption",
+      "By assigning static IPs",
+      "By compressing data"
+    ],
+    "correct": 0,
+    "explanation": "STP blocks redundant ports."
+  },
+  {
+    "id": 214,
+    "lecture": "Ethernet & STP",
+    "question": "What is the message used by STP called?",
+    "options": [
+      "BPDU",
+      "BID",
+      "BPD",
+      "SPD"
+    ],
+    "correct": 0,
+    "explanation": "BPDU = Bridge Protocol Data Unit."
+  },
+  {
+    "id": 215,
+    "lecture": "Ethernet & STP",
+    "question": "What are the two fields of the Bridge ID (BID)?",
+    "options": [
+      "IP address and Port number",
+      "Priority field and MAC address",
+      "VLAN ID and Port number",
+      "Device name and Serial number"
+    ],
+    "correct": 1,
+    "explanation": "BID = Priority + MAC address."
+  },
+  {
+    "id": 216,
+    "lecture": "Ethernet & STP",
+    "question": "How many bytes are in the priority field of the BID?",
+    "options": [
+      "4 bytes",
+      "6 bytes",
+      "2 bytes",
+      "8 bytes"
+    ],
+    "correct": 2,
+    "explanation": "Priority field = 2 bytes."
+  },
+  {
+    "id": 217,
+    "lecture": "Ethernet & STP",
+    "question": "How many bytes are in the MAC address field of the BID?",
+    "options": [
+      "2 bytes",
+      "4 bytes",
+      "6 bytes",
+      "8 bytes"
+    ],
+    "correct": 2,
+    "explanation": "MAC address = 6 bytes."
+  },
+  {
+    "id": 218,
+    "lecture": "Ethernet & STP",
+    "question": "What happens if no STP protocol is applied in a LAN with a looped topology?",
+    "options": [
+      "The network will be faster",
+      "Broadcast frames will stop automatically",
+      "Broadcast frames will propagate in both directions causing a broadcast storm",
+      "Only one switch will work"
+    ],
+    "correct": 2,
+    "explanation": "Loops cause broadcast storms."
+  },
+  {
+    "id": 219,
+    "lecture": "Ethernet & STP",
+    "question": "What is the effect of a broadcast storm on a network?",
+    "options": [
+      "Improves performance",
+      "Slows down or crashes the network",
+      "Increases bandwidth",
+      "Changes MAC addresses"
+    ],
+    "correct": 1,
+    "explanation": "Broadcast storms degrade performance."
+  },
+  {
+    "id": 220,
+    "lecture": "Ethernet & STP",
+    "question": "What is the first step in STP operation?",
+    "options": [
+      "Electing the root switch",
+      "Assigning blocked ports",
+      "Defining broadcast domains",
+      "Calculating path cost"
+    ],
+    "correct": 0,
+    "explanation": "First: elect root switch."
+  },
+  {
+    "id": 221,
+    "lecture": "Ethernet & STP",
+    "question": "How is the root switch selected automatically if not manually assigned?",
+    "options": [
+      "The switch with the highest MAC address",
+      "The switch with the lowest MAC address",
+      "The switch with the most ports",
+      "The switch with the lowest bandwidth"
+    ],
+    "correct": 1,
+    "explanation": "Lowest MAC address becomes root if priorities equal."
+  },
+  {
+    "id": 222,
+    "lecture": "Ethernet & STP",
+    "question": "How can a network admin manually set the root switch?",
+    "options": [
+      "By giving it a higher priority value",
+      "By giving it a lower priority value",
+      "By changing its MAC address",
+      "By adding more ports"
+    ],
+    "correct": 1,
+    "explanation": "Lower priority value = better chance to be root."
+  },
+  {
+    "id": 223,
+    "lecture": "Ethernet & STP",
+    "question": "What is the function of the root switch?",
+    "options": [
+      "It forwards all frames",
+      "It controls the STP operation and has all its ports open (forwarding)",
+      "It blocks all ports",
+      "It manages only broadcast traffic"
+    ],
+    "correct": 1,
+    "explanation": "Root switch is reference point; all ports forwarding."
+  },
+  {
+    "id": 224,
+    "lecture": "Ethernet & STP",
+    "question": "What are the ports on the root switch always set to?",
+    "options": [
+      "Blocking",
+      "Forwarding",
+      "Listening",
+      "Disabled"
+    ],
+    "correct": 1,
+    "explanation": "Root switch ports = forwarding."
+  },
+  {
+    "id": 225,
+    "lecture": "Ethernet & STP",
+    "question": "What are root ports in STP?",
+    "options": [
+      "Ports on the root switch",
+      "Ports on non-root switches facing toward the root switch",
+      "Ports used for VLAN communication",
+      "Backup ports on routers"
+    ],
+    "correct": 1,
+    "explanation": "Root port = best path to root switch."
+  },
+  {
+    "id": 226,
+    "lecture": "Ethernet & STP",
+    "question": "What is the status of root ports in STP?",
+    "options": [
+      "Always blocking",
+      "Always forwarding",
+      "Disabled by default",
+      "Randomly assigned"
+    ],
+    "correct": 1,
+    "explanation": "Root ports = forwarding."
+  },
+  {
+    "id": 227,
+    "lecture": "Ethernet & STP",
+    "question": "Which ports are designated ports?",
+    "options": [
+      "Ports directly connected to the root switch",
+      "Ports used for control messages only",
+      "Forwarding ports not directly connected to the root switch",
+      "Ports used only for backup"
+    ],
+    "correct": 2,
+    "explanation": "Designated ports = forwarding ports on segments."
+  },
+  {
+    "id": 228,
+    "lecture": "Ethernet & STP",
+    "question": "Which ports are blocking ports?",
+    "options": [
+      "Ports used for data transmission",
+      "Ports used for receiving only",
+      "Ports that are closed to prevent loops",
+      "Ports on the root switch"
+    ],
+    "correct": 2,
+    "explanation": "Blocking ports prevent loops."
+  },
+  {
+    "id": 229,
+    "lecture": "Ethernet & STP",
+    "question": "When choosing a designated port, what is the first factor considered?",
+    "options": [
+      "MAC address",
+      "Path cost to the root switch",
+      "Port number",
+      "Speed of the link"
+    ],
+    "correct": 1,
+    "explanation": "First criterion: lowest path cost to root."
+  },
+  {
+    "id": 230,
+    "lecture": "Ethernet & STP",
+    "question": "If 2 ports have equal cost to root switch, what is the second criterion to choose the designated port?",
+    "options": [
+      "Higher MAC address",
+      "Lower MAC address",
+      "Lower IP address",
+      "Higher port speed"
+    ],
+    "correct": 1,
+    "explanation": "If equal cost, choose lower MAC address."
+  },
+  {
+    "id": 231,
+    "lecture": "Transport & NAT",
+    "question": "Which OSI layer is responsible for segmentation of data and adding port numbers?",
+    "options": [
+      "Network Layer",
+      "Transport Layer",
+      "Session Layer",
+      "Data Link Layer"
+    ],
+    "correct": 1,
+    "explanation": "Transport layer segments data and adds ports."
+  },
+  {
+    "id": 232,
+    "lecture": "Transport & NAT",
+    "question": "Which of the following is NOT a function of the Transport Layer?",
+    "options": [
+      "Segmentation of data",
+      "Add port numbers",
+      "Error recovery in case of TCP",
+      "Logical addressing"
+    ],
+    "correct": 3,
+    "explanation": "Logical addressing = Network layer function."
+  }
+]
+
+

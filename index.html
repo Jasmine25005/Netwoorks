@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Networking Questions Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Networking & OSPF Quiz</h1>
+      <div class="stats">
+        <div>Total Questions: <span id="total">0</span></div>
+        <div>Correct: <span id="correct">0</span></div>
+        <div>Wrong: <span id="wrong">0</span></div>
+        <div>Percentage: <span id="percentage">0%</span></div>
+      </div>
+    </header>
+
+    <section class="lecture-info">
+      <h2 id="lecture-title">Lecture: General Networking</h2>
+    </section>
+
+    <main>
+      <div class="question-container">
+        <h3 id="question-text">Loading question...</h3>
+        <div id="options-container"></div>
+        <div class="buttons">
+          <button id="prev-btn">Previous</button>
+          <button id="next-btn">Next</button>
+        </div>
+        <div id="explanation" class="explanation"></div>
+      </div>
+
+      <aside class="sidebar">
+        <h3>All Questions</h3>
+        <div id="lecture-filter">
+          <button data-lecture="all">All</button>
+          <button data-lecture="Network Devices">Devices</button>
+          <button data-lecture="OSI Model">OSI Model</button>
+          <button data-lecture="IP Addresses">IP Addresses</button>
+          <button data-lecture="Ethernet & STP">Ethernet</button>
+          <button data-lecture="Transport & NAT">Transport</button>
+          <button data-lecture="Routing Protocols">Routing</button>
+          <button data-lecture="OSPF">OSPF</button>
+          <button data-lecture="ACL">ACL</button>
+          <button data-lecture="VLAN & VTP">VLAN</button>
+          <button data-lecture="WAN">WAN</button>
+          <button data-lecture="Frame Relay">Frame Relay</button>
+          <button data-lecture="Wireshark">Wireshark</button>
+        </div>
+        <div id="questions-list"></div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
