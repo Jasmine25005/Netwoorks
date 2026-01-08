@@ -3014,7 +3014,2946 @@
     ],
     "correct": 3,
     "explanation": "Logical addressing = Network layer function."
+  },
+  {
+    "id": 233,
+    "lecture": "Transport & NAT",
+    "question": "Which protocol provides error recovery in the Transport Layer?",
+    "options": [
+      "UDP",
+      "ICMP",
+      "TCP",
+      "IP"
+    ],
+    "correct": 2,
+    "explanation": "TCP provides error recovery through acknowledgments and retransmissions."
+  },
+  {
+    "id": 234,
+    "lecture": "Transport & NAT",
+    "question": "Which are the main protocols of the Transport Layer?",
+    "options": [
+      "TCP and IP",
+      "TCP and UDP",
+      "UDP and ICMP",
+      "HTTP and FTP"
+    ],
+    "correct": 1,
+    "explanation": "Transport layer main protocols: TCP and UDP."
+  },
+  {
+    "id": 235,
+    "lecture": "Transport & NAT",
+    "question": "TCP stands for:",
+    "options": [
+      "Transfer Control Process",
+      "Transmission Control Protocol",
+      "Transport Control Packet",
+      "Transmission Communication Process"
+    ],
+    "correct": 1,
+    "explanation": "TCP = Transmission Control Protocol."
+  },
+  {
+    "id": 236,
+    "lecture": "Transport & NAT",
+    "question": "Which of the following best describes TCP?",
+    "options": [
+      "Unreliable and connectionless",
+      "Reliable and connection-oriented",
+      "Reliable and connectionless",
+      "Unreliable and connection-oriented"
+    ],
+    "correct": 1,
+    "explanation": "TCP is reliable and connection-oriented."
+  },
+  {
+    "id": 237,
+    "lecture": "Transport & NAT",
+    "question": "What does TCP use for error correction and flow control?",
+    "options": [
+      "Parity bits",
+      "CRC",
+      "Windowing and buffering",
+      "Encryption"
+    ],
+    "correct": 2,
+    "explanation": "TCP uses windowing for flow control and buffering for error management."
+  },
+  {
+    "id": 238,
+    "lecture": "Transport & NAT",
+    "question": "How many steps are in the TCP connection establishment process?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 1,
+    "explanation": "TCP 3-way handshake: SYN, SYN-ACK, ACK."
+  },
+  {
+    "id": 239,
+    "lecture": "Transport & NAT",
+    "question": "The TCP connection establishment process is called:",
+    "options": [
+      "4-way handshake",
+      "2-way handshake",
+      "3-way handshake",
+      "Window handshake"
+    ],
+    "correct": 2,
+    "explanation": "TCP uses 3-way handshake for connection establishment."
+  },
+  {
+    "id": 240,
+    "lecture": "Transport & NAT",
+    "question": "Which flags are used in the TCP handshake process?",
+    "options": [
+      "SYN, ACK, FIN",
+      "RST, SYN, URG",
+      "SYN, NACK, ACK",
+      "PSH, URG, FIN"
+    ],
+    "correct": 0,
+    "explanation": "SYN, ACK, and FIN are used in TCP handshake."
+  },
+  {
+    "id": 241,
+    "lecture": "Transport & NAT",
+    "question": "What is the purpose of the TCP 4-way handshake?",
+    "options": [
+      "To establish connection",
+      "To terminate the connection",
+      "To retransmit data",
+      "To perform error correction"
+    ],
+    "correct": 1,
+    "explanation": "TCP uses 4-way handshake for connection termination."
+  },
+  {
+    "id": 242,
+    "lecture": "Transport & NAT",
+    "question": "Which of the following applications typically use TCP?",
+    "options": [
+      "Video streaming",
+      "Voice over IP",
+      "File transfer",
+      "Live gaming"
+    ],
+    "correct": 2,
+    "explanation": "File transfer (FTP) uses TCP for reliability."
+  },
+  {
+    "id": 243,
+    "lecture": "Transport & NAT",
+    "question": "Which of the following applications commonly use UDP?",
+    "options": [
+      "Web browsing",
+      "Email",
+      "Voice over IP (VoIP)",
+      "File download"
+    ],
+    "correct": 2,
+    "explanation": "VoIP uses UDP for lower latency."
+  },
+  {
+    "id": 244,
+    "lecture": "Transport & NAT",
+    "question": "UDP is best described as:",
+    "options": [
+      "Reliable and connection-oriented",
+      "Unreliable and connectionless",
+      "Reliable and connectionless",
+      "Unreliable and connection-oriented"
+    ],
+    "correct": 1,
+    "explanation": "UDP is unreliable and connectionless."
+  },
+  {
+    "id": 245,
+    "lecture": "Transport & NAT",
+    "question": "Which statement is true about TCP?",
+    "options": [
+      "It has no error recovery",
+      "It is faster but less reliable",
+      "It ensures data delivery through acknowledgments",
+      "It does not establish a connection"
+    ],
+    "correct": 2,
+    "explanation": "TCP ensures delivery using ACKs and retransmissions."
+  },
+  {
+    "id": 246,
+    "lecture": "Transport & NAT",
+    "question": "What happens when NACK is frequently received?",
+    "options": [
+      "The sender increases the rate",
+      "The sender reduces the rate",
+      "The receiver stops sending ACK",
+      "The sender ignores it"
+    ],
+    "correct": 1,
+    "explanation": "NACK (Negative ACK) causes sender to reduce transmission rate."
+  },
+  {
+    "id": 247,
+    "lecture": "Transport & NAT",
+    "question": "What happens as ACKs are received from the receiver?",
+    "options": [
+      "The rate decreases",
+      "The rate remains the same",
+      "The rate increases",
+      "Connection resets"
+    ],
+    "correct": 2,
+    "explanation": "Successful ACKs allow sender to increase transmission rate (TCP congestion control)."
+  },
+  {
+    "id": 248,
+    "lecture": "Transport & NAT",
+    "question": "Why are port numbers used in the Transport Layer?",
+    "options": [
+      "To identify physical devices",
+      "To specify IP addresses",
+      "To identify which application data belongs to",
+      "To encrypt data packets"
+    ],
+    "correct": 2,
+    "explanation": "Port numbers identify specific applications/services."
+  },
+  {
+    "id": 249,
+    "lecture": "Transport & NAT",
+    "question": "What is the size of a port number in bits?",
+    "options": [
+      "8 bits",
+      "12 bits",
+      "16 bits",
+      "32 bits"
+    ],
+    "correct": 2,
+    "explanation": "Port numbers are 16 bits (0-65535)."
+  },
+  {
+    "id": 250,
+    "lecture": "Transport & NAT",
+    "question": "What is the range of port numbers in networking?",
+    "options": [
+      "0–255",
+      "0–1023",
+      "0–65535",
+      "0–100000"
+    ],
+    "correct": 2,
+    "explanation": "Port range: 0 to 65535."
+  },
+  {
+    "id": 251,
+    "lecture": "Transport & NAT",
+    "question": "Which port numbers are known as 'well-known ports'?",
+    "options": [
+      "0–255",
+      "0–1023",
+      "1024–49151",
+      "49152–65535"
+    ],
+    "correct": 1,
+    "explanation": "Well-known ports: 0-1023."
+  },
+  {
+    "id": 252,
+    "lecture": "Transport & NAT",
+    "question": "Well-known ports are assigned to:",
+    "options": [
+      "Random applications",
+      "Common protocols and services",
+      "Private devices",
+      "Unused servers"
+    ],
+    "correct": 1,
+    "explanation": "Well-known ports for standard services (HTTP, FTP, etc.)."
+  },
+  {
+    "id": 253,
+    "lecture": "Transport & NAT",
+    "question": "What does SYN flag represent in TCP communication?",
+    "options": [
+      "Synchronize sequence numbers",
+      "Stop transmission",
+      "Send acknowledgment",
+      "Start encryption"
+    ],
+    "correct": 0,
+    "explanation": "SYN = synchronize sequence numbers (start connection)."
+  },
+  {
+    "id": 254,
+    "lecture": "Transport & NAT",
+    "question": "What does FIN flag represent in TCP communication?",
+    "options": [
+      "Start of connection",
+      "Finish/close connection",
+      "Error notification",
+      "Flow control"
+    ],
+    "correct": 1,
+    "explanation": "FIN = finish (close connection)."
+  },
+  {
+    "id": 255,
+    "lecture": "Transport & NAT",
+    "question": "Which of the following is NOT an application of TCP?",
+    "options": [
+      "Web browser",
+      "Email",
+      "File transfer",
+      "Video streaming"
+    ],
+    "correct": 3,
+    "explanation": "Video streaming often uses UDP for real-time delivery."
+  },
+  {
+    "id": 256,
+    "lecture": "Transport & NAT",
+    "question": "What does NAT stand for?",
+    "options": [
+      "Network Access Translation",
+      "Network Address Translation",
+      "New Address Transmission",
+      "Node Address Transfer"
+    ],
+    "correct": 1,
+    "explanation": "NAT = Network Address Translation."
+  },
+  {
+    "id": 257,
+    "lecture": "Transport & NAT",
+    "question": "What is the main purpose of NAT?",
+    "options": [
+      "Increase network speed",
+      "Solve the problem of IP depletion",
+      "Encrypt network traffic",
+      "Assign MAC addresses"
+    ],
+    "correct": 1,
+    "explanation": "NAT conserves IPv4 addresses by allowing multiple private IPs to share one public IP."
+  },
+  {
+    "id": 258,
+    "lecture": "Transport & NAT",
+    "question": "NAT translates ______ to ______.",
+    "options": [
+      "Public → Private",
+      "Private → Global",
+      "MAC → IP",
+      "IP → MAC"
+    ],
+    "correct": 1,
+    "explanation": "NAT translates private IPs to public/global IPs."
+  },
+  {
+    "id": 259,
+    "lecture": "Transport & NAT",
+    "question": "Which of the following is a private IP class?",
+    "options": [
+      "Class D",
+      "Class E",
+      "Class A",
+      "Class F"
+    ],
+    "correct": 2,
+    "explanation": "Class A (10.0.0.0/8), B (172.16.0.0/12), C (192.168.0.0/16) have private ranges."
+  },
+  {
+    "id": 260,
+    "lecture": "Transport & NAT",
+    "question": "What is the range of the first octet for Class A private IP?",
+    "options": [
+      "192–223",
+      "128–191",
+      "0–127",
+      "224–239"
+    ],
+    "correct": 2,
+    "explanation": "Class A private range: 10.0.0.0 to 10.255.255.255 (first octet 10)."
+  },
+  {
+    "id": 261,
+    "lecture": "Transport & NAT",
+    "question": "What device performs Network Address Translation?",
+    "options": [
+      "Switch",
+      "Access point",
+      "Router",
+      "Hub"
+    ],
+    "correct": 2,
+    "explanation": "Routers typically perform NAT."
+  },
+  {
+    "id": 262,
+    "lecture": "Transport & NAT",
+    "question": "Inside local address refers to:",
+    "options": [
+      "Public IP of inside host",
+      "Private IP assigned to an inside device",
+      "Public IP assigned by ISP",
+      "Outside network address"
+    ],
+    "correct": 1,
+    "explanation": "Inside local = private IP on internal network."
+  },
+  {
+    "id": 263,
+    "lecture": "Transport & NAT",
+    "question": "Inside global address refers to:",
+    "options": [
+      "Private IP address of host",
+      "Public IP representing inside host to outside world",
+      "Loopback address",
+      "Only internal routing IP"
+    ],
+    "correct": 1,
+    "explanation": "Inside global = public IP used to represent internal host externally."
+  },
+  {
+    "id": 264,
+    "lecture": "Transport & NAT",
+    "question": "Which NAT type maps ONE private IP to ONE public IP?",
+    "options": [
+      "Dynamic NAT",
+      "PAT",
+      "Static NAT",
+      "Proxy NAT"
+    ],
+    "correct": 2,
+    "explanation": "Static NAT = one-to-one mapping."
+  },
+  {
+    "id": 265,
+    "lecture": "Transport & NAT",
+    "question": "Static NAT requires you to have:",
+    "options": [
+      "No public IPs",
+      "One public IP per inside host",
+      "A pool of 5 public IPs",
+      "Unlimited private IPs only"
+    ],
+    "correct": 1,
+    "explanation": "Static NAT needs one public IP for each internal host."
+  },
+  {
+    "id": 266,
+    "lecture": "Transport & NAT",
+    "question": "Static NAT does NOT help in:",
+    "options": [
+      "IP conservation",
+      "Hiding internal IPs",
+      "One-to-one mapping",
+      "Allowing internal/external communication"
+    ],
+    "correct": 0,
+    "explanation": "Static NAT doesn't conserve IPs (1:1 mapping)."
+  },
+  {
+    "id": 267,
+    "lecture": "Transport & NAT",
+    "question": "Static NAT provides:",
+    "options": [
+      "Strong encryption",
+      "A degree of security by hiding inside IP",
+      "No communication with internet",
+      "Only local communication"
+    ],
+    "correct": 1,
+    "explanation": "Static NAT hides internal IP (basic security)."
+  },
+  {
+    "id": 268,
+    "lecture": "Transport & NAT",
+    "question": "Which NAT type maps private IPs to a pool of public IPs?",
+    "options": [
+      "Static NAT",
+      "Dynamic NAT",
+      "PAT",
+      "Hybrid NAT"
+    ],
+    "correct": 1,
+    "explanation": "Dynamic NAT uses a pool of public IPs."
+  },
+  {
+    "id": 269,
+    "lecture": "Transport & NAT",
+    "question": "If all dynamic NAT public IPs are used:",
+    "options": [
+      "New hosts get a random IP",
+      "Router stops working",
+      "New requests are discarded",
+      "Router adds a new IP automatically"
+    ],
+    "correct": 2,
+    "explanation": "When pool exhausted, new connections fail."
+  },
+  {
+    "id": 270,
+    "lecture": "Transport & NAT",
+    "question": "Dynamic NAT removes unused entries after:",
+    "options": [
+      "ACK packet",
+      "A timeout value",
+      "Manual clearing",
+      "A router reboot"
+    ],
+    "correct": 1,
+    "explanation": "Dynamic NAT entries timeout after inactivity."
+  },
+  {
+    "id": 271,
+    "lecture": "Transport & NAT",
+    "question": "PAT stands for:",
+    "options": [
+      "Packet Address Translation",
+      "Port Access Table",
+      "Port Address Translation",
+      "Protocol Address Transfer"
+    ],
+    "correct": 2,
+    "explanation": "PAT = Port Address Translation."
+  },
+  {
+    "id": 272,
+    "lecture": "Transport & NAT",
+    "question": "PAT is also known as:",
+    "options": [
+      "One-to-one NAT",
+      "Many-to-one NAT",
+      "Multi-NAT",
+      "Public NAT"
+    ],
+    "correct": 1,
+    "explanation": "PAT = many-to-one NAT (NAT overload)."
+  },
+  {
+    "id": 273,
+    "lecture": "Transport & NAT",
+    "question": "PAT maps many private IPs to:",
+    "options": [
+      "Many public IPs",
+      "One public IP",
+      "No public IP",
+      "Different MAC addresses"
+    ],
+    "correct": 1,
+    "explanation": "PAT maps multiple private IPs to single public IP."
+  },
+  {
+    "id": 274,
+    "lecture": "Transport & NAT",
+    "question": "Which NAT type is the most popular?",
+    "options": [
+      "Static",
+      "Dynamic",
+      "PAT",
+      "Manual NAT"
+    ],
+    "correct": 2,
+    "explanation": "PAT (NAT overload) is most common in homes/small businesses."
+  },
+  {
+    "id": 275,
+    "lecture": "Transport & NAT",
+    "question": "Port number size is:",
+    "options": [
+      "8 bits",
+      "12 bits",
+      "16 bits",
+      "32 bits"
+    ],
+    "correct": 2,
+    "explanation": "Port number = 16 bits."
+  },
+  {
+    "id": 276,
+    "lecture": "Transport & NAT",
+    "question": "What is the full range of port numbers?",
+    "options": [
+      "0 – 1023",
+      "0 – 4095",
+      "0 – 65535",
+      "1023 – 65535"
+    ],
+    "correct": 2,
+    "explanation": "Port range: 0-65535."
+  },
+  {
+    "id": 277,
+    "lecture": "Transport & NAT",
+    "question": "PAT allows how many users to share one public IP?",
+    "options": [
+      "1",
+      "10",
+      "Hundreds or thousands",
+      "Only 256"
+    ],
+    "correct": 2,
+    "explanation": "PAT can support thousands of connections using different ports."
+  },
+  {
+    "id": 278,
+    "lecture": "Transport & NAT",
+    "question": "PAT differentiates internal hosts by using:",
+    "options": [
+      "Different MAC addresses",
+      "Different public IPs",
+      "Different port numbers",
+      "Different VLANs"
+    ],
+    "correct": 2,
+    "explanation": "PAT uses unique port numbers to identify each internal host."
+  },
+  {
+    "id": 279,
+    "lecture": "Transport & NAT",
+    "question": "Inside global entries in PAT are:",
+    "options": [
+      "3 different IPs",
+      "1 global IP + different ports",
+      "3 public IPs",
+      "1 IP with same port"
+    ],
+    "correct": 1,
+    "explanation": "PAT: one public IP with different port numbers for each session."
+  },
+  {
+    "id": 280,
+    "lecture": "Transport & NAT",
+    "question": "PAT is also known as:",
+    "options": [
+      "NAT overload",
+      "NAT underload",
+      "Public NAT",
+      "Dual NAT"
+    ],
+    "correct": 0,
+    "explanation": "PAT = NAT overload."
+  },
+  {
+    "id": 281,
+    "lecture": "Transport & NAT",
+    "question": "Dynamic NAT assigns:",
+    "options": [
+      "Random global IPs",
+      "Global IP from a pool",
+      "MAC address only",
+      "No global IP"
+    ],
+    "correct": 1,
+    "explanation": "Dynamic NAT assigns from a pool of public IPs."
+  },
+  {
+    "id": 282,
+    "lecture": "Routing Protocols",
+    "question": "What is IP Routing?",
+    "options": [
+      "Assigning IP addresses to devices in a network",
+      "Forwarding packets from source to destination across networks",
+      "Encrypting packets to secure the transmitted data",
+      "Converting IPv4 addresses into IPv6 format"
+    ],
+    "correct": 1,
+    "explanation": "IP routing = forwarding packets between networks."
+  },
+  {
+    "id": 283,
+    "lecture": "Routing Protocols",
+    "question": "Router R1 knows only networks 10.0.0.0 and 11.0.0.0. To learn networks 12.0.0.0 and 192.168.1.0, which mechanism must exist between routers?",
+    "options": [
+      "ARP requests",
+      "Routing Protocol",
+      "TCP handshake",
+      "VLAN trunking"
+    ],
+    "correct": 1,
+    "explanation": "Routers need routing protocols to exchange network information."
+  },
+  {
+    "id": 284,
+    "lecture": "Routing Protocols",
+    "question": "A network uses multiple routers. Each router must determine the best path to reach all networks. Which protocol type performs this function?",
+    "options": [
+      "Routed Protocol",
+      "Routing Protocol",
+      "Switching Protocol",
+      "Encapsulation Protocol"
+    ],
+    "correct": 1,
+    "explanation": "Routing protocols determine best paths."
+  },
+  {
+    "id": 285,
+    "lecture": "Routing Protocols",
+    "question": "Which protocols are examples of routing protocols used to build routing tables?",
+    "options": [
+      "TCP and UDP",
+      "RIP and OSPF",
+      "HTTP and HTTPS",
+      "IPv4 and IPv6"
+    ],
+    "correct": 1,
+    "explanation": "RIP and OSPF are routing protocols."
+  },
+  {
+    "id": 286,
+    "lecture": "Routing Protocols",
+    "question": "What is a Routed Protocol?",
+    "options": [
+      "A protocol used for router-to-router communication",
+      "A protocol whose packets are routed between routers",
+      "A security protocol",
+      "A link-layer protocol"
+    ],
+    "correct": 1,
+    "explanation": "Routed protocol = protocol that gets routed (e.g., IP)."
+  },
+  {
+    "id": 287,
+    "lecture": "Routing Protocols",
+    "question": "Which of the following are Routed Protocols?",
+    "options": [
+      "IPv4 and IPv6",
+      "RIP and OSPF",
+      "DNS and DHCP",
+      "ARP and PPP"
+    ],
+    "correct": 0,
+    "explanation": "IPv4 and IPv6 are routed protocols."
+  },
+  {
+    "id": 288,
+    "lecture": "Routing Protocols",
+    "question": "What is the term for a collection of routers and networks that are all managed by a single organization?",
+    "options": [
+      "Interior Gateway System",
+      "Autonomous Region",
+      "Autonomous System",
+      "Routing Region"
+    ],
+    "correct": 2,
+    "explanation": "Autonomous System (AS) = network under single administration."
+  },
+  {
+    "id": 289,
+    "lecture": "Routing Protocols",
+    "question": "Static Routing is used when:",
+    "options": [
+      "Multiple paths exist",
+      "Only one simple path exists",
+      "Network is very large",
+      "Router is overloaded"
+    ],
+    "correct": 1,
+    "explanation": "Static routing for simple, single-path networks."
+  },
+  {
+    "id": 290,
+    "lecture": "Routing Protocols",
+    "question": "Dynamic routing is MOST beneficial for which environment?",
+    "options": [
+      "Small networks with a single router",
+      "Large networks with multiple paths",
+      "Networks without routers",
+      "IPv6-only networks"
+    ],
+    "correct": 1,
+    "explanation": "Dynamic routing excels in large, complex networks with multiple paths."
+  },
+  {
+    "id": 291,
+    "lecture": "Routing Protocols",
+    "question": "RIP and OSPF are both considered:",
+    "options": [
+      "Exterior Gateway Protocols",
+      "Interior Gateway Protocols",
+      "Static Routing Protocols",
+      "Hybrid Protocols"
+    ],
+    "correct": 1,
+    "explanation": "RIP and OSPF are Interior Gateway Protocols (IGP)."
+  },
+  {
+    "id": 292,
+    "lecture": "Routing Protocols",
+    "question": "Which routing protocol uses a link-state database describing every router and link in the AS?",
+    "options": [
+      "RIP",
+      "BGP",
+      "OSPF",
+      "EIGRP"
+    ],
+    "correct": 2,
+    "explanation": "OSPF is a link-state protocol with full topology database."
+  },
+  {
+    "id": 293,
+    "lecture": "Routing Protocols",
+    "question": "Which protocol distributes routing information ACROSS autonomous systems?",
+    "options": [
+      "RIP",
+      "OSPF",
+      "BGP",
+      "EIGRP"
+    ],
+    "correct": 2,
+    "explanation": "BGP is an Exterior Gateway Protocol for inter-AS routing."
+  },
+  {
+    "id": 294,
+    "lecture": "Routing Protocols",
+    "question": "BGP belongs to which category?",
+    "options": [
+      "IGP",
+      "EGP",
+      "Static",
+      "Hybrid"
+    ],
+    "correct": 1,
+    "explanation": "BGP = Exterior Gateway Protocol."
+  },
+  {
+    "id": 295,
+    "lecture": "Routing Protocols",
+    "question": "Which two main categories fall directly under Dynamic Routing Protocols?",
+    "options": [
+      "Distance Vector and Link-State",
+      "IGP and EGP",
+      "Static Routing and Dynamic Routing",
+      "RIP and OSPF"
+    ],
+    "correct": 1,
+    "explanation": "Dynamic routing protocols: IGP (interior) and EGP (exterior)."
+  },
+  {
+    "id": 296,
+    "lecture": "Routing Protocols",
+    "question": "Which protocol is considered a Link-State Protocol?",
+    "options": [
+      "RIPv1",
+      "IGRP",
+      "IS-IS",
+      "EIGRP"
+    ],
+    "correct": 2,
+    "explanation": "IS-IS is a link-state protocol."
+  },
+  {
+    "id": 297,
+    "lecture": "Routing Protocols",
+    "question": "Which protocol is shown as the successor or evolution of IGRP in the Distance Vector Protocols?",
+    "options": [
+      "RIPv2",
+      "EIGRP",
+      "OSPF",
+      "BGP"
+    ],
+    "correct": 1,
+    "explanation": "EIGRP is Cisco's enhanced version of IGRP."
+  },
+  {
+    "id": 298,
+    "lecture": "Routing Protocols",
+    "question": "Both RIPv1 and RIPv2 are under which category of Interior Gateway Protocols?",
+    "options": [
+      "Link-State Protocols",
+      "Exterior Gateway Protocols",
+      "Distance Vector Protocols",
+      "Static Routing"
+    ],
+    "correct": 2,
+    "explanation": "RIP is a distance-vector protocol."
+  },
+  {
+    "id": 299,
+    "lecture": "Routing Protocols",
+    "question": "Interior Gateway Protocols work:",
+    "options": [
+      "Between multiple autonomous systems",
+      "Inside one autonomous system",
+      "Only in OSPF area 0",
+      "In IPv6 only"
+    ],
+    "correct": 1,
+    "explanation": "IGPs operate within a single AS."
+  },
+  {
+    "id": 300,
+    "lecture": "Routing Protocols",
+    "question": "Exterior Gateway Protocols work:",
+    "options": [
+      "Inside a single AS",
+      "Between more than one AS",
+      "Only in LAN",
+      "For DHCP"
+    ],
+    "correct": 1,
+    "explanation": "EGPs operate between different ASes."
+  },
+  {
+    "id": 301,
+    "lecture": "Routing Protocols",
+    "question": "Administrative Distance is used when:",
+    "options": [
+      "Routers have only one protocol",
+      "A router runs multiple routing protocols that learn the same network",
+      "NAT is configured",
+      "DHCP is disabled"
+    ],
+    "correct": 1,
+    "explanation": "AD helps choose between routes from different protocols."
+  },
+  {
+    "id": 302,
+    "lecture": "Routing Protocols",
+    "question": "AD represents:",
+    "options": [
+      "Protocol trust level",
+      "Protocol performance",
+      "CPU load",
+      "Both A and B"
+    ],
+    "correct": 3,
+    "explanation": "AD represents trustworthiness/preference of routing source."
+  },
+  {
+    "id": 303,
+    "lecture": "Routing Protocols",
+    "question": "What is the range of Administrative Distance?",
+    "options": [
+      "0–15",
+      "0–255",
+      "1–100",
+      "0–1024"
+    ],
+    "correct": 1,
+    "explanation": "AD range: 0-255."
+  },
+  {
+    "id": 304,
+    "lecture": "Routing Protocols",
+    "question": "Which AD value is best?",
+    "options": [
+      "Higher is better",
+      "Lower is better",
+      "Both equal",
+      "Depends on subnet mask"
+    ],
+    "correct": 1,
+    "explanation": "Lower AD = more trusted route."
+  },
+  {
+    "id": 305,
+    "lecture": "Routing Protocols",
+    "question": "What is the AD of a directly connected network?",
+    "options": [
+      "120",
+      "110",
+      "0",
+      "1"
+    ],
+    "correct": 2,
+    "explanation": "Directly connected: AD = 0."
+  },
+  {
+    "id": 306,
+    "lecture": "Routing Protocols",
+    "question": "What is the AD of a static route?",
+    "options": [
+      "110",
+      "120",
+      "0",
+      "1"
+    ],
+    "correct": 3,
+    "explanation": "Static route: AD = 1."
+  },
+  {
+    "id": 307,
+    "lecture": "Routing Protocols",
+    "question": "What is the AD of OSPF?",
+    "options": [
+      "120",
+      "1",
+      "110",
+      "0"
+    ],
+    "correct": 2,
+    "explanation": "OSPF: AD = 110."
+  },
+  {
+    "id": 308,
+    "lecture": "Routing Protocols",
+    "question": "What is the AD of RIP?",
+    "options": [
+      "120",
+      "110",
+      "1",
+      "0"
+    ],
+    "correct": 0,
+    "explanation": "RIP: AD = 120."
+  },
+  {
+    "id": 309,
+    "lecture": "Routing Protocols",
+    "question": "Which of the following AD values is the MOST trusted?",
+    "options": [
+      "120",
+      "110",
+      "1",
+      "0"
+    ],
+    "correct": 3,
+    "explanation": "AD 0 (directly connected) is most trusted."
+  },
+  {
+    "id": 310,
+    "lecture": "Routing Protocols",
+    "question": "A static route and an OSPF route both point to the same network which will the router choose?",
+    "options": [
+      "OSPF",
+      "Static route",
+      "Both at random",
+      "Depends on subnet mask"
+    ],
+    "correct": 1,
+    "explanation": "Static (AD=1) chosen over OSPF (AD=110) - lower AD wins."
+  },
+  {
+    "id": 311,
+    "lecture": "Routing Protocols",
+    "question": "RIP and OSPF routes both point to the same network which route will the router choose?",
+    "options": [
+      "The one with higher bandwidth",
+      "The RIP route",
+      "The OSPF route",
+      "The route with higher AD"
+    ],
+    "correct": 2,
+    "explanation": "OSPF (AD=110) chosen over RIP (AD=120) - lower AD wins."
+  },
+  {
+    "id": 312,
+    "lecture": "Routing Protocols",
+    "question": "In RIP, the metric is based on:",
+    "options": [
+      "Link speed",
+      "Delay",
+      "Bandwidth",
+      "Hop count"
+    ],
+    "correct": 3,
+    "explanation": "RIP metric = hop count."
+  },
+  {
+    "id": 313,
+    "lecture": "Routing Protocols",
+    "question": "According to RIP, the best path between two networks is the one with:",
+    "options": [
+      "Lowest bandwidth",
+      "Most hops",
+      "Least hops",
+      "Fastest router"
+    ],
+    "correct": 2,
+    "explanation": "RIP chooses path with fewest hops."
+  },
+  {
+    "id": 314,
+    "lecture": "OSPF",
+    "question": "OSPF is classified as which type of routing protocol?",
+    "options": [
+      "Distance-vector",
+      "Link-state",
+      "Hybrid",
+      "Static routing"
+    ],
+    "correct": 1,
+    "explanation": "OSPF is a link-state protocol."
+  },
+  {
+    "id": 315,
+    "lecture": "OSPF",
+    "question": "In OSPF, a 'link' refers to:",
+    "options": [
+      "Any remote router",
+      "A physical cable only",
+      "An interface",
+      "A single network"
+    ],
+    "correct": 2,
+    "explanation": "In OSPF, link = router interface."
+  },
+  {
+    "id": 316,
+    "lecture": "OSPF",
+    "question": "In OSPF, 'state' refers to:",
+    "options": [
+      "Router uptime",
+      "Interface bandwidth",
+      "Description of the link",
+      "Authentication data"
+    ],
+    "correct": 2,
+    "explanation": "State = description/status of the link."
+  },
+  {
+    "id": 317,
+    "lecture": "OSPF",
+    "question": "OSPF uses which IP Protocol Number?",
+    "options": [
+      "88",
+      "6",
+      "17",
+      "89"
+    ],
+    "correct": 3,
+    "explanation": "OSPF uses IP protocol 89."
+  },
+  {
+    "id": 318,
+    "lecture": "OSPF",
+    "question": "How many OSPF packet types exist?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "correct": 2,
+    "explanation": "5 OSPF packet types: Hello, DBD, LSR, LSU, LSACK."
+  },
+  {
+    "id": 319,
+    "lecture": "OSPF",
+    "question": "Which OSPF packet is used for neighbor discovery?",
+    "options": [
+      "DBD",
+      "LSU",
+      "LSACK",
+      "Hello"
+    ],
+    "correct": 3,
+    "explanation": "Hello packets discover/maintain neighbors."
+  },
+  {
+    "id": 320,
+    "lecture": "OSPF",
+    "question": "Which packet provides a summary of the LSDB?",
+    "options": [
+      "Hello",
+      "LSR",
+      "DBD",
+      "LSACK"
+    ],
+    "correct": 2,
+    "explanation": "DBD (Database Description) summarizes LSDB."
+  },
+  {
+    "id": 321,
+    "lecture": "OSPF",
+    "question": "Which OSPF packet is sent to request missing LSDB information?",
+    "options": [
+      "LSU",
+      "DBD",
+      "LSR",
+      "LSACK"
+    ],
+    "correct": 2,
+    "explanation": "LSR (Link State Request) requests specific LSAs."
+  },
+  {
+    "id": 322,
+    "lecture": "OSPF",
+    "question": "When a router sends an LSR packet, what does it expect the neighbor to send back?",
+    "options": [
+      "Hello",
+      "LSACK",
+      "DBD",
+      "LSU"
+    ],
+    "correct": 3,
+    "explanation": "LSU (Link State Update) contains requested LSAs."
+  },
+  {
+    "id": 323,
+    "lecture": "OSPF",
+    "question": "Which OSPF packet contains complete LSA entries requested by the neighbor?",
+    "options": [
+      "LSACK",
+      "LSR",
+      "LSU",
+      "DBD"
+    ],
+    "correct": 2,
+    "explanation": "LSU contains full LSA information."
+  },
+  {
+    "id": 324,
+    "lecture": "OSPF",
+    "question": "Which packet acknowledges receipt of LSUs?",
+    "options": [
+      "LSACK",
+      "LSR",
+      "DBD",
+      "Hello"
+    ],
+    "correct": 0,
+    "explanation": "LSACK acknowledges LSU receipt."
+  },
+  {
+    "id": 325,
+    "lecture": "OSPF",
+    "question": "Which OSPF packet is sent as a response AFTER the router has successfully processed newly received LSAs?",
+    "options": [
+      "LSR",
+      "LSU",
+      "LSACK",
+      "DBD"
+    ],
+    "correct": 2,
+    "explanation": "LSACK confirms LSA processing."
+  },
+  {
+    "id": 326,
+    "lecture": "OSPF",
+    "question": "A router receives an LSU but never responds with LSACK. What is MOST likely to happen?",
+    "options": [
+      "Router enters Two-Way state",
+      "SPF calculation stops",
+      "Neighbor retransmits LSU",
+      "Router resets OSPF process"
+    ],
+    "correct": 2,
+    "explanation": "Unacknowledged LSUs are retransmitted."
+  },
+  {
+    "id": 327,
+    "lecture": "OSPF",
+    "question": "How many OSPF neighbor states exist?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": 2,
+    "explanation": "7 states: Down, Init, 2-Way, ExStart, Exchange, Loading, Full."
+  },
+  {
+    "id": 328,
+    "lecture": "OSPF",
+    "question": "In which state has no OSPF neighbor been detected yet?",
+    "options": [
+      "Down",
+      "Init",
+      "Two-way",
+      "Loading"
+    ],
+    "correct": 0,
+    "explanation": "Down = no neighbor detected."
+  },
+  {
+    "id": 329,
+    "lecture": "OSPF",
+    "question": "Receiving a Hello packet puts a router in which state?",
+    "options": [
+      "Down",
+      "Init",
+      "Exchange",
+      "Extart"
+    ],
+    "correct": 1,
+    "explanation": "Init = Hello received but not yet bidirectional."
+  },
+  {
+    "id": 330,
+    "lecture": "OSPF",
+    "question": "In which OSPF neighbor state is your own Router ID first seen inside the received Hello packet?",
+    "options": [
+      "Full",
+      "Init",
+      "Two-way",
+      "Loading"
+    ],
+    "correct": 2,
+    "explanation": "Two-way = bidirectional communication established."
+  },
+  {
+    "id": 331,
+    "lecture": "OSPF",
+    "question": "In which state are master/slave roles determined?",
+    "options": [
+      "Extart",
+      "Exchange",
+      "Full",
+      "Loading"
+    ],
+    "correct": 0,
+    "explanation": "ExStart = master/slave election for DBD exchange."
+  },
+  {
+    "id": 332,
+    "lecture": "OSPF",
+    "question": "In which state are DBD packets exchanged?",
+    "options": [
+      "Init",
+      "Exchange",
+      "Down",
+      "Loading"
+    ],
+    "correct": 1,
+    "explanation": "Exchange = DBD packets exchanged."
+  },
+  {
+    "id": 333,
+    "lecture": "OSPF",
+    "question": "Which state involves the exchange of LSR, LSU, and LSACK?",
+    "options": [
+      "Extart",
+      "Exchange",
+      "Loading",
+      "Full"
+    ],
+    "correct": 2,
+    "explanation": "Loading = exchange of LSR/LSU/LSACK for missing LSAs."
+  },
+  {
+    "id": 334,
+    "lecture": "OSPF",
+    "question": "Which OSPF neighbor state FIRST indicates that routers have agreed on which LSAs they are missing?",
+    "options": [
+      "Down",
+      "Exchange",
+      "Loading",
+      "Full"
+    ],
+    "correct": 2,
+    "explanation": "Loading = routers know what LSAs they need."
+  },
+  {
+    "id": 335,
+    "lecture": "OSPF",
+    "question": "When routers have synchronized LSDBs, the state is:",
+    "options": [
+      "Two-way",
+      "Loading",
+      "Full",
+      "Exchange"
+    ],
+    "correct": 2,
+    "explanation": "Full = LSDBs synchronized, adjacency complete."
+  },
+  {
+    "id": 336,
+    "lecture": "OSPF",
+    "question": "An OSPF Router ID is:",
+    "options": [
+      "16-bit",
+      "32-bit",
+      "MAC address",
+      "Randomly generated"
+    ],
+    "correct": 1,
+    "explanation": "Router ID is 32-bit (like IP address)."
+  },
+  {
+    "id": 337,
+    "lecture": "OSPF",
+    "question": "Two routers reach Full state. Which statement is TRUE?",
+    "options": [
+      "They must be DR and BDR",
+      "They have identical LSDBs",
+      "They must have identical Router IDs",
+      "They no longer exchange LSAs"
+    ],
+    "correct": 1,
+    "explanation": "Full state means LSDBs are synchronized."
+  },
+  {
+    "id": 338,
+    "lecture": "OSPF",
+    "question": "The Router ID is expressed as:",
+    "options": [
+      "Decimal number",
+      "Hexadecimal",
+      "IP address",
+      "Base-64 format"
+    ],
+    "correct": 2,
+    "explanation": "Router ID looks like an IP address (dotted decimal)."
+  },
+  {
+    "id": 339,
+    "lecture": "OSPF",
+    "question": "What is the highest-priority method for choosing the Router ID?",
+    "options": [
+      "Highest active physical interface",
+      "Highest loopback IP",
+      "Manually configured value",
+      "Random selection"
+    ],
+    "correct": 2,
+    "explanation": "Manual configuration takes precedence."
+  },
+  {
+    "id": 340,
+    "lecture": "OSPF",
+    "question": "If no manual Router ID is set, what is the next selection method?",
+    "options": [
+      "Highest physical interface",
+      "Highest loopback interface",
+      "Lowest loopback interface",
+      "MAC address"
+    ],
+    "correct": 1,
+    "explanation": "Highest loopback IP is second priority."
+  },
+  {
+    "id": 341,
+    "lecture": "OSPF",
+    "question": "If no loopback exists, the Router ID becomes:",
+    "options": [
+      "Lowest physical interface",
+      "Random IP",
+      "Highest active physical interface IP",
+      "The first interface configured"
+    ],
+    "correct": 2,
+    "explanation": "Highest active physical interface IP is third choice."
+  },
+  {
+    "id": 342,
+    "lecture": "OSPF",
+    "question": "A loopback interface is:",
+    "options": [
+      "A physical interface",
+      "A virtual interface",
+      "A wireless interface",
+      "A serial interface"
+    ],
+    "correct": 1,
+    "explanation": "Loopback is virtual, never goes down."
+  },
+  {
+    "id": 343,
+    "lecture": "OSPF",
+    "question": "What is the main advantage of using a loopback for Router ID?",
+    "options": [
+      "Higher bandwidth",
+      "Lower latency",
+      "It never goes down",
+      "It supports encryption"
+    ],
+    "correct": 2,
+    "explanation": "Loopback is always up, providing stable Router ID."
+  },
+  {
+    "id": 344,
+    "lecture": "OSPF",
+    "question": "Which statement about loopback interfaces in OSPF is TRUE?",
+    "options": [
+      "They cannot be used as Router IDs",
+      "They become active only if an IP is assigned",
+      "They increase LSDB size",
+      "They ensure Router ID stability"
+    ],
+    "correct": 3,
+    "explanation": "Loopback provides stable Router ID."
+  },
+  {
+    "id": 345,
+    "lecture": "OSPF",
+    "question": "Two routers on an Ethernet segment have priorities 1 and 1 which router becomes DR?",
+    "options": [
+      "The router with the lowest Router ID",
+      "The router with the highest Router ID",
+      "No DR is elected",
+      "The router that sends the first Hello"
+    ],
+    "correct": 1,
+    "explanation": "If priorities equal, higher Router ID wins."
+  },
+  {
+    "id": 346,
+    "lecture": "OSPF",
+    "question": "A router's OSPF priority is set to 0 which roles can it take?",
+    "options": [
+      "DR only",
+      "BDR only",
+      "Both DR and BDR",
+      "DROther only"
+    ],
+    "correct": 3,
+    "explanation": "Priority 0 = cannot be DR or BDR."
+  },
+  {
+    "id": 347,
+    "lecture": "OSPF",
+    "question": "Two OSPF routers are connected on a broadcast network but never reach FULL adjacency. Their Hello and Dead intervals match. What is the MOST likely cause?",
+    "options": [
+      "Different priorities",
+      "Different Router IDs",
+      "Different network types",
+      "DR/BDR not elected yet"
+    ],
+    "correct": 2,
+    "correct": 2,
+    "explanation": "Mismatched network types (e.g., broadcast vs point-to-point) prevent adjacency."
+  },
+  {
+    "id": 348,
+    "lecture": "OSPF",
+    "question": "If a DR fails and later comes back online, which statement is TRUE?",
+    "options": [
+      "It immediately becomes DR again",
+      "It becomes BDR",
+      "It becomes DROther",
+      "It triggers a full LSA purge"
+    ],
+    "correct": 2,
+    "explanation": "Former DR becomes DROther when it returns."
+  },
+  {
+    "id": 349,
+    "lecture": "OSPF",
+    "question": "In which scenario will a Network LSA (Type 2) NOT be generated?",
+    "options": [
+      "Multi-access network with a DR elected",
+      "Broadcast network with priority 0 on all routers",
+      "Point-to-point network",
+      "Multi-access network with no BDR"
+    ],
+    "correct": 2,
+    "explanation": "Type 2 LSAs only on multi-access networks with DR."
+  },
+  {
+    "id": 350,
+    "lecture": "OSPF",
+    "question": "If the Hello interval is changed to 5 seconds on one router but stays 10 seconds on the neighbor, what happens?",
+    "options": [
+      "Adjacency forms normally",
+      "Router transitions to FULL",
+      "Routers never become neighbors",
+      "DR/BDR election resets"
+    ],
+    "correct": 2,
+    "explanation": "Hello/Dead intervals must match for adjacency."
+  },
+  {
+    "id": 351,
+    "lecture": "OSPF",
+    "question": "An ABR generates which LSA ONLY to other areas, not within its own area?",
+    "options": [
+      "Type 1",
+      "Type 2",
+      "Type 3",
+      "Type 7"
+    ],
+    "correct": 2,
+    "explanation": "Type 3 (Summary LSA) advertised between areas by ABR."
+  },
+  {
+    "id": 352,
+    "lecture": "OSPF",
+    "question": "An OSPF router in Area 1 receives a Summary LSA for a network that already exists in its own area via Type 1 LSAs. What does it do?",
+    "options": [
+      "Accepts the summary",
+      "Rejects the summary",
+      "Replaces its Type 1 LSAs",
+      "Treats it as a Type 2 update"
+    ],
+    "correct": 1,
+    "explanation": "Intra-area route (Type 1) preferred over inter-area (Type 3)."
+  },
+  {
+    "id": 353,
+    "lecture": "OSPF",
+    "question": "A router receives no Hellos from a neighbor for slightly LESS than the Dead interval. What does OSPF do?",
+    "options": [
+      "Immediately marks neighbor down",
+      "Removes LSAs",
+      "Waits until the full Dead interval expires",
+      "Floods Type 3 LSAs"
+    ],
+    "correct": 2,
+    "explanation": "OSPF waits full Dead interval before declaring neighbor down."
+  },
+  {
+    "id": 354,
+    "lecture": "OSPF",
+    "question": "In which OSPF network type do routers connect directly with only one neighbor?",
+    "options": [
+      "Multi-access",
+      "Point-to-Point",
+      "Broadcast",
+      "NBMA"
+    ],
+    "correct": 1,
+    "explanation": "Point-to-point links connect exactly two routers."
+  },
+  {
+    "id": 355,
+    "lecture": "OSPF",
+    "question": "Multi-access networks (like Ethernet) may create which problem?",
+    "options": [
+      "Too few neighbors",
+      "No routing updates",
+      "Too many neighbor relationships on one segment",
+      "Invalid LSAs"
+    ],
+    "correct": 2,
+    "explanation": "Many neighbors = many adjacencies = high overhead."
+  },
+  {
+    "id": 356,
+    "lecture": "OSPF",
+    "question": "What is the OSPF mechanism used to reduce LSA flooding in multi-access networks?",
+    "options": [
+      "Route summarization",
+      "SPF optimization",
+      "DR/BDR election",
+      "Passive interface"
+    ],
+    "correct": 2,
+    "explanation": "DR/BDR reduces LSA flooding in multi-access networks."
+  },
+  {
+    "id": 357,
+    "lecture": "OSPF",
+    "question": "What is the function of the Designated Router (DR)?",
+    "options": [
+      "Encrypt LSAs",
+      "Collect and distribute LSAs",
+      "Manage authentication",
+      "Assign router IDs"
+    ],
+    "correct": 1,
+    "explanation": "DR collects/distributes LSAs for the segment."
+  },
+  {
+    "id": 358,
+    "lecture": "OSPF",
+    "question": "What does LSDB consist of?",
+    "options": [
+      "Routing tables",
+      "Metrics only",
+      "Many LSAs",
+      "DR/BDR information only"
+    ],
+    "correct": 2,
+    "explanation": "LSDB = collection of LSAs."
+  },
+  {
+    "id": 359,
+    "lecture": "OSPF",
+    "question": "Which router becomes the DR?",
+    "options": [
+      "Lowest priority",
+      "First router booted",
+      "Highest priority",
+      "Lowest Router ID"
+    ],
+    "correct": 2,
+    "explanation": "Highest priority becomes DR (default priority=1)."
+  },
+  {
+    "id": 360,
+    "lecture": "OSPF",
+    "question": "If two routers have equal OSPF priority, who becomes DR?",
+    "options": [
+      "Lowest IP",
+      "Highest Router ID",
+      "First discovered",
+      "Lowest Router ID"
+    ],
+    "correct": 1,
+    "explanation": "If priority equal, higher Router ID wins."
+  },
+  {
+    "id": 361,
+    "lecture": "OSPF",
+    "question": "What is the OSPF priority default value?",
+    "options": [
+      "0",
+      "5",
+      "1",
+      "255"
+    ],
+    "correct": 2,
+    "explanation": "Default OSPF priority = 1."
+  },
+  {
+    "id": 362,
+    "lecture": "OSPF",
+    "question": "What is a DROther router?",
+    "options": [
+      "A router excluded from OSPF",
+      "Router not DR or BDR",
+      "Router that cannot form adjacency",
+      "Router without LSDB"
+    ],
+    "correct": 1,
+    "explanation": "DROther = router that is neither DR nor BDR."
+  },
+  {
+    "id": 363,
+    "lecture": "OSPF",
+    "question": "What happens when the DR fails?",
+    "options": [
+      "New DR and BDR elected immediately",
+      "BDR becomes DR",
+      "Router ID is recalculated",
+      "All adjacencies reset"
+    ],
+    "correct": 1,
+    "explanation": "BDR promotes to DR, new BDR elected."
+  },
+  {
+    "id": 364,
+    "lecture": "OSPF",
+    "question": "If a previously failed DR comes back online, what is its role?",
+    "options": [
+      "DR",
+      "BDR",
+      "DROther",
+      "ABR"
+    ],
+    "correct": 2,
+    "explanation": "Former DR becomes DROther."
+  },
+  {
+    "id": 365,
+    "lecture": "OSPF",
+    "question": "Which parameters must match for two routers to form adjacency?",
+    "options": [
+      "Router ID, metric, area",
+      "Hello interval, Dead interval, network type",
+      "Priority, metric, area",
+      "Cost, MTU, DR status"
+    ],
+    "correct": 1,
+    "explanation": "Hello/Dead intervals and network type must match."
+  },
+  {
+    "id": 366,
+    "lecture": "OSPF",
+    "question": "What is the default OSPF Hello interval?",
+    "options": [
+      "5 sec",
+      "20 sec",
+      "10 sec",
+      "40 sec"
+    ],
+    "correct": 2,
+    "explanation": "Default Hello interval = 10 seconds."
+  },
+  {
+    "id": 367,
+    "lecture": "OSPF",
+    "question": "What is the default OSPF Dead interval?",
+    "options": [
+      "20 sec",
+      "40 sec",
+      "60 sec",
+      "10 sec"
+    ],
+    "correct": 1,
+    "explanation": "Default Dead interval = 4 × Hello = 40 seconds."
+  },
+  {
+    "id": 368,
+    "lecture": "OSPF",
+    "question": "If no Hello packets are received after the Dead interval, what happens?",
+    "options": [
+      "SPF is disabled",
+      "Neighbor is marked down",
+      "Router resets its ID",
+      "DR/BDR election starts"
+    ],
+    "correct": 1,
+    "explanation": "After Dead interval, neighbor declared down."
+  },
+  {
+    "id": 369,
+    "lecture": "OSPF",
+    "question": "After declaring a neighbor down, the router will:",
+    "options": [
+      "Shut down the interface",
+      "Remove it from LSDB and flood new LSAs",
+      "Reset all areas",
+      "Disable OSPF"
+    ],
+    "correct": 1,
+    "explanation": "Router removes neighbor's LSAs and floods updates."
+  },
+  {
+    "id": 370,
+    "lecture": "OSPF",
+    "question": "What is an OSPF area?",
+    "options": [
+      "Group of routers with different databases",
+      "Single router only",
+      "Group of routers sharing the same LSDB",
+      "DR and BDR only"
+    ],
+    "correct": 2,
+    "explanation": "Area = routers sharing same LSDB."
+  },
+  {
+    "id": 371,
+    "lecture": "OSPF",
+    "question": "What identifies an OSPF area?",
+    "options": [
+      "MAC address",
+      "Area-ID",
+      "DR IP address",
+      "Cost value"
+    ],
+    "correct": 1,
+    "explanation": "Area identified by Area ID (number)."
+  },
+  {
+    "id": 372,
+    "lecture": "OSPF",
+    "question": "What is an advantage of dividing OSPF into areas?",
+    "options": [
+      "Larger databases",
+      "Harder troubleshooting",
+      "Smaller LSDBs",
+      "Higher cost"
+    ],
+    "correct": 2,
+    "explanation": "Areas reduce LSDB size and SPF calculations."
+  },
+  {
+    "id": 373,
+    "lecture": "OSPF",
+    "question": "Which area is the backbone area?",
+    "options": [
+      "Area 10",
+      "Area 1",
+      "Area 0",
+      "Area 255"
+    ],
+    "correct": 2,
+    "explanation": "Area 0 = backbone area."
+  },
+  {
+    "id": 374,
+    "lecture": "OSPF",
+    "question": "What must all other areas connect to?",
+    "options": [
+      "DR",
+      "BDR",
+      "Area 0",
+      "Router ID"
+    ],
+    "correct": 2,
+    "explanation": "All non-backbone areas must connect to Area 0."
+  },
+  {
+    "id": 375,
+    "lecture": "OSPF",
+    "question": "A router connected to Area 0 and Area 1 is called:",
+    "options": [
+      "DR",
+      "Internal router",
+      "ABR",
+      "ASBR"
+    ],
+    "correct": 2,
+    "explanation": "ABR = Area Border Router (connects multiple areas)."
+  },
+  {
+    "id": 376,
+    "lecture": "OSPF",
+    "question": "Which LSA is generated by every router within an area?",
+    "options": [
+      "Type 4",
+      "Type 7",
+      "Type 1",
+      "Type 3"
+    ],
+    "correct": 2,
+    "explanation": "Type 1 (Router LSA) by every router in area."
+  },
+  {
+    "id": 377,
+    "lecture": "OSPF",
+    "question": "Which LSA is generated by the DR in a multi-access network?",
+    "options": [
+      "Type 1",
+      "Type 2",
+      "Type 3",
+      "Type 4"
+    ],
+    "correct": 1,
+    "explanation": "Type 2 (Network LSA) by DR."
+  },
+  {
+    "id": 378,
+    "lecture": "OSPF",
+    "question": "Which LSA is generated by an ABR to advertise between areas?",
+    "options": [
+      "Type 2",
+      "Type 1",
+      "Type 3",
+      "Type 7"
+    ],
+    "correct": 2,
+    "explanation": "Type 3 (Summary LSA) by ABR for inter-area routes."
+  },
+  {
+    "id": 379,
+    "lecture": "OSPF",
+    "question": "What does OSPF use as its metric?",
+    "options": [
+      "Delay",
+      "Hop Count",
+      "Cost",
+      "MTU"
+    ],
+    "correct": 2,
+    "explanation": "OSPF metric = cost (based on bandwidth)."
+  },
+  {
+    "id": 380,
+    "lecture": "OSPF",
+    "question": "OSPF Cost Formula is:",
+    "options": [
+      "Cost = Actual Bandwidth / Reference Bandwidth",
+      "Cost = MTU × Bandwidth",
+      "Cost = Reference Bandwidth / Actual Bandwidth",
+      "Cost = Router ID / Priority"
+    ],
+    "correct": 2,
+    "explanation": "Cost = Reference BW / Actual BW."
+  },
+  {
+    "id": 381,
+    "lecture": "OSPF",
+    "question": "What is the default OSPF reference bandwidth?",
+    "options": [
+      "1 Mbps",
+      "10 Mbps",
+      "100 Mbps",
+      "1 Gbps"
+    ],
+    "correct": 2,
+    "explanation": "Default reference bandwidth = 100 Mbps."
+  },
+  {
+    "id": 382,
+    "lecture": "OSPF",
+    "question": "What is the OSPF cost for a link with bandwidth 10 Mbps?",
+    "options": [
+      "1",
+      "10",
+      "100",
+      "0.1"
+    ],
+    "correct": 1,
+    "explanation": "Cost = 100 Mbps / 10 Mbps = 10."
+  },
+  {
+    "id": 383,
+    "lecture": "OSPF",
+    "question": "What is the OSPF cost for a link with bandwidth 50 Kbps?",
+    "options": [
+      "1500",
+      "1000",
+      "2000",
+      "0.1"
+    ],
+    "correct": 2,
+    "explanation": "Cost = 100 Mbps / 0.05 Mbps = 2000."
+  },
+  {
+    "id": 384,
+    "lecture": "OSPF",
+    "question": "What is the OSPF cost for a link with bandwidth 4 Mbps?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "correct": 1,
+    "explanation": "Cost = 100 Mbps / 4 Mbps = 25."
+  },
+  {
+    "id": 385,
+    "lecture": "OSPF",
+    "question": "Higher bandwidth links have:",
+    "options": [
+      "Higher cost",
+      "Same cost",
+      "Lower cost",
+      "No metric"
+    ],
+    "correct": 2,
+    "explanation": "Higher bandwidth = lower cost (better)."
+  },
+  {
+    "id": 386,
+    "lecture": "OSPF",
+    "question": "Can the reference bandwidth be changed?",
+    "options": [
+      "No",
+      "Yes, by router configuration",
+      "Only during DR election",
+      "Only by ABR"
+    ],
+    "correct": 1,
+    "explanation": "Reference bandwidth configurable with 'auto-cost reference-bandwidth'."
+  },
+  {
+    "id": 387,
+    "lecture": "ACL",
+    "question": "In a wildcard mask, what does a bit value of 1 represent?",
+    "options": [
+      "The bit must be matched exactly",
+      "The bit is ignored (don't care)",
+      "The bit must be denied",
+      "The bit represents a subnet boundary"
+    ],
+    "correct": 1,
+    "explanation": "Wildcard 1 = ignore/don't care bit."
+  },
+  {
+    "id": 388,
+    "lecture": "ACL",
+    "question": "Which wildcard mask correctly matches only one host with IP address 192.168.1.2?",
+    "options": [
+      "0.0.0.255",
+      "255.255.255.255",
+      "0.0.0.0",
+      "255.255.255.0"
+    ],
+    "correct": 2,
+    "explanation": "Wildcard 0.0.0.0 matches exact host."
+  },
+  {
+    "id": 389,
+    "lecture": "ACL",
+    "question": "Given the network 172.16.0.0/20, what is the correct wildcard mask?",
+    "options": [
+      "0.0.0.255",
+      "0.0.15.255",
+      "0.0.31.255",
+      "0.0.255.255"
+    ],
+    "correct": 1,
+    "explanation": "/20 = subnet mask 255.255.240.0, wildcard = 0.0.15.255."
+  },
+  {
+    "id": 390,
+    "lecture": "ACL",
+    "question": "Given the network 192.168.32.0/21, what is the correct wildcard mask?",
+    "options": [
+      "0.0.0.255",
+      "0.0.7.255",
+      "0.0.15.255",
+      "0.0.255.255"
+    ],
+    "correct": 1,
+    "explanation": "/21 = subnet mask 255.255.248.0, wildcard = 0.0.7.255."
+  },
+  {
+    "id": 391,
+    "lecture": "ACL",
+    "question": "A network uses the subnet mask 255.255.232.0 what is the corresponding wildcard mask?",
+    "options": [
+      "0.0.0.255",
+      "0.0.15.255",
+      "255.255.240.0",
+      "0.0.23.255"
+    ],
+    "correct": 3,
+    "explanation": "Wildcard = inverse of subnet mask: 0.0.23.255."
+  },
+  {
+    "id": 392,
+    "lecture": "ACL",
+    "question": "A network uses the wildcard mask 0.0.63.255 what is the corresponding subnet mask?",
+    "options": [
+      "255.255.192.0",
+      "255.255.224.0",
+      "255.255.240.0",
+      "255.255.248.0"
+    ],
+    "correct": 0,
+    "explanation": "Wildcard 0.0.63.255 = subnet mask 255.255.192.0 (/18)."
+  },
+  {
+    "id": 393,
+    "lecture": "ACL",
+    "question": "A network uses the wildcard mask 0.0.127.255 what is the CIDR subnet prefix?",
+    "options": [
+      "/17",
+      "/18",
+      "/19",
+      "/20"
+    ],
+    "correct": 0,
+    "explanation": "Wildcard 0.0.127.255 = /17 (255.255.128.0)."
+  },
+  {
+    "id": 394,
+    "lecture": "ACL",
+    "question": "Given the subnet mask /22 what is the corresponding wildcard mask?",
+    "options": [
+      "0.0.31.255",
+      "0.0.7.255",
+      "0.0.15.255",
+      "0.0.3.255"
+    ],
+    "correct": 3,
+    "explanation": "/22 = subnet 255.255.252.0, wildcard = 0.0.3.255."
+  },
+  {
+    "id": 395,
+    "lecture": "ACL",
+    "question": "What is the correct wildcard mask to match the first 18 bits for the network 172.31.0.0/18?",
+    "options": [
+      "0.0.15.255",
+      "0.0.31.255",
+      "0.0.63.255",
+      "0.0.127.255"
+    ],
+    "correct": 2,
+    "explanation": "/18 = subnet 255.255.192.0, wildcard = 0.0.63.255."
+  },
+  {
+    "id": 396,
+    "lecture": "ACL",
+    "question": "When configuring a filter for a subnet with a /26 prefix, which wildcard mask should be applied?",
+    "options": [
+      "0.0.0.31",
+      "0.0.0.63",
+      "0.0.0.127",
+      "0.0.0.255"
+    ],
+    "correct": 1,
+    "explanation": "/26 = subnet 255.255.255.192, wildcard = 0.0.0.63."
+  },
+  {
+    "id": 397,
+    "lecture": "ACL",
+    "question": "How many bits of the source IP address are being compared/matched for the following command? # access-list 105 permit ip 10.50.1.0 0.0.0.7 any",
+    "options": [
+      "The first 24 bits",
+      "The first 27 bits",
+      "The first 29 bits",
+      "All 32 bits"
+    ],
+    "correct": 2,
+    "explanation": "Wildcard 0.0.0.7 = last 3 bits ignored, so first 29 bits matched."
+  },
+  {
+    "id": 398,
+    "lecture": "ACL",
+    "question": "To examine the traffic from exactly one server with the IP 192.168.100.50, which wildcard mask is chosen?",
+    "options": [
+      "255.255.255.255",
+      "0.0.255.255",
+      "0.0.255.255",
+      "0.0.0.0"
+    ],
+    "correct": 3,
+    "explanation": "Wildcard 0.0.0.0 matches exact host."
+  },
+  {
+    "id": 399,
+    "lecture": "ACL",
+    "question": "# access-list 1 permit 10.0.0.0 0.255.255.255 What is the corresponding CIDR network prefix for this range?",
+    "options": [
+      "/8",
+      "/16",
+      "/24",
+      "/32"
+    ],
+    "correct": 0,
+    "explanation": "Wildcard 0.255.255.255 = first 8 bits matched = /8."
+  },
+  {
+    "id": 400,
+    "lecture": "ACL",
+    "question": "What is the effect of the following configuration? # access-list 1 deny 172.16.3.10 0.0.0.0 # access-list 1 permit 0.0.0.0 255.255.255.255",
+    "options": [
+      "Deny all traffic from the 172.16.3.0 network",
+      "Deny only host 172.16.3.10 and permit all others",
+      "Permit only host 172.16.3.10",
+      "Deny all traffic due to implicit deny"
+    ],
+    "correct": 1,
+    "explanation": "First denies host 172.16.3.10, then permits all other traffic."
+  },
+  {
+    "id": 401,
+    "lecture": "ACL",
+    "question": "Which command is functionally equivalent to 'access-list 1 deny 172.16.3.10 0.0.0.0'?",
+    "options": [
+      "access-list 1 deny any",
+      "access-list 1 deny host 172.16.3.10",
+      "access-list 1 deny 172.16.3.0 0.0.0.255",
+      "access-list 1 deny 172.16.3.10 255.255.255.255"
+    ],
+    "correct": 1,
+    "explanation": "'host 172.16.3.10' = '172.16.3.10 0.0.0.0'."
+  },
+  {
+    "id": 402,
+    "lecture": "ACL",
+    "question": "Which ACL is identified as an Extended ACL?",
+    "options": [
+      "access-list 50 permit any",
+      "access-list 1 deny host 10.1.1.1",
+      "access-list 101 deny tcp any host 10.1.1.1 eq 23",
+      "access-list 24 permit 10.1.1.0 0.255.255.255"
+    ],
+    "correct": 2,
+    "explanation": "Extended ACLs use numbers 100-199, 2000-2699 and can filter on protocol/port."
+  },
+  {
+    "id": 403,
+    "lecture": "ACL",
+    "question": "What does the following ACL accomplish? # access-list 101 deny tcp any host 10.1.1.1 eq telnet",
+    "options": [
+      "Blocks all TCP traffic to 10.1.1.1",
+      "Blocks Telnet traffic to 10.1.1.1 from all sources",
+      "Blocks all UDP traffic to port 23",
+      "Blocks Telnet traffic from 10.1.1.1 to any destination"
+    ],
+    "correct": 1,
+    "explanation": "Denies Telnet (TCP port 23) to host 10.1.1.1 from any source."
+  },
+  {
+    "id": 404,
+    "lecture": "ACL",
+    "question": "Which of the following information can be examined by an Extended ACL but NOT by a Standard ACL?",
+    "options": [
+      "Source IP address",
+      "Destination IP address",
+      "Layer 4 port number",
+      "Both B and C are correct"
+    ],
+    "correct": 3,
+    "explanation": "Extended ACLs can filter on destination IP and port numbers."
+  },
+  {
+    "id": 405,
+    "lecture": "ACL",
+    "question": "What does the keyword 'lt 1023' indicate in an Extended ACL?",
+    "options": [
+      "Port numbers equal to 1023",
+      "Port numbers greater than 1023",
+      "Port numbers less than 1023",
+      "A range between 0 and 1023 inclusive"
+    ],
+    "correct": 2,
+    "explanation": "'lt' = less than."
+  },
+  {
+    "id": 406,
+    "lecture": "ACL",
+    "question": "Which traffic is denied? # access-list 101 deny udp 10.0.0.0 0.0.0.255 lt 1023 any",
+    "options": [
+      "TCP traffic from 10.0.0.0/24 to any destination",
+      "UDP traffic with source ports less than 1023 from 10.0.0.0/24",
+      "UDP traffic to destination ports less than 1023",
+      "All traffic from 10.0.0.0/24"
+    ],
+    "correct": 1,
+    "explanation": "Denies UDP from 10.0.0.0/24 with source ports < 1023."
+  },
+  {
+    "id": 407,
+    "lecture": "ACL",
+    "question": "Why are Named ACLs preferred over traditional numbered ACLs?",
+    "options": [
+      "They support only Standard ACLs",
+      "They allow modification of specific lines",
+      "They automatically apply to all interfaces",
+      "They remove the implicit deny"
+    ],
+    "correct": 1,
+    "explanation": "Named ACLs allow insertion/deletion of specific entries."
+  },
+  {
+    "id": 408,
+    "lecture": "ACL",
+    "question": "Which command removes only the second entry in a Named ACL?",
+    "options": [
+      "no access-list my_lesson",
+      "clear access-list my_lesson",
+      "delete access-list my_lesson 2",
+      "no deny udp host 10.1.1.1 10.1.2.0 0.0.0.255"
+    ],
+    "correct": 3,
+    "explanation": "Use 'no' followed by the exact ACL entry to remove it."
+  },
+  {
+    "id": 409,
+    "lecture": "ACL",
+    "question": "Which command is used to verify configured ACLs?",
+    "options": [
+      "show ip route",
+      "show run config",
+      "show access-lists",
+      "Both B and C"
+    ],
+    "correct": 3,
+    "explanation": "Both 'show running-config' and 'show access-lists' display ACLs."
+  },
+  {
+    "id": 410,
+    "lecture": "ACL",
+    "question": "In a numbered ACL, why are sequence numbers like 10, 20, and 30 used?",
+    "options": [
+      "To improve router performance",
+      "To allow insertion of ACL entries later",
+      "To enforce priority routing",
+      "To replace wildcard masks"
+    ],
+    "correct": 1,
+    "explanation": "Sequence numbers allow inserting entries between existing ones."
+  },
+  {
+    "id": 411,
+    "lecture": "ACL",
+    "question": "To insert a new ACL entry between sequence 20 and 30, which sequence number is valid?",
+    "options": [
+      "5",
+      "10",
+      "25",
+      "40"
+    ],
+    "correct": 2,
+    "explanation": "25 is between 20 and 30."
+  },
+  {
+    "id": 412,
+    "lecture": "ACL",
+    "question": "What is the effect of this ACL? # access-list 1 deny 192.168.1.10 0.0.0.0 # access-list 1 permit 0.0.0.0 255.255.255.255",
+    "options": [
+      "Blocks all traffic from network 192.168.1.0/24",
+      "Blocks only host 192.168.1.10 and allows all other traffic",
+      "Allows only host 192.168.1.10",
+      "Blocks all traffic due to implicit deny"
+    ],
+    "correct": 1,
+    "explanation": "Denies host 192.168.1.10, permits everything else."
+  },
+  {
+    "id": 413,
+    "lecture": "ACL",
+    "question": "In a Named ACL, what is the command to remove a specific permit rule for a host?",
+    "options": [
+      "delete permit host 10.1.1.1",
+      "no permit host 10.1.1.1",
+      "remove 10.1.1.1",
+      "clear access-list"
+    ],
+    "correct": 1,
+    "explanation": "'no permit host 10.1.1.1' removes that specific entry."
+  },
+  {
+    "id": 414,
+    "lecture": "ACL",
+    "question": "What does this ACL do? # access-list 1 deny 192.168.1.0 0.0.0.255 # access-list 1 permit any",
+    "options": [
+      "Denies only one host in the 192.168.1.0 network",
+      "Denies the entire 192.168.1.0/24 network",
+      "Permits only the 192.168.1.0 network",
+      "Denies all traffic"
+    ],
+    "correct": 1,
+    "explanation": "Denies entire 192.168.1.0/24, permits all other traffic."
+  },
+  {
+    "id": 415,
+    "lecture": "ACL",
+    "question": "What traffic is affected by this ACL entry? # access-list 101 deny ip any host 10.1.1.1",
+    "options": [
+      "Only TCP traffic to 10.1.1.1",
+      "All IP traffic from 10.1.1.1",
+      "All IP traffic destined to 10.1.1.1",
+      "Only UDP traffic to 10.1.1.1"
+    ],
+    "correct": 2,
+    "explanation": "Denies all IP traffic (any protocol) to host 10.1.1.1."
+  },
+  {
+    "id": 416,
+    "lecture": "ACL",
+    "question": "What does this ACL specifically block? # access-list 101 deny tcp any host 10.1.1.1 eq 23",
+    "options": [
+      "All TCP traffic to 10.1.1.1",
+      "Telnet traffic to 10.1.1.1 from any source",
+      "Telnet traffic from 10.1.1.1 to any destination",
+      "All UDP traffic on port 23"
+    ],
+    "correct": 1,
+    "explanation": "Blocks Telnet (TCP port 23) to host 10.1.1.1."
+  },
+  {
+    "id": 417,
+    "lecture": "ACL",
+    "question": "What is permitted by this ACL? # access-list 101 permit tcp 172.16.1.0 0.0.255.255 172.16.3.0 0.0.255.255 eq 21",
+    "options": [
+      "FTP traffic from 172.16.3.0 to 172.16.1.0",
+      "FTP traffic from 172.16.1.0 to 172.16.3.0",
+      "All TCP traffic between the two networks",
+      "FTP traffic on any port"
+    ],
+    "correct": 1,
+    "explanation": "Permits FTP control (port 21) from 172.16.1.0/16 to 172.16.3.0/16."
+  },
+  {
+    "id": 418,
+    "lecture": "ACL",
+    "question": "What is the actual behavior of this ACL? # access-list 1 permit 0.0.0.0 0.0.0.0",
+    "options": [
+      "Permits all traffic",
+      "Permits traffic from 0.0.0.0 only",
+      "Denies all traffic",
+      "Matches no traffic"
+    ],
+    "correct": 1,
+    "explanation": "Permits only host 0.0.0.0 (not 'any')."
+  },
+  {
+    "id": 419,
+    "lecture": "ACL",
+    "question": "What does this ACL deny? # access-list 101 deny tcp host 192.168.10.5 any range 21",
+    "options": [
+      "All TCP traffic from 192.168.10.5",
+      "FTP control traffic only",
+      "FTP data traffic from 192.168.10.5",
+      "FTP control traffic from 192.168.10.5"
+    ],
+    "correct": 3,
+    "explanation": "Denies FTP control (port 21) from host 192.168.10.5 to any destination."
+  },
+  {
+    "id": 420,
+    "lecture": "ACL",
+    "question": "This line applied on interface Fa0/0, what does it mean? # ip access-group 1 out",
+    "options": [
+      "ACL 1 filters traffic entering Fa0/0",
+      "ACL 1 filters traffic leaving Fa0/0",
+      "ACL 1 filters traffic generated by the router only",
+      "ACL 1 filters only broadcast traffic"
+    ],
+    "correct": 1,
+    "explanation": "'out' applies ACL to outgoing traffic on the interface."
+  },
+  {
+    "id": 421,
+    "lecture": "ACL",
+    "question": "What is the effect of this Named ACL? # ip access-list extended MY_ACL # deny udp host 10.1.1.1 10.1.2.0 0.0.0.255 # permit ip any any",
+    "options": [
+      "Blocks all UDP traffic to 10.1.2.0/24",
+      "Blocks UDP traffic from 10.1.1.1 to 10.1.2.0/24",
+      "Blocks all traffic from 10.1.1.1",
+      "Blocks TCP traffic only"
+    ],
+    "correct": 1,
+    "explanation": "Denies UDP from host 10.1.1.1 to network 10.1.2.0/24."
+  },
+  {
+    "id": 422,
+    "lecture": "ACL",
+    "question": "What traffic is permitted? # ip access-list standard 24 # permit 10.1.1.0 0.255.255.255 # permit 10.1.2.0 0.255.255.255",
+    "options": [
+      "Only hosts in 10.1.1.0/24 and 10.1.2.0/24",
+      "Any host whose first octet is 10",
+      "Any host in Class A network 10.0.0.0",
+      "Only two specific hosts"
+    ],
+    "correct": 1,
+    "explanation": "Permits any IP starting with 10.x.x.x (entire Class A 10.0.0.0/8)."
+  },
+  {
+    "id": 423,
+    "lecture": "ACL",
+    "question": "Why are sequence numbers used here? # 10 permit 10.1.1.0 0.255.255.255 # 20 permit 10.1.2.0 0.255.255.255",
+    "options": [
+      "To improve ACL matching speed",
+      "To allow inserting or removing entries easily",
+      "To define subnet priority",
+      "To disable implicit deny"
+    ],
+    "correct": 1,
+    "explanation": "Sequence numbers allow easy editing of ACL entries."
+  },
+  {
+    "id": 424,
+    "lecture": "ACL",
+    "question": "This line is placed between sequence 10 and 20, what is its effect? # 12 deny 10.0.0.0 0.255.255.255",
+    "options": [
+      "Denies all Class A networks",
+      "Denies all 10.x.x.x traffic before permits",
+      "Has no effect due to order",
+      "Denies only 10.0.0.0/8 traffic after permits"
+    ],
+    "correct": 1,
+    "explanation": "Placed at sequence 12, it denies 10.0.0.0/8 before the permit statements."
+  },
+  {
+    "id": 425,
+    "lecture": "ACL",
+    "question": "What is the final effect if this is the ONLY ACL line? # access-list 101 deny ip any any",
+    "options": [
+      "All traffic is permitted",
+      "Only TCP traffic is denied",
+      "All IP traffic is denied",
+      "Only inbound traffic is denied"
+    ],
+    "correct": 2,
+    "explanation": "Denies all IP traffic + implicit deny at end blocks everything."
+  },
+  {
+    "id": 426,
+    "lecture": "ACL",
+    "question": "Which command will add a new rule to deny traffic from network 10.0.0.0 between the two existing rules? # 10 permit 10.1.1.0 0.255.255.255 # 20 permit 10.1.2.0 0.255.255.255",
+    "options": [
+      "# 5 deny 10.0.0.0 0.255.255.255",
+      "# add 15 deny 10.0.0.0 0.255.255.255",
+      "# 30 deny 10.0.0.0 0.255.255.255",
+      "# 15 deny 10.0.0.0 0.255.255.255"
+    ],
+    "correct": 3,
+    "explanation": "Sequence 15 is between 10 and 20."
+  },
+  {
+    "id": 427,
+    "lecture": "ACL",
+    "question": "What happens if an ACL does NOT explicitly permit traffic?",
+    "options": [
+      "Traffic is automatically allowed",
+      "Traffic is logged and forwarded",
+      "Traffic is denied by the implicit deny",
+      "Traffic is rerouted"
+    ],
+    "correct": 2,
+    "explanation": "Implicit deny at end of ACL denies all unmatched traffic."
+  },
+  {
+    "id": 428,
+    "lecture": "ACL",
+    "question": "An administrator needs to create a rule that blocks all traffic from any source to a specific server at IP address 10.1.1.1. Which type of ACL is most suitable for this task?",
+    "options": [
+      "Extended IP ACL",
+      "Named IP ACL",
+      "Standard IP ACL",
+      "Numbered IP ACL"
+    ],
+    "correct": 0,
+    "explanation": "Extended ACL needed to filter based on destination IP."
+  },
+  {
+    "id": 429,
+    "lecture": "ACL",
+    "question": "In the context of a wildcard mask used in an ACL, what does a '0' bit signify?",
+    "options": [
+      "The corresponding bit in the IP address should be ignored",
+      "The entire octet must match the IP address exactly",
+      "The corresponding bit in the IP address must be an even number",
+      "The corresponding bit in the IP address must be compared"
+    ],
+    "correct": 3,
+    "explanation": "Wildcard 0 = bit must match exactly."
+  },
+  {
+    "id": 430,
+    "lecture": "ACL",
+    "question": "Which of the following access list numbers falls within the valid range for a standard IP ACL?",
+    "options": [
+      "1500",
+      "2000",
+      "90",
+      "A and C are correct"
+    ],
+    "correct": 3,
+    "explanation": "Standard ACLs: 1-99 and 1300-1999."
+  },
+  {
+    "id": 431,
+    "lecture": "ACL",
+    "question": "Which ACL number can filter traffic based on a destination port number?",
+    "options": [
+      "299",
+      "2500",
+      "1500",
+      "A and B are correct"
+    ],
+    "correct": 1,
+    "explanation": "Extended ACLs (100-199, 2000-2699) can filter on ports."
+  },
+  {
+    "id": 432,
+    "lecture": "ACL",
+    "question": "An administrator wants to create an ACL rule that applies only to the host with the IP address 192.168.1.2. Which wildcard mask should be used?",
+    "options": [
+      "0.0.0.0",
+      "0.0.0.255",
+      "255.255.255.255",
+      "255.255.255.0"
+    ],
+    "correct": 0,
+    "explanation": "0.0.0.0 matches exact host."
+  },
+  {
+    "id": 433,
+    "lecture": "ACL",
+    "question": "What is the purpose of the following ACL command? # access list 101 deny TCP any host 10.1.1.1 eq 23",
+    "options": [
+      "It prevents the host at 10.1.1.1 from initiating any Telnet sessions",
+      "It permits any device to establish a Telnet session with the host at 10.1.1.1",
+      "It prevents all devices from establishing a Telnet session to the host at 10.1.1.1",
+      "It prevents all devices from accessing the web server at 10.1.1.1"
+    ],
+    "correct": 2,
+    "explanation": "Denies Telnet (port 23) to host 10.1.1.1."
+  },
+  {
+    "id": 434,
+    "lecture": "ACL",
+    "question": "In an extended ACL, what keyword is equivalent to specifying an IP address of 0.0.0.0 with a wildcard mask of 255.255.255.255?",
+    "options": [
+      "any",
+      "host",
+      "all",
+      "network"
+    ],
+    "correct": 0,
+    "explanation": "'any' = 0.0.0.0 255.255.255.255."
+  },
+  {
+    "id": 435,
+    "lecture": "ACL",
+    "question": "In an IP Access Control List, what keyword is equivalent to specifying a single, specific IP address followed by a wildcard mask of 0.0.0.0?",
+    "options": [
+      "any",
+      "host",
+      "match",
+      "equal"
+    ],
+    "correct": 1,
+    "explanation": "'host 192.168.1.1' = '192.168.1.1 0.0.0.0'."
+  },
+  {
+    "id": 436,
+    "lecture": "ACL",
+    "question": "Which of the following is NOT a component that an Extended IP ACL can use for filtering decisions?",
+    "options": [
+      "Source port number",
+      "Destination IP address",
+      "Layer 4 protocol type",
+      "MAC address"
+    ],
+    "correct": 3,
+    "explanation": "Extended ACLs cannot filter by MAC address (Layer 2)."
+  },
+  {
+    "id": 437,
+    "lecture": "ACL",
+    "question": "An administrator wants to block Simple Mail Transfer Protocol traffic, which protocol and port number should be targeted in the ACL?",
+    "options": [
+      "UDP, Port 53",
+      "TCP, Port 110",
+      "TCP, Port 25",
+      "TCP, Port 21"
+    ],
+    "correct": 2,
+    "explanation": "SMTP uses TCP port 25."
+  },
+  {
+    "id": 438,
+    "lecture": "ACL",
+    "question": "What is the purpose of the command 'ip access-group my_lesson out' when entered in interface configuration mode?",
+    "options": [
+      "To verify the configuration of the ACL named 'my_lesson'",
+      "To delete the named access list 'my_lesson' from the configuration",
+      "To create a new named access list called 'my_lesson'",
+      "To apply the existing 'my_lesson' ACL to filter traffic leaving the interface"
+    ],
+    "correct": 3,
+    "explanation": "Applies ACL 'my_lesson' to outgoing traffic."
+  },
+  {
+    "id": 439,
+    "lecture": "ACL",
+    "question": "What does this rule accomplish? # access-list 101 permit TCP 172.16.1.0 0.0.255.255 172.16.3.0 0.0.255.255 eq 21",
+    "options": [
+      "It permits file transfers using FTP from the 172.16.1.0 network to the 172.16.3.0 network",
+      "It denies all TCP traffic between the 172.16.1.0 and 172.16.3.0 networks",
+      "It permits devices in the 172.16.3.0 network to initiate FTP sessions to the 172.16.1.0 network",
+      "It permits any device in the 172.16.1.0 network to access any web server in the 172.16.3.0 network"
+    ],
+    "correct": 0,
+    "explanation": "Permits FTP control (port 21) from 172.16.1.0/16 to 172.16.3.0/16."
+  },
+  {
+    "id": 440,
+    "lecture": "ACL",
+    "question": "What is the result of the following ACL rules? # access list 1 deny 172.16.3.10 0.0.0.0 # access list 1 permit 0.0.0.0 255.255.255",
+    "options": [
+      "Only traffic from host 172.16.3.10 is permitted",
+      "All traffic from host 172.16.3.10 is permitted, and all other traffic is denied",
+      "All traffic, including from host 172.16.3.10, is permitted",
+      "All traffic from host 172.16.3.10 is denied, and all other traffic is permitted"
+    ],
+    "correct": 3,
+    "explanation": "Denies host 172.16.3.10, permits all others."
+  },
+  {
+    "id": 441,
+    "lecture": "ACL",
+    "question": "What is the function of the command 'access-list 1 permit any'?",
+    "options": [
+      "It allows traffic only from the IP address 0.0.0.0",
+      "It allows traffic from any source IP address",
+      "It denies all traffic by default",
+      "It has no effect until applied to an interface"
+    ],
+    "correct": 1,
+    "explanation": "'any' = permits all source IPs."
+  },
+  {
+    "id": 442,
+    "lecture": "ACL",
+    "question": "A numbered ACL has a single rule with sequence number 30 what command should be used to remove this rule?",
+    "options": [
+      "# delete 30",
+      "# remove rule 30",
+      "# no 30",
+      "Both B and C"
+    ],
+    "correct": 2,
+    "explanation": "'no 30' removes sequence number 30."
+  },
+  {
+    "id": 443,
+    "lecture": "ACL",
+    "question": "In the command '# access list 101 deny ip any host 10.1.1.1', what does 'host 10.1.1.1' represent?",
+    "options": [
+      "The default gateway for the 10.1.1.0 network",
+      "Any host within the 10.1.1.0 network",
+      "The specific IP address 10.1.1.1 and the wildcard mask 255.255.255.255",
+      "The specific IP address 10.1.1.1 and the wildcard mask 0.0.0.0"
+    ],
+    "correct": 3,
+    "explanation": "'host 10.1.1.1' = '10.1.1.1 0.0.0.0'."
+  },
+  {
+    "id": 444,
+    "lecture": "ACL",
+    "question": "The combination of an IP address and a port number is referred to as what?",
+    "options": [
+      "MAC Address",
+      "Gateway",
+      "Subnet Mask",
+      "Socket number"
+    ],
+    "correct": 3,
+    "explanation": "Socket = IP address + port number."
+  },
+  {
+    "id": 445,
+    "lecture": "ACL",
+    "question": "Which port should be permitted in an outbound ACL to allow users to browse websites?",
+    "options": [
+      "TCP Port 23",
+      "TCP Port 80",
+      "UDP Port 67",
+      "TCP Port 110"
+    ],
+    "correct": 1,
+    "explanation": "HTTP uses TCP port 80."
+  },
+  {
+    "id": 446,
+    "lecture": "ACL",
+    "question": "To activate a created access list on a router's gateway interface to filter outgoing traffic:",
+    "options": [
+      "access-list 10 permit any",
+      "ip access-group [name/number] out",
+      "show access-list",
+      "interface fa0/0 permit"
+    ],
+    "correct": 1,
+    "explanation": "'ip access-group X out' applies ACL to outgoing traffic."
+  },
+  {
+    "id": 447,
+    "lecture": "ACL",
+    "question": "What type of ACL is being configured? # access-list 115 permit ip 192.168.10.0 0.0.0.255 any",
+    "options": [
+      "Standard IP ACL",
+      "Extended IP ACL",
+      "Named IP ACL",
+      "Verification ACL"
+    ],
+    "correct": 1,
+    "explanation": "Number 115 is in extended ACL range (100-199)."
+  },
+  {
+    "id": 448,
+    "lecture": "ACL",
+    "question": "What specific application traffic is this command allowing? # access-list 102 permit tcp any host 192.168.1.50 eq 53",
+    "options": [
+      "Telnet",
+      "FTP",
+      "HTTP",
+      "DNS"
+    ],
+    "correct": 3,
+    "explanation": "TCP port 53 = DNS (though DNS usually uses UDP 53)."
+  },
+  {
+    "id": 449,
+    "lecture": "ACL",
+    "question": "which command is correct if you want to block files from being downloaded via FTP?",
+    "options": [
+      "access-list 1 deny 192.168.1.1",
+      "access-list 101 deny tcp any any eq 21",
+      "access-list 101 deny udp any any eq 21",
+      "no 21"
+    ],
+    "correct": 1,
+    "explanation": "FTP control uses TCP port 21."
+  },
+  {
+    "id": 450,
+    "lecture": "VLAN & VTP",
+    "question": "By default, when a broadcast frame enters a switch port, it exits through:",
+    "options": [
+      "Only the designated Root port",
+      "Only the Trunk port",
+      "All other ports on the switch",
+      "None of the above"
+    ],
+    "correct": 2,
+    "explanation": "Switches flood broadcasts to all ports (except incoming port)."
+  },
+  {
+    "id": 451,
+    "lecture": "VLAN & VTP",
+    "question": "What is the traditional rule regarding switches and LANs mentioned in the source?",
+    "options": [
+      "Every switch must have at least 3 LANs",
+      "One switch can support an unlimited number of departments",
+      "Each switch normally belongs to only one LAN",
+      "Switches cannot be divided into smaller network"
+    ],
+    "correct": 2,
+    "explanation": "Traditional: one switch = one broadcast domain/LAN."
+  },
+  {
+    "id": 452,
+    "lecture": "VLAN & VTP",
+    "question": "VLANs primarily operate at which OSI layer?",
+    "options": [
+      "Layer 1",
+      "Layer 2",
+      "Layer 3",
+      "Layer 4"
+    ],
+    "correct": 1,
+    "explanation": "VLANs operate at Data Link layer (Layer 2)."
+  },
+  {
+    "id": 453,
+    "lecture": "VLAN & VTP",
+    "question": "A VLAN allows a network administrator to divide one physical switch into:",
+    "options": [
+      "Multiple physical routers",
+      "Logical sections for different departments",
+      "Multiple collision domains only",
+      "Different internet service providers"
+    ],
+    "correct": 1,
+    "explanation": "VLANs create logical segments on physical switch."
+  },
+  {
+    "id": 454,
+    "lecture": "VLAN & VTP",
+    "question": "Is it possible for an organization to have more than one switch?",
+    "options": [
+      "No, only one switch is allowed per organization",
+      "Yes, organizations can have more than one switch",
+      "Yes, but they cannot be connected",
+      "No, multiple switches cause network failure"
+    ],
+    "correct": 1,
+    "explanation": "Organizations often use multiple switches."
+  },
+  {
+    "id": 455,
+    "lecture": "VLAN & VTP",
+    "question": "Can the same VLAN be assigned to ports on different switches?",
+    "options": [
+      "No",
+      "Yes",
+      "Only if the switches are from different brands",
+      "Only if they use different IP ranges"
+    ],
+    "correct": 1,
+    "explanation": "VLANs can span multiple switches via trunking."
+  },
+  {
+    "id": 456,
+    "lecture": "VLAN & VTP",
+    "question": "If a switch is divided into 'Personnel,' 'Accounting,' and 'Secretariat,' how many VLANs have been created?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "6"
+    ],
+    "correct": 2,
+    "explanation": "Three departments = three VLANs."
+  },
+  {
+    "id": 457,
+    "lecture": "VLAN & VTP",
+    "question": "If Ports 1 and 2 are assigned to 'Personnel' and Ports 3 and 4 to 'Accounts,' these groups are:",
+    "options": [
+      "Physically separated by different cables",
+      "Logically separated into different VLANs",
+      "Still part of the same broadcast domain",
+      "Connected via a Hub"
+    ],
+    "correct": 1,
+    "explanation": "Different VLANs = logical separation."
+  },
+  {
+    "id": 458,
+    "lecture": "VLAN & VTP",
+    "question": "In a VLAN-configured environment, a broadcast frame from 'VLAN 1' will exit through:",
+    "options": [
+      "Every port on the switch",
+      "Only the internet gateway",
+      "Only the ports that belong to VLAN 1",
+      "Only ports belonging to VLAN 2"
+    ],
+    "correct": 2,
+    "explanation": "Broadcasts stay within same VLAN."
   }
-]
+] 
 
 
